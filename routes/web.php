@@ -116,6 +116,8 @@ Route::group(['prefix' => 'admin'], function(){
     Route::resource('privacypolicy', PrivacyPolicyController::class);
     Route::resource('termandcondition', TermAndConditionController::class);
 
+    Route::get('landingpage', [HomeController::class, 'landingpage'])->name('landingpage');
+
     Route::get('size/list', [AttributeController::class, 'size_list'])->name('size.list');
     Route::post('/getsubcategory', [ProductController::class, 'getsubcategory']);
     Route::post('/getinventorydata', [ProductController::class, 'getinventorydata']);

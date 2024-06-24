@@ -75,7 +75,6 @@
                                     <span class="nav-text">Category List</span>
                                 </a>
                             </li>
-
                             <li class="">
                                 <a class="sidenav-item-link" href="{{ route('subcategorys.index') }}">
                                     <span class="nav-text">Subcategory List</span>
@@ -107,12 +106,12 @@
                     </a>
                 </li>
                 <!-- Landing Page list -->
-                {{-- <li>
-                    <a class="sidenav-item-link" href="{{ route('commingsoon') }}">
+                <li>
+                    <a class="sidenav-item-link" href="{{ route('landingpage') }}">
                         <i class="mdi mdi-book-open"></i>
                         <span class="nav-text">Landing Page</span>
                     </a>
-                </li> --}}
+                </li>
                 <!-- Visitor Count list -->
                 <li>
                     <a class="sidenav-item-link" href="{{ route('visitors') }}">

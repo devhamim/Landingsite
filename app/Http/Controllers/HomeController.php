@@ -51,4 +51,9 @@ class HomeController extends Controller
     function commingsoon(){
         return view('backend.commingsoon');
     }
+
+    // landingpage
+    function landingpage(){
+        return view('backend.landingpage');
+    }
 }
