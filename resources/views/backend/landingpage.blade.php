@@ -31,19 +31,19 @@
                             <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>https://cottonbd.nitebiz.com/black/dress</td>
+                                    <td><a href="https://cottonbd.nitebiz.com/black/dress">https://cottonbd.nitebiz.com/black/dress</a></td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>https://cottonbd.nitebiz.com/landing/page</td>
+                                    <td><a href="https://cottonbd.nitebiz.com/landing/page">https://cottonbd.nitebiz.com/landing/page</a></td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td>https://cottonbd.nitebiz.com/putul/dress</td>
+                                    <td><a href="https://cottonbd.nitebiz.com/putul/dress">https://cottonbd.nitebiz.com/putul/dress</a></td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
-                                    <td>https://cottonbd.nitebiz.com/sharee</td>
+                                    <td><a href="https://cottonbd.nitebiz.com/sharee">https://cottonbd.nitebiz.com/sharee</a></td>
                                 </tr>
                             </tbody>
                         </table>
