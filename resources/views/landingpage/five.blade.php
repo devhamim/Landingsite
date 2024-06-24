@@ -1464,7 +1464,7 @@
                                                         </label>
                                                         <label>
                                                             <input type="checkbox" name="color[]" value="নীল" class="input-checkbox">
-                                                            লাল
+                                                            নীল
                                                         </label>
 
                                                     </div>
