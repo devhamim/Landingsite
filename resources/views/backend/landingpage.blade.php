@@ -43,7 +43,7 @@
                                 </tr>
                                 <tr>
                                     <td>5</td>
-                                    <td><a href="https://cottonbd.nitebiz.com/batik">https://cottonbd.nitebiz.com/batik</a></td>
+                                    <td><a href="https://cottonbd.nitebiz.com/batik/dress">https://cottonbd.nitebiz.com/batik/dress</a></td>
                                 </tr>
                             </tbody>
                         </table>
