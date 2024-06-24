@@ -146,7 +146,7 @@ class landingpageController extends Controller
             'quantity' => $request->quantity,
             'price' => $price,
             'attribute_id' => 63,
-            'inventory_id' => 25,
+            'inventory_id' => 26,
             'created_at' => Carbon::now(),
         ]);
 
