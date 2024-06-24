@@ -8,11 +8,7 @@
                 <span><i class="mdi mdi-chevron-right"></i></span>Landing Page
             </p>
         </div>
-        <div>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                data-bs-target="#addBanner"> Add Landing Page
-            </button>
-        </div>
+
     </div>
 
     <div class="row">
