@@ -74,6 +74,8 @@ Route::post('/landing/order/store', [landingpageController::class, 'landing_orde
 
 Route::get('/black/dress', [landingpageController::class, 'black_dress'])->name('black.dress');
 Route::post('/black/order/store', [landingpageController::class, 'black_order_store'])->name('black.order.store');
+Route::get('/batik/dress', [landingpageController::class, 'batik_dress'])->name('batik.dress');
+Route::post('/batik/order/store', [landingpageController::class, 'batik_order_store'])->name('batik.order.store');
 // landing three page
 Route::get('/putul/dress', [landingpageController::class, 'putul_dress'])->name('putul.dress');
 Route::post('/putul/order/store', [landingpageController::class, 'putul_order_store'])->name('putul.order.store');

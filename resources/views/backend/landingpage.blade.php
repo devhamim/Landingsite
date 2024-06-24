@@ -41,6 +41,10 @@
                                     <td>4</td>
                                     <td><a href="https://cottonbd.nitebiz.com/sharee">https://cottonbd.nitebiz.com/sharee</a></td>
                                 </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td><a href="https://cottonbd.nitebiz.com/batik">https://cottonbd.nitebiz.com/batik</a></td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>

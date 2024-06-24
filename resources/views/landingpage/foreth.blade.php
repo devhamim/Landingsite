@@ -465,6 +465,7 @@
 
     <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/kc8sjhif/5ukdy.js' type="text/javascript"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <style>
         img#wpstats {
             display: none
@@ -1457,7 +1458,15 @@
                                                             <input type="checkbox" name="color[]" checked value="কালো" class="input-checkbox">
                                                             কালো
                                                         </label>
-
+                                                        @error('color')
+                                                            <script>
+                                                                Swal.fire({
+                                                                    icon: "error",
+                                                                    title: "Oops...",
+                                                                    text: "Something went wrong!",
+                                                                });
+                                                            </script>
+                                                        @enderror
                                                     </div>
                                                 </p>
                                             </div>
@@ -1716,49 +1725,36 @@
         media="all" />
 
 {{-- main js --}}
-{{-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> --}}
+
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="{{ asset('landingpage/sharee/slick.min.js') }}"></script>
 
 <script>
-    // Function to start the countdown
     function startCountdown() {
         var countdownElement = document.getElementById('simple_timer');
-
-        // Get the current time
         var now = new Date().getTime();
-
-        // Set the target time to 24 hours from now
         var targetTime = now + (24 * 60 * 60 * 1000);
 
-        // Update the countdown every second
         var x = setInterval(function() {
-            // Get current time
             var now = new Date().getTime();
-
-            // Find the distance between now and the target time
             var distance = targetTime - now;
 
-            // Calculate hours, minutes and seconds
             var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            // Display the result in the elements
             countdownElement.querySelector('.elementor-countdown-hours').innerHTML = hours;
             countdownElement.querySelector('.elementor-countdown-minutes').innerHTML = minutes;
             countdownElement.querySelector('.elementor-countdown-seconds').innerHTML = seconds;
 
-            // If the countdown is over, reset it
             if (distance < 0) {
-                clearInterval(x); // Stop the countdown interval
-                startCountdown(); // Restart the countdown for the next 24 hours
+                clearInterval(x);
+                startCountdown();
             }
-        }, 1000); // Update every second
+        }, 1000);
     }
 
-    // Start the countdown when the page loads
     document.addEventListener('DOMContentLoaded', function() {
         startCountdown();
     });
@@ -1898,104 +1894,6 @@
         id="elementor-webpack-runtime-js"></script>
     <script type="text/javascript" src="{{ asset('landingpage/sharee') }}/wp-content/plugins/elementor/assets/js/frontend-modules.min63aa.js?ver=3.21.5"
         id="elementor-frontend-modules-js"></script>
-    {{-- <script type="text/javascript" id="elementor-pro-frontend-js-before">
-        /* <![CDATA[ */
-        var ElementorProFrontendConfig = {
-            "ajaxurl": "https:\/\/cottonbd.nitebiz.com\/wp-admin\/admin-ajax.php",
-            "nonce": "a0f15a11d7",
-            "urls": {
-                "assets": "https:\/\/cottonbd.nitebiz.com\/wp-content\/plugins\/pro-elements\/assets\/",
-                "rest": "https:\/\/cottonbd.nitebiz.com\/wp-json\/"
-            },
-            "shareButtonsNetworks": {
-                "facebook": {
-                    "title": "Facebook",
-                    "has_counter": true
-                },
-                "twitter": {
-                    "title": "Twitter"
-                },
-                "linkedin": {
-                    "title": "LinkedIn",
-                    "has_counter": true
-                },
-                "pinterest": {
-                    "title": "Pinterest",
-                    "has_counter": true
-                },
-                "reddit": {
-                    "title": "Reddit",
-                    "has_counter": true
-                },
-                "vk": {
-                    "title": "VK",
-                    "has_counter": true
-                },
-                "odnoklassniki": {
-                    "title": "OK",
-                    "has_counter": true
-                },
-                "tumblr": {
-                    "title": "Tumblr"
-                },
-                "digg": {
-                    "title": "Digg"
-                },
-                "skype": {
-                    "title": "Skype"
-                },
-                "stumbleupon": {
-                    "title": "StumbleUpon",
-                    "has_counter": true
-                },
-                "mix": {
-                    "title": "Mix"
-                },
-                "telegram": {
-                    "title": "Telegram"
-                },
-                "pocket": {
-                    "title": "Pocket",
-                    "has_counter": true
-                },
-                "xing": {
-                    "title": "XING",
-                    "has_counter": true
-                },
-                "whatsapp": {
-                    "title": "WhatsApp"
-                },
-                "email": {
-                    "title": "Email"
-                },
-                "print": {
-                    "title": "Print"
-                },
-                "x-twitter": {
-                    "title": "X"
-                },
-                "threads": {
-                    "title": "Threads"
-                }
-            },
-            "woocommerce": {
-                "menu_cart": {
-                    "cart_page_url": "https:\/\/cottonbd.nitebiz.com\/cart\/",
-                    "checkout_page_url": "https:\/\/cottonbd.nitebiz.com\/checkout\/",
-                    "fragments_nonce": "be5424afce"
-                },
-                "productAddedToCart": true
-            },
-            "facebook_sdk": {
-                "lang": "en_US",
-                "app_id": ""
-            },
-            "lottie": {
-                "defaultAnimationUrl": "https:\/\/cottonbd.nitebiz.com\/wp-content\/plugins\/pro-elements\/modules\/lottie\/assets\/animations\/default.json"
-            }
-        };
-        /* ]]> */
-    </script> --}}
     <script type="text/javascript" src="{{ asset('landingpage/sharee') }}/wp-content/plugins/pro-elements/assets/js/frontend.min08e6.js?ver=3.21.2"
         id="elementor-pro-frontend-js"></script>
     <script type="text/javascript"

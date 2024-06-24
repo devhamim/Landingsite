@@ -465,6 +465,7 @@
 
     <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/kc8sjhif/5ukdy.js' type="text/javascript"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <style>
         img#wpstats {
             display: none
@@ -1461,7 +1462,22 @@
                                                             <input type="checkbox" name="color[]" checked value="কালো" class="input-checkbox">
                                                             কালো
                                                         </label>
-
+                                                        <?php $__errorArgs = ['color'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+                                                            <script>
+                                                                Swal.fire({
+                                                                    icon: "error",
+                                                                    title: "Oops...",
+                                                                    text: "Something went wrong!",
+                                                                });
+                                                            </script>
+                                                        <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
                                                     </div>
                                                 </p>
                                             </div>
@@ -1758,43 +1774,30 @@ unset($__errorArgs, $__bag); ?>
 <script src="<?php echo e(asset('landingpage/sharee/slick.min.js')); ?>"></script>
 
 <script>
-    // Function to start the countdown
     function startCountdown() {
         var countdownElement = document.getElementById('simple_timer');
-
-        // Get the current time
         var now = new Date().getTime();
-
-        // Set the target time to 24 hours from now
         var targetTime = now + (24 * 60 * 60 * 1000);
 
-        // Update the countdown every second
         var x = setInterval(function() {
-            // Get current time
             var now = new Date().getTime();
-
-            // Find the distance between now and the target time
             var distance = targetTime - now;
 
-            // Calculate hours, minutes and seconds
             var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            // Display the result in the elements
             countdownElement.querySelector('.elementor-countdown-hours').innerHTML = hours;
             countdownElement.querySelector('.elementor-countdown-minutes').innerHTML = minutes;
             countdownElement.querySelector('.elementor-countdown-seconds').innerHTML = seconds;
 
-            // If the countdown is over, reset it
             if (distance < 0) {
-                clearInterval(x); // Stop the countdown interval
-                startCountdown(); // Restart the countdown for the next 24 hours
+                clearInterval(x);
+                startCountdown();
             }
-        }, 1000); // Update every second
+        }, 1000);
     }
 
-    // Start the countdown when the page loads
     document.addEventListener('DOMContentLoaded', function() {
         startCountdown();
     });
@@ -1912,7 +1915,6 @@ unset($__errorArgs, $__bag); ?>
         id="elementor-webpack-runtime-js"></script>
     <script type="text/javascript" src="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/plugins/elementor/assets/js/frontend-modules.min63aa.js?ver=3.21.5"
         id="elementor-frontend-modules-js"></script>
-    
     <script type="text/javascript" src="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/plugins/pro-elements/assets/js/frontend.min08e6.js?ver=3.21.2"
         id="elementor-pro-frontend-js"></script>
     <script type="text/javascript"
