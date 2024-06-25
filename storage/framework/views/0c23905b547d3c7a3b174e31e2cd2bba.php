@@ -120,7 +120,7 @@
                                 $total_revineu += $completed->total;
                             }
                         ?>
-                        <h2 class="mb-1"><?php echo e($total_revineu); ?> Tk</h2>
+                        <h2 class="mb-1"><?php echo e(number_format($total_revineu)); ?> Tk</h2>
                         <p>Revenue</p>
                         <span class="mdi mdi-currency-usd"></span>
                     </div>

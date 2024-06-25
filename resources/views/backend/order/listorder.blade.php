@@ -121,9 +121,8 @@
                                 $total_revineu += $completed->total;
                             }
                         @endphp
-                        <h2 class="mb-1">{{ $total_revineu }} Tk</h2>
+                        <h2 class="mb-1">{{ number_format($total_revineu) }} Tk</h2>
                         <p>Revenue</p>
-                        <span class="mdi mdi-currency-usd"></span>
                     </div>
                 </div>
             </div>
