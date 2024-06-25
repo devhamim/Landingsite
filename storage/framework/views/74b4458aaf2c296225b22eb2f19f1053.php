@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    @if($setting->first()->title != null)
-        <title>{{$setting->first()->title}}</title>
-    @endif
-    <link rel="stylesheet" type="text/css" href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/eh03duwi/a3jsn.css"
+    <?php if($setting->first()->title != null): ?>
+        <title><?php echo e($setting->first()->title); ?></title>
+    <?php endif; ?>
+    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/eh03duwi/a3jsn.css"
         media="all" />
     <style id='jetpack-sharing-buttons-style-inline-css' type='text/css'>
         .jetpack-sharing-buttons__services-list {
@@ -54,7 +54,7 @@
             padding: 1.25em 2.375em
         }
     </style>
-    <link rel="stylesheet" type="text/css" href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/1y6plmk/5ukdx.css"
+    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/1y6plmk/5ukdx.css"
         media="all" />
     <style id='classic-theme-styles-inline-css' type='text/css'>
         /*! This file is auto-generated */
@@ -396,25 +396,25 @@
             line-height: 1.6;
         }
     </style>
-    <link rel="stylesheet" type="text/css" href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/14oboyxa/5ukdx.css"
+    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/14oboyxa/5ukdx.css"
         media="all" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/2c3d52n2/5ukdx.css"
+    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/2c3d52n2/5ukdx.css"
         media="only screen and (max-width: 768px)" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/buoawj8/5ukdx.css"
+    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/buoawj8/5ukdx.css"
         media="all" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/78qfj7b0/5u9rb.css"
+    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/78qfj7b0/5u9rb.css"
         media="all" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/7xzwkiy0/5ukdx.css"
+    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/7xzwkiy0/5ukdx.css"
         media="all" />
     <link rel='stylesheet' id='elementor-post-2283-css'
-        href='{{ asset('landingpage/sharee') }}/wp-content/uploads/elementor/css/post-2283eefd.css?ver=1715248386' type='text/css'
+        href='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/uploads/elementor/css/post-2283eefd.css?ver=1715248386' type='text/css'
         media='all' />
-    <link rel="stylesheet" type="text/css" href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/6zsossqs/5ukdx.css"
+    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/6zsossqs/5ukdx.css"
         media="all" />
     <link rel='stylesheet' id='elementor-post-2325-css'
-        href='{{ asset('landingpage/sharee') }}/wp-content/uploads/elementor/css/post-23252ee6.css?ver=1715511391' type='text/css'
+        href='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/uploads/elementor/css/post-23252ee6.css?ver=1715511391' type='text/css'
         media='all' />
-    <link rel="stylesheet" type="text/css" href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/qa9ezqp0/5ukdx.css"
+    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/qa9ezqp0/5ukdx.css"
         media="all" />
     <style id='dashicons-inline-css' type='text/css'>
         [data-font="Dashicons"]:before {
@@ -430,9 +430,9 @@
             -moz-osx-font-smoothing: grayscale !important;
         }
     </style>
-    <link rel="stylesheet" type="text/css" href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/7ll98hwt/5ukdx.css"
+    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/7ll98hwt/5ukdx.css"
         media="all" />
-    <link rel="stylesheet" href="{{ asset('landingpage/sharee/slick.css') }}">
+    <link rel="stylesheet" href="<?php echo e(asset('landingpage/sharee/slick.css')); ?>">
     <link rel='stylesheet' id='flatsome-googlefonts-css'
         href='http://fonts.googleapis.com/css?family=Lato%3Aregular%2C700%2C400%2C700%7CDancing+Script%3Aregular%2C400&amp;display=swap&amp;ver=3.9'
         type='text/css' media='all' />
@@ -440,30 +440,30 @@
         href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CHind+Siliguri%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=swap&amp;ver=6.5.3'
         type='text/css' media='all' />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/mob3d79n/5u9rb.js' type="text/javascript"></script>
+    <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/mob3d79n/5u9rb.js' type="text/javascript"></script>
 
-    <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/quq3qn0g/5u9rb.js' type="text/javascript"></script>
+    <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/quq3qn0g/5u9rb.js' type="text/javascript"></script>
 
-    <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/pxrbfce/5ukdy.js' type="text/javascript"></script>
+    <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/pxrbfce/5ukdy.js' type="text/javascript"></script>
 
-    <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/7io3j6c5/5ukdy.js' type="text/javascript"></script>
+    <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/7io3j6c5/5ukdy.js' type="text/javascript"></script>
 
-    <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/2nytrlxg/5ukdy.js' type="text/javascript"></script>
+    <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/2nytrlxg/5ukdy.js' type="text/javascript"></script>
 
-    <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/e5xv04yd/5ukdy.js' type="text/javascript"></script>
+    <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/e5xv04yd/5ukdy.js' type="text/javascript"></script>
 
-    <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/2z65b5dc/5ukdy.js' type="text/javascript"></script>
+    <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/2z65b5dc/5ukdy.js' type="text/javascript"></script>
 
-    <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/fpauzlgh/5ukdy.js' type="text/javascript"></script>
+    <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/fpauzlgh/5ukdy.js' type="text/javascript"></script>
 
-    <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/5awtn25/5ukdy.js' type="text/javascript"></script>
+    <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/5awtn25/5ukdy.js' type="text/javascript"></script>
 
-    <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/g38vfwxl/4euc4.js' type="text/javascript"></script>
+    <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/g38vfwxl/4euc4.js' type="text/javascript"></script>
 
 
-    <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/dq7tdaz1/a3jsn.js' type="text/javascript"></script>
+    <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/dq7tdaz1/a3jsn.js' type="text/javascript"></script>
 
-    <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/kc8sjhif/5ukdy.js' type="text/javascript"></script>
+    <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/kc8sjhif/5ukdy.js' type="text/javascript"></script>
 
     <style>
         img#wpstats {
@@ -481,9 +481,9 @@
             opacity: 1;
         }
     </style>
-    @if($setting->first()->favicon != null)
-        <link rel="shortcut icon" href="{{ asset('uploads/setting') }}/{{ $setting->first()->favicon }}">
-    @endif
+    <?php if($setting->first()->favicon != null): ?>
+        <link rel="shortcut icon" href="<?php echo e(asset('uploads/setting')); ?>/<?php echo e($setting->first()->favicon); ?>">
+    <?php endif; ?>
 
     <style id="custom-css" type="text/css">
         :root {
@@ -727,15 +727,17 @@
     </style>
 
     <!-- Meta Pixel Code -->
-    @if ($markatingsetting->first()->fb_pixel != null)
-        {!! $markatingsetting->first()->fb_pixel !!}
-    @endif
-    {{-- <!-- End Meta Pixel Code --> --}}
+    <?php if($markatingsetting->first()->fb_pixel != null): ?>
+        <?php echo $markatingsetting->first()->fb_pixel; ?>
+
+    <?php endif; ?>
+    
 
     <!-- googletag Code -->
-    @if ($markatingsetting->first()->google_tag != null)
-        {!! $markatingsetting->first()->google_tag !!}
-    @endif
+    <?php if($markatingsetting->first()->google_tag != null): ?>
+        <?php echo $markatingsetting->first()->google_tag; ?>
+
+    <?php endif; ?>
     <!-- End googletag Code -->
 </head>
 
@@ -754,7 +756,7 @@
                         data-widget_type="animated-headline.default">
                         <div class="elementor-widget-container">
                             <link rel="stylesheet" type="text/css"
-                                href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/zixf9ao/5ukdx.css" media="all" />
+                                href="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/zixf9ao/5ukdx.css" media="all" />
                             <h3
                                 class="elementor-headline elementor-headline-animation-type-typing elementor-headline-letters">
                                 <span class="elementor-headline-plain-text elementor-headline-text-wrapper">হোম
@@ -917,18 +919,18 @@
                         <div class="elementor-image-carousel-wrapper swiper" dir="ltr">
                             <div class="imageautoplay" aria-live="off">
                                 <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                                        src="{{ asset('landingpage/sharee/image/3-1.jpg') }}" alt="1.jpg" />
+                                        src="<?php echo e(asset('landingpage/sharee/image/3-1.jpg')); ?>" alt="1.jpg" />
                                 </figure>
                                 <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                                        src="{{ asset('landingpage/sharee/image/3-4.jpg') }}" /></figure>
+                                        src="<?php echo e(asset('landingpage/sharee/image/3-4.jpg')); ?>" /></figure>
                                 <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                                        src="{{ asset('landingpage/sharee/black-image/3.jpg') }}" alt="3.jpg" />
+                                        src="<?php echo e(asset('landingpage/sharee/black-image/3.jpg')); ?>" alt="3.jpg" />
                                 </figure>
                                 <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                                        src="{{ asset('landingpage/sharee/image/3-6.jpg') }}" alt="4.jpg" />
+                                        src="<?php echo e(asset('landingpage/sharee/image/3-6.jpg')); ?>" alt="4.jpg" />
                                 </figure>
                                 <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                                        src="{{ asset('landingpage/sharee/image/3-7.jpg') }}" alt="4.jpg" />
+                                        src="<?php echo e(asset('landingpage/sharee/image/3-7.jpg')); ?>" alt="4.jpg" />
                                 </figure>
 
                             </div>
@@ -957,18 +959,18 @@
                         <div class="elementor-image-carousel-wrapper swiper" >
                             <div class="imageautoplay" >
                                 <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                                        src="{{ asset('landingpage/sharee/image/3-3.jpg') }}" alt="1.jpg" />
+                                        src="<?php echo e(asset('landingpage/sharee/image/3-3.jpg')); ?>" alt="1.jpg" />
                                 </figure>
                                 <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                                        src="{{ asset('landingpage/sharee/image/3-5.jpg') }}" /></figure>
+                                        src="<?php echo e(asset('landingpage/sharee/image/3-5.jpg')); ?>" /></figure>
                                 <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                                        src="{{ asset('landingpage/sharee/black-image/3.jpg') }}" alt="3.jpg" />
+                                        src="<?php echo e(asset('landingpage/sharee/black-image/3.jpg')); ?>" alt="3.jpg" />
                                 </figure>
                                 <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                                        src="{{ asset('landingpage/sharee/image/3-8.jpg') }}" alt="4.jpg" />
+                                        src="<?php echo e(asset('landingpage/sharee/image/3-8.jpg')); ?>" alt="4.jpg" />
                                 </figure>
                                 <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                                        src="{{ asset('landingpage/sharee/image/3-2.jpg') }}" alt="4.jpg" />
+                                        src="<?php echo e(asset('landingpage/sharee/image/3-2.jpg')); ?>" alt="4.jpg" />
                                 </figure>
 
                             </div>
@@ -1297,30 +1299,30 @@
                             <div class="elementor-image-carousel-wrapper swiper" dir="ltr">
                                 <div class="imageautoplay" aria-live="off">
                                     <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                                            src="{{ asset('landingpage/sharee/image/3-1.jpg') }}" alt="1.jpg" />
+                                            src="<?php echo e(asset('landingpage/sharee/image/3-1.jpg')); ?>" alt="1.jpg" />
                                     </figure>
                                     <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                                            src="{{ asset('landingpage/sharee/image/3-2.jpg') }}" /></figure>
+                                            src="<?php echo e(asset('landingpage/sharee/image/3-2.jpg')); ?>" /></figure>
                                     <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                                            src="{{ asset('landingpage/sharee/black-image/3.jpg') }}" alt="3.jpg" />
+                                            src="<?php echo e(asset('landingpage/sharee/black-image/3.jpg')); ?>" alt="3.jpg" />
                                     </figure>
                                     <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                                            src="{{ asset('landingpage/sharee/image/3-3.jpg') }}" alt="4.jpg" />
+                                            src="<?php echo e(asset('landingpage/sharee/image/3-3.jpg')); ?>" alt="4.jpg" />
                                     </figure>
                                     <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                                            src="{{ asset('landingpage/sharee/image/3-4.jpg') }}" alt="4.jpg" />
+                                            src="<?php echo e(asset('landingpage/sharee/image/3-4.jpg')); ?>" alt="4.jpg" />
                                     </figure>
                                     <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                                            src="{{ asset('landingpage/sharee/image/3-5.jpg') }}" alt="4.jpg" />
+                                            src="<?php echo e(asset('landingpage/sharee/image/3-5.jpg')); ?>" alt="4.jpg" />
                                     </figure>
                                     <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                                            src="{{ asset('landingpage/sharee/image/3-6.jpg') }}" alt="4.jpg" />
+                                            src="<?php echo e(asset('landingpage/sharee/image/3-6.jpg')); ?>" alt="4.jpg" />
                                     </figure>
                                     <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                                            src="{{ asset('landingpage/sharee/image/3-7.jpg') }}" alt="4.jpg" />
+                                            src="<?php echo e(asset('landingpage/sharee/image/3-7.jpg')); ?>" alt="4.jpg" />
                                     </figure>
                                     <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                                            src="{{ asset('landingpage/sharee/image/3-8.jpg') }}" alt="4.jpg" />
+                                            src="<?php echo e(asset('landingpage/sharee/image/3-8.jpg')); ?>" alt="4.jpg" />
                                     </figure>
 
                                 </div>
@@ -1389,18 +1391,18 @@
                     data-id="5219f14" data-element_type="widget" data-widget_type="button.default">
                     <div class="elementor-widget-container">
                         <div class="elementor-button-wrapper">
-                            @if ($setting->first()->number_two != null)
+                            <?php if($setting->first()->number_two != null): ?>
                                 <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-pulse-grow"
-                                    href="tel:{{ $setting->first()->number_two }}" style="background: #33D422">
+                                    href="tel:<?php echo e($setting->first()->number_two); ?>" style="background: #33D422">
                                     <span class="elementor-button-content-wrapper">
                                         <span class="elementor-button-icon elementor-align-icon-left">
                                             <img style="width: 65px"
-                                                src="{{ asset('landingpage/sharee/whatsapp.png') }}" alt="">
+                                                src="<?php echo e(asset('landingpage/sharee/whatsapp.png')); ?>" alt="">
                                             <span
-                                                class="elementor-button-text">{{ $setting->first()->number_two }}</span>
+                                                class="elementor-button-text"><?php echo e($setting->first()->number_two); ?></span>
                                         </span>
                                 </a>
-                            @endif
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
@@ -1469,8 +1471,8 @@
                                 <!-- CHECKOUT SHORTCODE -->
                                 <div class="woocommerce">
                                     <div class="woocommerce-notices-wrapper"></div>
-                                    <form action="{{ route('putul.order.store') }}" method="POST">
-                                        @csrf
+                                    <form action="<?php echo e(route('putul.order.store')); ?>" method="POST">
+                                        <?php echo csrf_field(); ?>
                                         <div class="wcf-product-option-wrap wcf-yp-skin-classic wcf-product-option-before-customer">
                                             <h3 id="your_products_heading"> নিচে আপনার প্রোডাক্টটি নিবার্চন করুন </h3>
                                             <!-- Product Options Table -->
@@ -1493,7 +1495,7 @@
                                                             <input class="wcf-single-sel" type="radio" id="product_1" name="radio_btn" value="1" data-product-name="প্রিমিয়াম - টু পিচ সেট গ্রাউন+ওড়না" data-quantity="1" data-price="1350" data-image="" checked="checked">
                                                         </div>
                                                         <div class="wcf-item-image" style="">
-                                                            <img fetchpriority="high" decoding="async" width="300" height="300" src="{{ asset('landingpage/sharee/image/3-7.jpg') }}" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" />
+                                                            <img fetchpriority="high" decoding="async" width="300" height="300" src="<?php echo e(asset('landingpage/sharee/image/3-7.jpg')); ?>" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" />
                                                         </div>
                                                         <div class="wcf-item-all-text">
                                                             <div class="wcf-item-wrap">
@@ -1529,9 +1531,16 @@
                                                                 <input type="text" class="input-text " name="name" id="name" placeholder="সম্পূর্ন নামটি লিখুন" value="" autocomplete="given-name" required />
                                                             </span>
                                                         </p>
-                                                        @error('name')
-                                                            <strong class="text-danger">{{ $message }}</strong>
-                                                        @enderror
+                                                        <?php $__errorArgs = ['name'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+                                                            <strong class="text-danger"><?php echo e($message); ?></strong>
+                                                        <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
                                                         <p class="form-row address-field form-row-first thwcfd-required thwcfd-field-wrapper thwcfd-field-text wcf-column-100 validate-required" id="billing_address_1_field" data-priority="20">
                                                             <label for="address" class="">আপনার সম্পূর্ণ ঠিকানা&nbsp;
                                                                 <abbr class="required" title="required">*</abbr>
@@ -1540,9 +1549,16 @@
                                                                 <input type="text" class="input-text " name="address" id="address" placeholder="আপনার সম্পূর্ণ ঠিকানা লিখুন" value="" autocomplete="address-line1" required />
                                                             </span>
                                                         </p>
-                                                        @error('address')
-                                                            <strong class="text-danger">{{ $message }}</strong>
-                                                        @enderror
+                                                        <?php $__errorArgs = ['address'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+                                                            <strong class="text-danger"><?php echo e($message); ?></strong>
+                                                        <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
                                                         <p class="form-row form-row-wide thwcfd-required thwcfd-field-wrapper thwcfd-field-tel wcf-column-100 validate-required validate-phone" id="billing_phone_field" data-priority="30">
                                                             <label for="mobile" class="">আপনার ফোন নাম্বার&nbsp;
                                                                 <abbr class="required" title="required">*</abbr>
@@ -1551,10 +1567,21 @@
                                                                 <input type="tel" class="input-text " name="mobile" id="mobile" placeholder="আপনার ফোন নাম্বার লিখুন" value="" autocomplete="tel" required />
                                                             </span>
                                                         </p>
-                                                        @error('mobile')
-                                                            <strong class="text-danger">{{ $message }}</strong>
-                                                        @enderror
-                                                        @error('mobile')
+                                                        <?php $__errorArgs = ['mobile'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+                                                            <strong class="text-danger"><?php echo e($message); ?></strong>
+                                                        <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+                                                        <?php $__errorArgs = ['mobile'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
                                                             <script>
                                                                 Swal.fire({
                                                                     icon: "error",
@@ -1562,7 +1589,10 @@
                                                                     text: "Something went wrong!",
                                                                 });
                                                             </script>
-                                                        @enderror
+                                                        <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
                                                         <p class="form-row address-field form-row-first thwcfd-required thwcfd-field-wrapper thwcfd-field-text wcf-column-100 validate-required" id="billing_address_1_field" data-priority="20">
                                                             <label for="color" class="">পছন্দের কালারটি সিলেক্ট করুন&nbsp;
                                                                 <abbr class="required" title="required">*</abbr>
@@ -1595,7 +1625,7 @@
                                                                         <div class="wcf-product-image">
                                                                             <div class="wcf-product-thumbnail">
                                                                                 <img width="80" height="80"
-                                                                                    src="{{ asset('landingpage/sharee/image/3-7.jpg') }}"
+                                                                                    src="<?php echo e(asset('landingpage/sharee/image/3-7.jpg')); ?>"
                                                                                     class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
                                                                                     alt="">
                                                                                 <a href="#" rel="nofollow"
@@ -1699,103 +1729,17 @@
         </div>
     </div>
     <!-- Mobile Sidebar -->
-    {{-- <div id="main-menu" class="mobile-sidebar no-scrollbar mfp-hide">
-        <div class="sidebar-menu no-scrollbar ">
-            <ul class="nav nav-sidebar  nav-vertical nav-uppercase">
-                <li class="header-search-form search-form html relative has-icon">
-                    <div class="header-search-form-wrapper">
-                        <div class="searchform-wrapper ux-search-box relative form-flat is-normal">
-                            <form role="search" method="get" class="searchform"
-                                action="https://baharicolor.online/">
-                                <div class="flex-row relative">
-                                    <div class="flex-col search-form-categories">
-                                        <select class="search_categories resize-select mb-0" name="product_cat">
-                                            <option value="" selected='selected'>All</option>
-                                            <option value="couple-dress">Couple Dress</option>
-                                            <option value="couple-set">Couple Set</option>
-                                            <option value="shari">Shari</option>
-                                            <option value="silk-saree">Silk Saree</option>
-                                        </select>
-                                    </div><!-- .flex-col -->
-                                    <div class="flex-col flex-grow">
-                                        <label class="screen-reader-text"
-                                            for="woocommerce-product-search-field-0">Search for:</label>
-                                        <input type="search" id="woocommerce-product-search-field-0"
-                                            class="search-field mb-0" placeholder="Search&hellip;" value=""
-                                            name="s" />
-                                        <input type="hidden" name="post_type" value="product" />
-                                    </div><!-- .flex-col -->
-                                    <div class="flex-col">
-                                        <button type="submit" value="Search"
-                                            class="ux-search-submit submit-button secondary button icon mb-0">
-                                            <i class="icon-search"></i> </button>
-                                    </div><!-- .flex-col -->
-                                </div><!-- .flex-row -->
-                                <div class="live-search-results text-left z-top"></div>
-                            </form>
-                        </div>
-                    </div>
-                </li>
-                <li id="menu-item-1428"
-                    class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-1428">
-                    <a href="https://baharicolor.online/product-category/couple-dress/" class="nav-top-link">Couple
-                        Dress</a>
-                    <ul class=children>
-                        <li id="menu-item-1429"
-                            class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1429"><a
-                                href="https://baharicolor.online/product-category/couple-dress/couple-shari-panjabi/">Couple
-                                Set (Shari + Panjabi)</a></li>
-                        <li id="menu-item-1430"
-                            class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1430"><a
-                                href="https://baharicolor.online/product-category/couple-dress/couple-two-pieces/">Couple
-                                Set (Two-Piece)</a></li>
-                        <li id="menu-item-1727"
-                            class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1727"><a
-                                href="https://baharicolor.online/product-category/couple-set/">Couple Set</a></li>
-                    </ul>
-                </li>
-                <li id="menu-item-1431"
-                    class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1431"><a
-                        href="https://baharicolor.online/product-category/mens-shirt/" class="nav-top-link">Mens
-                        Shirt</a></li>
-                <li id="menu-item-1432"
-                    class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1432"><a
-                        href="https://baharicolor.online/product-category/panjabi/" class="nav-top-link">Panjabi</a>
-                </li>
-                <li id="menu-item-1433"
-                    class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-1433">
-                    <a href="https://baharicolor.online/product-category/shari/" class="nav-top-link">Shari</a>
-                    <ul class=children>
-                        <li id="menu-item-1435"
-                            class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1435"><a
-                                href="https://baharicolor.online/product-category/shari/digital-print-shari/">Digital
-                                Print Shari</a></li>
-                        <li id="menu-item-1434"
-                            class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1434"><a
-                                href="https://baharicolor.online/product-category/shari/boutique-shari/">Boutique
-                                Shari</a></li>
-                        <li id="menu-item-1798"
-                            class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1798"><a
-                                href="https://baharicolor.online/product-category/silk-saree/">Silk Saree</a></li>
-                    </ul>
-                </li>
-                <li id="menu-item-2247"
-                    class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-2247"><a
-                        href="https://baharicolor.online/product-category/islamic-wear/"
-                        class="nav-top-link">Islamic Wear</a></li>
-            </ul>
-        </div><!-- inner -->
-    </div> --}}
+    
     <!-- #mobile-menu -->
 
-<link rel="stylesheet" type="text/css" href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/78qrtsnc/5ukdx.css"
+<link rel="stylesheet" type="text/css" href="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/78qrtsnc/5ukdx.css"
         media="all" />
 
-{{-- main js --}}
+
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="{{ asset('landingpage/sharee/slick.min.js') }}"></script>
+    <script src="<?php echo e(asset('landingpage/sharee/slick.min.js')); ?>"></script>
 
     <script>
         function startCountdown() {
@@ -1874,7 +1818,7 @@
     });
 </script>
 
-        @if (session('success'))
+        <?php if(session('success')): ?>
             {
             <script>
                 Swal.fire({
@@ -1884,8 +1828,8 @@
                 });
             </script>
             }
-        @endif
-        @if (session('error'))
+        <?php endif; ?>
+        <?php if(session('error')): ?>
             {
             <script>
                 Swal.fire({
@@ -1896,8 +1840,8 @@
                 });
             </script>
             }
-        @endif
-{{-- main js end --}}
+        <?php endif; ?>
+
 
     <script type="text/javascript" id="woo-variation-swatches-js-extra">
         /* <![CDATA[ */
@@ -1953,11 +1897,11 @@
         /* ]]> */
     </script>
     <script type="text/javascript"
-        src="{{ asset('landingpage/sharee') }}/wp-content/plugins/pro-elements/assets/js/webpack-pro.runtime.min08e6.js?ver=3.21.2"
+        src="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/plugins/pro-elements/assets/js/webpack-pro.runtime.min08e6.js?ver=3.21.2"
         id="elementor-pro-webpack-runtime-js"></script>
-    <script type="text/javascript" src="{{ asset('landingpage/sharee') }}/wp-content/plugins/elementor/assets/js/webpack.runtime.min63aa.js?ver=3.21.5"
+    <script type="text/javascript" src="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/plugins/elementor/assets/js/webpack.runtime.min63aa.js?ver=3.21.5"
         id="elementor-webpack-runtime-js"></script>
-    <script type="text/javascript" src="{{ asset('landingpage/sharee') }}/wp-content/plugins/elementor/assets/js/frontend-modules.min63aa.js?ver=3.21.5"
+    <script type="text/javascript" src="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/plugins/elementor/assets/js/frontend-modules.min63aa.js?ver=3.21.5"
         id="elementor-frontend-modules-js"></script>
     <script type="text/javascript" id="elementor-pro-frontend-js-before">
         /* <![CDATA[ */
@@ -2057,12 +2001,12 @@
         };
         /* ]]> */
     </script>
-    <script type="text/javascript" src="{{ asset('landingpage/sharee') }}/wp-content/plugins/pro-elements/assets/js/frontend.min08e6.js?ver=3.21.2"
+    <script type="text/javascript" src="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/plugins/pro-elements/assets/js/frontend.min08e6.js?ver=3.21.2"
         id="elementor-pro-frontend-js"></script>
     <script type="text/javascript"
-        src="{{ asset('landingpage/sharee') }}/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js?ver=4.0.2"
+        src="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js?ver=4.0.2"
         id="elementor-waypoints-js"></script>
-    <script type="text/javascript" src="{{ asset('landingpage/sharee') }}/wp-content/plugins/ui/core.min3f14.js?ver=1.13.2" id="jquery-ui-core-js">
+    <script type="text/javascript" src="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/plugins/ui/core.min3f14.js?ver=1.13.2" id="jquery-ui-core-js">
     </script>
 
     <script type="text/javascript" id="elementor-frontend-js-before">
@@ -2194,11 +2138,12 @@
         };
         /* ]]> */
     </script>
-    <script type="text/javascript" src="{{ asset('landingpage/sharee') }}/wp-content/plugins/elementor/assets/js/frontend.min63aa.js?ver=3.21.5"
+    <script type="text/javascript" src="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/plugins/elementor/assets/js/frontend.min63aa.js?ver=3.21.5"
         id="elementor-frontend-js"></script>
     <script type="text/javascript"
-        src="{{ asset('landingpage/sharee') }}/wp-content/plugins/pro-elements/assets/js/elements-handlers.min08e6.js?ver=3.21.2"
+        src="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/plugins/pro-elements/assets/js/elements-handlers.min08e6.js?ver=3.21.2"
         id="pro-elements-handlers-js"></script>
 
 </body>
 </html>
+<?php /**PATH F:\all project\cottonbd\resources\views/landingpage/threepage.blade.php ENDPATH**/ ?>
