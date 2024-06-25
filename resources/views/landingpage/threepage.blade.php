@@ -1530,9 +1530,14 @@
                                                     </style>
                                                 <div class="woocommerce-input-wrapper" style="display: inline-flex">
                                                     <label>
-                                                        <input type="checkbox" name="color[]" checked value="কালো"
+                                                        <input type="checkbox" name="color[]" checked value="সাদা"
                                                             class="input-checkbox">
-                                                        কালো
+                                                            সাদা
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="color[]" value="আকাশী"
+                                                            class="input-checkbox">
+                                                        আকাশী
                                                     </label>
                                                     @error('color')
                                                         <script>
