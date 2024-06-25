@@ -21,7 +21,7 @@
                                         echo '<span class="btn btn-secondary">Pending</span>';
                                     }
                                     elseif ($orders->status == 1) {
-                                        echo '<span class="btn btn-info">Confirmed Order</span>';
+                                        echo '<span class="btn btn-info">On Hold</span>';
                                     }
                                     elseif ($orders->status == 2) {
                                         echo '<span class="btn btn-primary">Processing Order</span>';
@@ -30,7 +30,7 @@
                                         echo '<span class="btn btn-warning ">On Delivery</span>';
                                     }
                                     elseif ($orders->status == 4) {
-                                        echo '<span class="btn btn-success">Product Delivered</span>';
+                                        echo '<span class="btn btn-success">Confirmed</span>';
                                     }
                                     else {
                                         echo '<span class="btn btn-danger">Cancel Order</span>';
@@ -43,7 +43,7 @@
                                         <button name="status" value="<?php echo e($orders->order_id .','. '0'); ?>" class="dropdown-item status">Pending</button>
                                     </li>
                                     <li>
-                                        <button name="status" value="<?php echo e($orders->order_id .','. '1'); ?>" class="dropdown-item status">Confirmed Order</button>
+                                        <button name="status" value="<?php echo e($orders->order_id .','. '1'); ?>" class="dropdown-item status">On Hold</button>
                                     </li>
                                     <li>
                                         <button name="status" value="<?php echo e($orders->order_id .','. '2'); ?>" class="dropdown-item status">Processing Order</button>
@@ -52,7 +52,7 @@
                                         <button name="status" value="<?php echo e($orders->order_id .','. '3'); ?>" class="dropdown-item status">On Delivery</button>
                                     </li>
                                     <li>
-                                        <button name="status" value="<?php echo e($orders->order_id .','. '4'); ?>" class="dropdown-item status">Product Delivered</button>
+                                        <button name="status" value="<?php echo e($orders->order_id .','. '4'); ?>" class="dropdown-item status">Confirmed</button>
                                     </li>
                                     <li>
                                         <button name="status" value="<?php echo e($orders->order_id .','. '5'); ?>" class="dropdown-item status">Cancel Order</button>
@@ -201,7 +201,7 @@
                             <div class="step-icon-wrap">
                                 <div class="step-icon"><i class="mdi mdi-cart"></i></div>
                             </div>
-                            <h4 class="step-title">Confirmed Order</h4>
+                            <h4 class="step-title">On Hold</h4>
                         </div>
                         <div class="step <?php echo e($orders->status >= 2 && $orders->status != 5 ? 'completed':''); ?>">
                             <div class="step-icon-wrap">
@@ -220,7 +220,7 @@
                             <div class="step-icon-wrap">
                                 <div class="step-icon"><i class="mdi mdi-hail"></i></div>
                             </div>
-                            <h4 class="step-title">Product Delivered</h4>
+                            <h4 class="step-title">Confirmed</h4>
                         </div>
                     </div>
                 </div>

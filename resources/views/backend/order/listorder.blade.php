@@ -77,7 +77,6 @@
                     <div class="card-body">
                         <h2 class="mb-1">{{ $total_orders }}</h2>
                         <p>Total Order</p>
-                        <span class="mdi mdi-account-arrow-left"></span>
                     </div>
                 </div>
             </div>
@@ -86,7 +85,6 @@
                     <div class="card-body">
                         <h2 class="mb-1">{{ $pending_orders }}</h2>
                         <p>Total Pending</p>
-                        <span class="mdi mdi-account-clock"></span>
                     </div>
                 </div>
             </div>
@@ -95,7 +93,6 @@
                     <div class="card-body">
                         <h2 class="mb-1">{{ $confirm_orders }}</h2>
                         <p>Total Confirm</p>
-                        <span class="mdi mdi-package-variant"></span>
                     </div>
                 </div>
             </div>
@@ -104,7 +101,6 @@
                     <div class="card-body">
                         <h2 class="mb-1">{{ $hold_orders }}</h2>
                         <p>Total Hold</p>
-                        <span class="mdi mdi-package-variant"></span>
                     </div>
                 </div>
             </div>
@@ -113,7 +109,6 @@
                     <div class="card-body">
                         <h2 class="mb-1">{{ $cancel_orders }}</h2>
                         <p>Total Cancel</p>
-                        <span class="mdi mdi-package-variant"></span>
                     </div>
                 </div>
             </div>
