@@ -341,7 +341,7 @@ class landingpageController extends Controller
                     'created_at' => Carbon::now(),
                 ]);
                 if($request->radio_btn == 1){
-                    $price = 1350;
+                    $price = 1080;
                     $product_name = 'পুতুল ড্রেস টু পিস >গ্রাউন+ওড়না।';
                 }
                 $subtotal = $price*$request->quantity;

@@ -1492,7 +1492,7 @@
                                                     <!-- Product Row 1 -->
                                                     <div class="wcf-item">
                                                         <div class="wcf-item-selector wcf-item-single-sel">
-                                                            <input class="wcf-single-sel" type="radio" id="product_1" name="radio_btn" value="1" data-product-name="প্রিমিয়াম - টু পিচ সেট গ্রাউন+ওড়না" data-quantity="1" data-price="1350" data-image="" checked="checked">
+                                                            <input class="wcf-single-sel" type="radio" id="product_1" name="radio_btn" value="1" data-product-name="প্রিমিয়াম - টু পিচ সেট গ্রাউন+ওড়না" data-quantity="1" data-price="1080" data-image="" checked="checked">
                                                         </div>
                                                         <div class="wcf-item-image" style="">
                                                             <img fetchpriority="high" decoding="async" width="300" height="300" src="<?php echo e(asset('landingpage/sharee/image/3-7.jpg')); ?>" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" />
@@ -1638,7 +1638,7 @@ unset($__errorArgs, $__bag); ?>
                                                                         <strong class="product-quantity"></strong>
                                                                     </td>
                                                                     <td class="product-total">
-                                                                        <span class="woocommerce-Price-amount amount"><bdi >1350
+                                                                        <span class="woocommerce-Price-amount amount"><bdi >1080
                                                                             <span class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi>
                                                                         </span>
                                                                     </td>
@@ -1649,8 +1649,8 @@ unset($__errorArgs, $__bag); ?>
                                                                 <tr class="cart-subtotal">
                                                                     <th>Subtotal</th>
                                                                     <td>
-                                                                        <input type="hidden" name="sub_total" value="1350" id="sub_total_input">
-                                                                        <span class="woocommerce-Price-amount amount"><bdi id="subtotal_footer">1350<span class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span>
+                                                                        <input type="hidden" name="sub_total" value="1080" id="sub_total_input">
+                                                                        <span class="woocommerce-Price-amount amount"><bdi id="subtotal_footer">1080<span class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span>
                                                                     </td>
                                                                 </tr>
                                                                 <!-- Shipping Options -->
@@ -1677,8 +1677,8 @@ unset($__errorArgs, $__bag); ?>
                                                                 <tr class="order-total">
                                                                     <th>Total</th>
                                                                     <td>
-                                                                        <input type="hidden" name="total" value="1350" id="total_input">
-                                                                        <strong><span class="woocommerce-Price-amount amount"><bdi id="total">1350<span class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span></strong>
+                                                                        <input type="hidden" name="total" value="1080" id="total_input">
+                                                                        <strong><span class="woocommerce-Price-amount amount"><bdi id="total">1080<span class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span></strong>
                                                                     </td>
                                                                 </tr>
                                                                 <!-- End Order Total -->
@@ -1786,7 +1786,7 @@ unset($__errorArgs, $__bag); ?>
         const subtotalElement = document.getElementById('subtotal');
         const subtotalFooterElement = document.getElementById('subtotal_footer');
         const totalElement = document.getElementById('total');
-        const productPrice = 1350;
+        const productPrice = 1080;
         let shippingCost = 60;
 
         function updateSubtotalAndTotal() {
