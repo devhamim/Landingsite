@@ -22,56 +22,72 @@ class OrderController extends Controller
      * Display a listing of the resource.
      */
     public function index(Request $request)
-{
-    $startDate = $request->input('start_date');
-    $endDate = $request->input('end_date');
-    $status = $request->input('status');
+    {
+        $startDate = $request->input('start_date');
+        $endDate = $request->input('end_date');
+        $status = $request->input('status');
 
-    if (empty($startDate) && empty($endDate)) {
-        $startDate = '';
-        $endDate = '';
-    } else {
-        $endDate = Carbon::parse($endDate)->addDay();
-        $endDate = $endDate->format('Y-m-d');
+            if (empty($startDate) && empty($endDate)) {
+                $startDate = '';
+                $endDate = '';
+            }
+            else {
+                $endDate = Carbon::parse($endDate)->addDay();
+                $endDate = $endDate->format('Y-m-d');
+            }
+
+            if(!empty($startDate) && !empty($endDate)){
+                $orders = Order::with('rel_to_billing')->whereBetween('created_at', [$startDate, $endDate])->orderBy('created_at', 'desc')->get();
+                $total_orders = Order::whereBetween('created_at', [$startDate, $endDate])->orderBy('created_at', 'desc')->count();
+                $pending_orders = Order::where('status', 0)->whereBetween('created_at', [$startDate, $endDate])->orderBy('created_at', 'desc')->count();
+                $hold_orders = Order::where('status', 1)->whereBetween('created_at', [$startDate, $endDate])->orderBy('created_at', 'desc')->count();
+                $confirm_orders = Order::where('status', 4)->whereBetween('created_at', [$startDate, $endDate])->orderBy('created_at', 'desc')->count();
+                $cancel_orders = Order::where('status', 5)->whereBetween('created_at', [$startDate, $endDate])->orderBy('created_at', 'desc')->count();
+                $total_completed = Order::where('status', 4)->whereBetween('created_at', [$startDate, $endDate])->orderBy('created_at', 'desc')->get();
+
+                if ($status === 'pending') {
+                    $orders->where('status', 0);
+                } elseif ($status === 'hold') {
+                    $orders->where('status', 1);
+                } elseif ($status === 'confirm') {
+                    $orders->where('status', 4);
+                } elseif ($status === 'cancel') {
+                    $orders->where('status', 5);
+                }
+            }
+            else{
+                $orders = Order::with('rel_to_billing')->orderBy('created_at', 'desc')->get();
+                $total_orders = Order::orderBy('created_at', 'desc')->count();
+                $pending_orders = Order::where('status', 0)->orderBy('created_at', 'desc')->count();
+                $hold_orders = Order::where('status', 1)->orderBy('created_at', 'desc')->count();
+                $confirm_orders = Order::where('status', 4)->orderBy('created_at', 'desc')->count();
+                $cancel_orders = Order::where('status', 5)->orderBy('created_at', 'desc')->count();
+                $total_completed = Order::where('status', 4)->get();
+
+                if ($status === 'pending') {
+                    $orders->where('status', 0);
+                } elseif ($status === 'hold') {
+                    $orders->where('status', 1);
+                } elseif ($status === 'confirm') {
+                    $orders->where('status', 4);
+                } elseif ($status === 'cancel') {
+                    $orders->where('status', 5);
+                }
+            }
+
+        return view('backend.order.listorder',[
+            'orders'=>$orders,
+            'defaultStartDate' => $startDate,
+            'defaultEndDate' => $endDate,
+            'total_orders' => $total_orders,
+            'pending_orders' => $pending_orders,
+            'hold_orders' => $hold_orders,
+            'confirm_orders' => $confirm_orders,
+            'cancel_orders' => $cancel_orders,
+            'total_completed' => $total_completed,
+        ]);
+
     }
-
-    $query = Order::with('rel_to_billing')->orderBy('created_at', 'desc');
-
-    if (!empty($startDate) && !empty($endDate)) {
-        $query->whereBetween('created_at', [$startDate, $endDate]);
-    }
-
-    if ($status === 'pending') {
-        $query->where('status', 0);
-    } elseif ($status === 'hold') {
-        $query->where('status', 1);
-    } elseif ($status === 'confirm') {
-        $query->where('status', 4);
-    } elseif ($status === 'cancel') {
-        $query->where('status', 5);
-    }
-
-    $orders = $query->get();
-    $total_orders = Order::count();
-    $pending_orders = Order::where('status', 0)->count();
-    $hold_orders = Order::where('status', 1)->count();
-    $confirm_orders = Order::where('status', 4)->count();
-    $cancel_orders = Order::where('status', 5)->count();
-    $total_completed = Order::where('status', 4)->get();
-
-    return view('backend.order.listorder', [
-        'orders' => $orders,
-        'defaultStartDate' => $startDate,
-        'defaultEndDate' => $endDate,
-        'total_orders' => $total_orders,
-        'pending_orders' => $pending_orders,
-        'hold_orders' => $hold_orders,
-        'confirm_orders' => $confirm_orders,
-        'cancel_orders' => $cancel_orders,
-        'total_completed' => $total_completed,
-    ]);
-}
-
 
     /**
      * Show the form for creating a new resource.
