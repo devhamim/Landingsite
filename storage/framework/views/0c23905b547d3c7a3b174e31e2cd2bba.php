@@ -1,5 +1,4 @@
-@extends('backend.layouts.app')
-@section('content')
+<?php $__env->startSection('content'); ?>
 <div class="content">
 
     <div class="">
@@ -9,39 +8,39 @@
                     <div class="col-lg-4 col-md-6 col-6">
                         <div>
                             <h1>Orders List</h1>
-                            <p class="breadcrumbs"><span><a href="{{ route('dashboard') }}">Dashboard</a></span>
+                            <p class="breadcrumbs"><span><a href="<?php echo e(route('dashboard')); ?>">Dashboard</a></span>
                                 <span><i class="mdi mdi-chevron-right"></i></span>Orders
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-8 col-md-6 col-6 d-flex">
                         <div class="mx-3">
-                            <form action="{{ route('multi.order.status') }}" method="post" id="all_order_form">
-                                @csrf
+                            <form action="<?php echo e(route('multi.order.status')); ?>" method="post" id="all_order_form">
+                                <?php echo csrf_field(); ?>
                                 <input type="hidden" name="order_data" id="checked_order_value">
                                 <div class="dropdown">
                                     <button class="border-0 bg-body" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
                                         <span class="btn btn-success">Status</span>
                                     </button>
-                                    @if ($orders->first() != null)
+                                    <?php if($orders->first() != null): ?>
                                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                                             <li>
-                                                <button name="status" value="{{ $orders->first()->order_id .','. '0' }}" class="dropdown-item status">Pending</button>
+                                                <button name="status" value="<?php echo e($orders->first()->order_id .','. '0'); ?>" class="dropdown-item status">Pending</button>
                                             </li>
                                             <li>
-                                                <button name="status" value="{{ $orders->first()->order_id .','. '4' }}" class="dropdown-item status">Confirmed</button>
+                                                <button name="status" value="<?php echo e($orders->first()->order_id .','. '4'); ?>" class="dropdown-item status">Confirmed</button>
                                             </li>
                                             <li>
-                                                <button name="status" value="{{ $orders->first()->order_id .','. '5' }}" class="dropdown-item status">Cancel Order</button>
+                                                <button name="status" value="<?php echo e($orders->first()->order_id .','. '5'); ?>" class="dropdown-item status">Cancel Order</button>
                                             </li>
                                         </ul>
-                                    @endif
+                                    <?php endif; ?>
                                 </div>
                             </form>
                         </div>
                         <div >
-                            <form action="{{ route('multi.view.invoice') }}" method="post" id="all_print_form">
-                                @csrf
+                            <form action="<?php echo e(route('multi.view.invoice')); ?>" method="post" id="all_print_form">
+                                <?php echo csrf_field(); ?>
                                 <input type="hidden" name="print_data" id="checked_value">
                                 <div class="form-group">
                                     <button type="submit" id="bulk_print_btn" class="btn btn-info">Print Invoice</button>
@@ -60,9 +59,9 @@
                          </div>
                     </div>
                     <div class="col-lg-3">
-                        <form action="{{ route('orders.index') }}" method="GET">
-                            <input type="hidden" name="start_date" id="start_date" value="{{ $defaultStartDate }}">
-                            <input type="hidden" name="end_date" id="end_date" value="{{ $defaultEndDate }}">
+                        <form action="<?php echo e(route('orders.index')); ?>" method="GET">
+                            <input type="hidden" name="start_date" id="start_date" value="<?php echo e($defaultStartDate); ?>">
+                            <input type="hidden" name="end_date" id="end_date" value="<?php echo e($defaultEndDate); ?>">
                             <button type="submit" class="btn btn-primary">Filter</button>
                         </form>
                     </div>
@@ -75,7 +74,7 @@
             <div class="col-xl-2 col-sm-6 p-b-15 lbl-card cursor-pointer">
                 <div id="total-orders" class="card card-mini dash-card card-1">
                     <div class="card-body">
-                        <h2 class="mb-1">{{ $total_orders }}</h2>
+                        <h2 class="mb-1"><?php echo e($total_orders); ?></h2>
                         <p>Total Order</p>
                         <span class="mdi mdi-account-arrow-left"></span>
                     </div>
@@ -84,7 +83,7 @@
             <div class="col-xl-2 col-sm-6 p-b-15 lbl-card cursor-pointer">
                 <div id="pending-orders" class="card card-mini dash-card card-2">
                     <div class="card-body">
-                        <h2 class="mb-1">{{ $pending_orders }}</h2>
+                        <h2 class="mb-1"><?php echo e($pending_orders); ?></h2>
                         <p>Total Pending</p>
                         <span class="mdi mdi-account-clock"></span>
                     </div>
@@ -93,7 +92,7 @@
             <div class="col-xl-2 col-sm-6 p-b-15 lbl-card cursor-pointer">
                 <div id="confirm-orders" class="card card-mini dash-card card-3">
                     <div class="card-body">
-                        <h2 class="mb-1">{{ $confirm_orders }}</h2>
+                        <h2 class="mb-1"><?php echo e($confirm_orders); ?></h2>
                         <p>Total Confirm</p>
                         <span class="mdi mdi-package-variant"></span>
                     </div>
@@ -102,7 +101,7 @@
             <div class="col-xl-2 col-sm-6 p-b-15 lbl-card cursor-pointer">
                 <div id="hold-orders" class="card card-mini dash-card card-3">
                     <div class="card-body">
-                        <h2 class="mb-1">{{ $hold_orders }}</h2>
+                        <h2 class="mb-1"><?php echo e($hold_orders); ?></h2>
                         <p>Total Hold</p>
                         <span class="mdi mdi-package-variant"></span>
                     </div>
@@ -111,7 +110,7 @@
             <div class="col-xl-2 col-sm-6 p-b-15 lbl-card cursor-pointer">
                 <div id="cancel-orders" class="card card-mini dash-card card-3">
                     <div class="card-body">
-                        <h2 class="mb-1">{{ $cancel_orders }}</h2>
+                        <h2 class="mb-1"><?php echo e($cancel_orders); ?></h2>
                         <p>Total Cancel</p>
                         <span class="mdi mdi-package-variant"></span>
                     </div>
@@ -143,89 +142,97 @@
                             </thead>
 
                             <tbody>
-                                @foreach ($orders as $sl=>$order)
-                                    <tr id="tr_{{ $order->id }}">
+                                <?php $__currentLoopData = $orders; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $sl=>$order): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                    <tr id="tr_<?php echo e($order->id); ?>">
                                         <td>
-                                            <input type="checkbox" name="checkbox" class="sub_chk" data-id="{{ $order->id }}">
+                                            <input type="checkbox" name="checkbox" class="sub_chk" data-id="<?php echo e($order->id); ?>">
                                         </td>
-                                        <td>{{ $sl+1 }}</td>
+                                        <td><?php echo e($sl+1); ?></td>
                                         <td>
-                                            @foreach ($order->rel_to_orderpro->take(1) as $OrderProduct)
-                                                @if ($OrderProduct != null)
-                                                    @if ($OrderProduct->rel_to_attribute != null)
-                                                        <img width="100" src="{{ asset('uploads/product') }}/{{ $OrderProduct->rel_to_attribute->image }}" alt="Image" />
-                                                    @elseif ($OrderProduct->rel_to_pro)
-                                                        <img width="100" src="{{ asset('uploads/product') }}/{{ $OrderProduct->rel_to_pro->image }}" alt="Image" />
-                                                    @endif
-                                                @endif
-                                            @endforeach
+                                            <?php $__currentLoopData = $order->rel_to_orderpro->take(1); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $OrderProduct): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                                <?php if($OrderProduct != null): ?>
+                                                    <?php if($OrderProduct->rel_to_attribute != null): ?>
+                                                        <img width="100" src="<?php echo e(asset('uploads/product')); ?>/<?php echo e($OrderProduct->rel_to_attribute->image); ?>" alt="Image" />
+                                                    <?php elseif($OrderProduct->rel_to_pro): ?>
+                                                        <img width="100" src="<?php echo e(asset('uploads/product')); ?>/<?php echo e($OrderProduct->rel_to_pro->image); ?>" alt="Image" />
+                                                    <?php endif; ?>
+                                                <?php endif; ?>
+                                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                                         </td>
-                                        <td>{{ $order->order_id }}</td>
+                                        <td><?php echo e($order->order_id); ?></td>
                                         <td>
-                                            <span>{{ $order->rel_to_billing ? $order->rel_to_billing->name : 'No Billing Details' }}</span>
+                                            <span><?php echo e($order->rel_to_billing ? $order->rel_to_billing->name : 'No Billing Details'); ?></span>
                                             <br>
-                                            <a href="tel: {{ $order->rel_to_billing ? $order->rel_to_billing->mobile : 'No Billing Details' }}"><span>{{ $order->rel_to_billing ? $order->rel_to_billing->mobile : 'No Billing Details' }}</span></a>
+                                            <a href="tel: <?php echo e($order->rel_to_billing ? $order->rel_to_billing->mobile : 'No Billing Details'); ?>"><span><?php echo e($order->rel_to_billing ? $order->rel_to_billing->mobile : 'No Billing Details'); ?></span></a>
                                             <br>
-                                            <span>{{ $order->rel_to_billing ? $order->rel_to_billing->address : 'No Billing Details' }}</span>
+                                            <span><?php echo e($order->rel_to_billing ? $order->rel_to_billing->address : 'No Billing Details'); ?></span>
                                             <br>
-                                            <span>{{ $order->rel_to_billing ? $order->rel_to_billing->district : 'No Busines Name' }}</span>
+                                            <span><?php echo e($order->rel_to_billing ? $order->rel_to_billing->district : 'No Busines Name'); ?></span>
                                         </td>
                                         <td>
-                                            @foreach ($order->rel_to_orderpro as $OrderProduct)
-                                                @if ($OrderProduct != null)
-                                                    @if ($order->landing == 1)
-                                                        <span>{{ $OrderProduct->rel_to_pro->name??'' }} <br> {{ $OrderProduct->quantity }} x {{ $OrderProduct->price }},
-                                                            @if ($order->color != null)
-                                                                Color: {{ $order->color }}
-                                                            @endif
-                                                            @if ($order->size)
-                                                                Size: {{ $order->size }}
-                                                            @endif
-                                                        </span><hr>
-                                                    @else
-                                                        @if ($OrderProduct->rel_to_attribute != null)
-                                                            <span>{{ $OrderProduct->rel_to_pro->name??'' }} <br> {{ $OrderProduct->quantity }} x {{ $OrderProduct->price }},
-                                                                @if ($OrderProduct->rel_to_attribute->weight != null)
-                                                                    Package: {{ $OrderProduct->rel_to_attribute->weight }}
-                                                                @else
-                                                                    Color: {{ $OrderProduct->rel_to_attribute->rel_to_color->name }}
-                                                                    Size: {{ $OrderProduct->rel_to_attribute->rel_to_size->name }}
-                                                                @endif
-                                                            </span><hr>
-                                                        @elseif ($OrderProduct->rel_to_pro != null)
-                                                            <span>{{ $OrderProduct->rel_to_pro->name }} <br> {{ $OrderProduct->quantity }} x {{ $OrderProduct->rel_to_pro ? $OrderProduct->rel_to_pro->sell_price : $OrderProduct->rel_to_pro->price }},
-                                                                @if ($OrderProduct->rel_to_pro->weight != null)
-                                                                    Package: {{ $OrderProduct->rel_to_pro->weight }}
-                                                                @else
-                                                                    Color: {{ $OrderProduct->rel_to_pro->color_id }}
-                                                                    Size: {{ $OrderProduct->rel_to_pro->size_id }}
-                                                                @endif
-                                                            </span><hr>
-                                                        @endif
-                                                    @endif
+                                            <?php $__currentLoopData = $order->rel_to_orderpro; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $OrderProduct): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                                <?php if($OrderProduct != null): ?>
+                                                    <?php if($order->landing == 1): ?>
+                                                        <span><?php echo e($OrderProduct->rel_to_pro->name??''); ?> <br> <?php echo e($OrderProduct->quantity); ?> x <?php echo e($OrderProduct->price); ?>,
+                                                            <?php if($order->color != null): ?>
+                                                                Color: <?php echo e($order->color); ?>
 
-                                                @endif
-                                            @endforeach
+                                                            <?php endif; ?>
+                                                            <?php if($order->size): ?>
+                                                                Size: <?php echo e($order->size); ?>
+
+                                                            <?php endif; ?>
+                                                        </span><hr>
+                                                    <?php else: ?>
+                                                        <?php if($OrderProduct->rel_to_attribute != null): ?>
+                                                            <span><?php echo e($OrderProduct->rel_to_pro->name??''); ?> <br> <?php echo e($OrderProduct->quantity); ?> x <?php echo e($OrderProduct->price); ?>,
+                                                                <?php if($OrderProduct->rel_to_attribute->weight != null): ?>
+                                                                    Package: <?php echo e($OrderProduct->rel_to_attribute->weight); ?>
+
+                                                                <?php else: ?>
+                                                                    Color: <?php echo e($OrderProduct->rel_to_attribute->rel_to_color->name); ?>
+
+                                                                    Size: <?php echo e($OrderProduct->rel_to_attribute->rel_to_size->name); ?>
+
+                                                                <?php endif; ?>
+                                                            </span><hr>
+                                                        <?php elseif($OrderProduct->rel_to_pro != null): ?>
+                                                            <span><?php echo e($OrderProduct->rel_to_pro->name); ?> <br> <?php echo e($OrderProduct->quantity); ?> x <?php echo e($OrderProduct->rel_to_pro ? $OrderProduct->rel_to_pro->sell_price : $OrderProduct->rel_to_pro->price); ?>,
+                                                                <?php if($OrderProduct->rel_to_pro->weight != null): ?>
+                                                                    Package: <?php echo e($OrderProduct->rel_to_pro->weight); ?>
+
+                                                                <?php else: ?>
+                                                                    Color: <?php echo e($OrderProduct->rel_to_pro->color_id); ?>
+
+                                                                    Size: <?php echo e($OrderProduct->rel_to_pro->size_id); ?>
+
+                                                                <?php endif; ?>
+                                                            </span><hr>
+                                                        <?php endif; ?>
+                                                    <?php endif; ?>
+
+                                                <?php endif; ?>
+                                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                                         </td>
-                                        <td>{{ $order->sub_total }}Tk</td>
-                                        <td>{{ $order->delivery_charge }}Tk</td>
-                                        <td>{{ $order->total }}Tk</td>
+                                        <td><?php echo e($order->sub_total); ?>Tk</td>
+                                        <td><?php echo e($order->delivery_charge); ?>Tk</td>
+                                        <td><?php echo e($order->total); ?>Tk</td>
                                         <td>
-                                            @if ($order->status == 0)
+                                            <?php if($order->status == 0): ?>
                                                 <div class="badge badge-secondary">Pending</div>
-                                            @elseif ($order->status == 1)
+                                            <?php elseif($order->status == 1): ?>
                                                 <div class="badge badge-info">On Hold</div>
-                                            @elseif ($order->status == 2)
+                                            <?php elseif($order->status == 2): ?>
                                                 <div class="badge badge-primary">Processing Order</div>
-                                            @elseif ($order->status == 3)
+                                            <?php elseif($order->status == 3): ?>
                                                 <div class="badge badge-warning">On Delivery</div>
-                                            @elseif ($order->status == 4)
+                                            <?php elseif($order->status == 4): ?>
                                                 <div class="badge badge-success">Confirmed</div>
-                                            @else
+                                            <?php else: ?>
                                                 <div class="badge badge-danger">Cancel</div>
-                                            @endif
+                                            <?php endif; ?>
                                         </td>
-                                        <td>{{ $order->created_at->format('d-m-Y') }}</td>
+                                        <td><?php echo e($order->created_at->format('d-m-Y')); ?></td>
                                         <td>
                                             <div class="btn-group mb-1">
                                                 <button type="button"
@@ -238,10 +245,10 @@
                                                 </button>
 
                                                 <div class="dropdown-menu">
-                                                    <a href="{{ route('orders.edit',  $order->id) }}" class="dropdown-item">Edit</a>
-                                                    <form action="{{ route('orders.destroy',  $order->id) }}" method="POST">
-                                                        @csrf
-                                                        @method('DELETE')
+                                                    <a href="<?php echo e(route('orders.edit',  $order->id)); ?>" class="dropdown-item">Edit</a>
+                                                    <form action="<?php echo e(route('orders.destroy',  $order->id)); ?>" method="POST">
+                                                        <?php echo csrf_field(); ?>
+                                                        <?php echo method_field('DELETE'); ?>
                                                         <button type="submit" class="dropdown-item" onclick="return confirm('Are you sure you want to delete this item?')">
                                                             Delete
                                                         </button>
@@ -250,7 +257,7 @@
                                             </div>
                                         </td>
                                     </tr>
-                                @endforeach
+                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                             </tbody>
                         </table>
                     </div>
@@ -259,13 +266,13 @@
         </div>
     </div>
 </div>
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('footer_scripts')
+<?php $__env->startSection('footer_scripts'); ?>
 <script type="text/javascript">
     $(document).ready(function () {
-        var start_date = '{{ $defaultStartDate }}';
-        var end_date = '{{ $defaultEndDate }}';
+        var start_date = '<?php echo e($defaultStartDate); ?>';
+        var end_date = '<?php echo e($defaultEndDate); ?>';
 
         if (start_date && end_date) {
             start_date = moment(start_date, 'YYYY-MM-DD');
@@ -296,7 +303,7 @@
         cb(start_date, end_date);
     });
 </script>
-@endsection
+<?php $__env->stopSection(); ?>
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -320,23 +327,23 @@
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('total-orders').addEventListener('click', function() {
-            window.location.href = '{{ url("admin/orders") }}';
+            window.location.href = '<?php echo e(url("admin/orders")); ?>';
         });
 
         document.getElementById('pending-orders').addEventListener('click', function() {
-            window.location.href = '{{ url("admin/orders") }}?status=pending';
+            window.location.href = '<?php echo e(url("admin/orders")); ?>?status=pending';
         });
 
         document.getElementById('confirm-orders').addEventListener('click', function() {
-            window.location.href = '{{ url("admin/orders") }}?status=confirm';
+            window.location.href = '<?php echo e(url("admin/orders")); ?>?status=confirm';
         });
 
         document.getElementById('hold-orders').addEventListener('click', function() {
-            window.location.href = '{{ url("admin/orders") }}?status=hold';
+            window.location.href = '<?php echo e(url("admin/orders")); ?>?status=hold';
         });
 
         document.getElementById('cancel-orders').addEventListener('click', function() {
-            window.location.href = '{{ url("admin/orders") }}?status=cancel';
+            window.location.href = '<?php echo e(url("admin/orders")); ?>?status=cancel';
         });
     });
 </script>
@@ -415,3 +422,5 @@
         }
     });
 </script>
+
+<?php echo $__env->make('backend.layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH F:\all project\cottonbd\resources\views/backend/order/listorder.blade.php ENDPATH**/ ?>

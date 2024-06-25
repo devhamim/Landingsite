@@ -22,32 +22,54 @@ class OrderController extends Controller
      * Display a listing of the resource.
      */
     public function index(Request $request)
-    {
-        $startDate = $request->input('start_date');
-        $endDate = $request->input('end_date');
+{
+    $startDate = $request->input('start_date');
+    $endDate = $request->input('end_date');
+    $status = $request->input('status');
 
-            if (empty($startDate) && empty($endDate)) {
-                $startDate = '';
-                $endDate = '';
-            }
-            else {
-                $endDate = Carbon::parse($endDate)->addDay();
-                $endDate = $endDate->format('Y-m-d');
-            }
-
-            if(!empty($startDate) && !empty($endDate)){
-                $orders = Order::with('rel_to_billing')->whereBetween('created_at', [$startDate, $endDate])->orderBy('created_at', 'desc')->get();
-            }
-            else{
-                $orders = Order::with('rel_to_billing')->orderBy('created_at', 'desc')->get();
-            }
-        return view('backend.order.listorder',[
-            'orders'=>$orders,
-            'defaultStartDate' => $startDate,
-            'defaultEndDate' => $endDate,
-        ]);
-
+    if (empty($startDate) && empty($endDate)) {
+        $startDate = '';
+        $endDate = '';
+    } else {
+        $endDate = Carbon::parse($endDate)->addDay();
+        $endDate = $endDate->format('Y-m-d');
     }
+
+    $query = Order::with('rel_to_billing')->orderBy('created_at', 'desc');
+
+    if (!empty($startDate) && !empty($endDate)) {
+        $query->whereBetween('created_at', [$startDate, $endDate]);
+    }
+
+    if ($status === 'pending') {
+        $query->where('status', 0);
+    } elseif ($status === 'hold') {
+        $query->where('status', 1);
+    } elseif ($status === 'confirm') {
+        $query->where('status', 4);
+    } elseif ($status === 'cancel') {
+        $query->where('status', 5);
+    }
+
+    $orders = $query->get();
+    $total_orders = Order::count();
+    $pending_orders = Order::where('status', 0)->count();
+    $hold_orders = Order::where('status', 1)->count();
+    $confirm_orders = Order::where('status', 4)->count();
+    $cancel_orders = Order::where('status', 5)->count();
+
+    return view('backend.order.listorder', [
+        'orders' => $orders,
+        'defaultStartDate' => $startDate,
+        'defaultEndDate' => $endDate,
+        'total_orders' => $total_orders,
+        'pending_orders' => $pending_orders,
+        'hold_orders' => $hold_orders,
+        'confirm_orders' => $confirm_orders,
+        'cancel_orders' => $cancel_orders,
+    ]);
+}
+
 
     /**
      * Show the form for creating a new resource.

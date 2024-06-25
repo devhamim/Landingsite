@@ -53,6 +53,10 @@
     padding: 0 !important;
     margin: 0;
 }
+
+.cursor-pointer{
+  cursor: pointer;
+}
     </style>
 </head>
 
