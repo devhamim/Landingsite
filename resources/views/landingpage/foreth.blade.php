@@ -1416,7 +1416,7 @@
                                     আজকের অফার মূল্য মাত্র</span>
                                 <span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper">
                                     <span
-                                        class="elementor-headline-dynamic-text elementor-headline-text-active">১৩০০/-</span>
+                                        class="elementor-headline-dynamic-text elementor-headline-text-active">১৩৫০/-</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150"
                                         preserveAspectRatio="none">
                                         <path
