@@ -1512,10 +1512,39 @@
                                                     </div>
                                                     <div class="wcf-price">
                                                         <div class="wcf-display-price wcf-field-label">
-                                                            <label for="product_1" id="subtotal">৯৫০৳</label>
+                                                            <label for="product_1" id="subtotal">1080Tk</label>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <p style="padding-top: 20px"
+                                                    class=" address-field form-row-first thwcfd-required thwcfd-field-wrapper thwcfd-field-text wcf-column-100 validate-required"
+                                                    id="billing_address_1_field" data-priority="20">
+                                                    <label style="margin-bottom: 0" for="color"
+                                                        class="">পছন্দের কালারটি সিলেক্ট করুন&nbsp;
+                                                        <abbr class="required" title="required">*</abbr>
+                                                    </label>
+                                                    <style>
+                                                        .woocommerce-input-wrapper label {
+                                                            margin: 0 6px;
+                                                        }
+                                                    </style>
+                                                <div class="woocommerce-input-wrapper" style="display: inline-flex">
+                                                    <label>
+                                                        <input type="checkbox" name="color[]" checked value="কালো"
+                                                            class="input-checkbox">
+                                                        কালো
+                                                    </label>
+                                                    @error('color')
+                                                        <script>
+                                                            Swal.fire({
+                                                                icon: "error",
+                                                                title: "Oops...",
+                                                                text: "Something went wrong!",
+                                                            });
+                                                        </script>
+                                                    @enderror
+                                                </div>
+                                                </p>
                                             </div>
                                         </div>
                                         <div class="wcf-col2-set col2-set" id="customer_details">
@@ -1563,17 +1592,6 @@
                                                                 });
                                                             </script>
                                                         @enderror
-                                                        <p class="form-row address-field form-row-first thwcfd-required thwcfd-field-wrapper thwcfd-field-text wcf-column-100 validate-required" id="billing_address_1_field" data-priority="20">
-                                                            <label for="color" class="">পছন্দের কালারটি সিলেক্ট করুন&nbsp;
-                                                                <abbr class="required" title="required">*</abbr>
-                                                            </label>
-                                                            <span class="woocommerce-input-wrapper">
-                                                                <select name="color" id="color" class="input-text" required>
-                                                                    <option value="সাদা">সাদা</option>
-                                                                    <option value="আকাশী">আকাশী</option>
-                                                                </select>
-                                                            </span>
-                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
