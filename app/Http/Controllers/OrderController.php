@@ -57,6 +57,7 @@ class OrderController extends Controller
     $hold_orders = Order::where('status', 1)->count();
     $confirm_orders = Order::where('status', 4)->count();
     $cancel_orders = Order::where('status', 5)->count();
+    $total_completed = Order::where('status', 4)->get();
 
     return view('backend.order.listorder', [
         'orders' => $orders,
@@ -67,6 +68,7 @@ class OrderController extends Controller
         'hold_orders' => $hold_orders,
         'confirm_orders' => $confirm_orders,
         'cancel_orders' => $cancel_orders,
+        'total_completed' => $total_completed,
     ]);
 }
 

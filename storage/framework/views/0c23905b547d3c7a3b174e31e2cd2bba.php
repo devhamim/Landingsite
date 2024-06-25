@@ -111,6 +111,21 @@
                     </div>
                 </div>
             </div>
+            <div class="col-xl-2 col-sm-6 p-b-15 lbl-card">
+                <div class="card card-mini dash-card card-4">
+                    <div class="card-body">
+                        <?php
+                            $total_revineu = 0;
+                            foreach ($total_completed as $completed) {
+                                $total_revineu += $completed->total;
+                            }
+                        ?>
+                        <h2 class="mb-1"><?php echo e($total_revineu); ?> Tk</h2>
+                        <p>Revenue</p>
+                        <span class="mdi mdi-currency-usd"></span>
+                    </div>
+                </div>
+            </div>
         </div>
 
     <div class="row">
