@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    @if($setting->first()->title != null)
-        <title>{{$setting->first()->title}}</title>
-    @endif
-    <link rel="stylesheet" type="text/css" href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/eh03duwi/a3jsn.css"
+    <?php if($setting->first()->title != null): ?>
+        <title><?php echo e($setting->first()->title); ?></title>
+    <?php endif; ?>
+    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/eh03duwi/a3jsn.css"
         media="all" />
     <style id='jetpack-sharing-buttons-style-inline-css' type='text/css'>
         .jetpack-sharing-buttons__services-list {
@@ -54,7 +54,7 @@
             padding: 1.25em 2.375em
         }
     </style>
-    <link rel="stylesheet" type="text/css" href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/1y6plmk/5ukdx.css"
+    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/1y6plmk/5ukdx.css"
         media="all" />
     <style id='classic-theme-styles-inline-css' type='text/css'>
         /*! This file is auto-generated */
@@ -396,26 +396,26 @@
             line-height: 1.6;
         }
     </style>
-    <link rel="stylesheet" type="text/css" href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/14oboyxa/5ukdx.css"
+    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/14oboyxa/5ukdx.css"
         media="all" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/2c3d52n2/5ukdx.css"
+    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/2c3d52n2/5ukdx.css"
         media="only screen and (max-width: 768px)" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/buoawj8/5ukdx.css"
+    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/buoawj8/5ukdx.css"
         media="all" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/78qfj7b0/5u9rb.css"
+    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/78qfj7b0/5u9rb.css"
         media="all" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/7xzwkiy0/5ukdx.css"
+    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/7xzwkiy0/5ukdx.css"
         media="all" />
     <link rel='stylesheet' id='elementor-post-2283-css'
-        href='{{ asset('landingpage/sharee') }}/wp-content/uploads/elementor/css/post-2283eefd.css?ver=1715248386' type='text/css'
+        href='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/uploads/elementor/css/post-2283eefd.css?ver=1715248386' type='text/css'
         media='all' />
-    <link rel="stylesheet" href="{{ asset('landingpage/sharee/slick.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/6zsossqs/5ukdx.css"
+    <link rel="stylesheet" href="<?php echo e(asset('landingpage/sharee/slick.css')); ?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/6zsossqs/5ukdx.css"
         media="all" />
     <link rel='stylesheet' id='elementor-post-2325-css'
-        href='{{ asset('landingpage/sharee') }}/wp-content/uploads/elementor/css/post-23252ee6.css?ver=1715511391' type='text/css'
+        href='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/uploads/elementor/css/post-23252ee6.css?ver=1715511391' type='text/css'
         media='all' />
-    <link rel="stylesheet" type="text/css" href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/qa9ezqp0/5ukdx.css"
+    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/qa9ezqp0/5ukdx.css"
         media="all" />
     <style id='dashicons-inline-css' type='text/css'>
         [data-font="Dashicons"]:before {
@@ -431,7 +431,7 @@
             -moz-osx-font-smoothing: grayscale !important;
         }
     </style>
-    <link rel="stylesheet" type="text/css" href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/7ll98hwt/5ukdx.css"
+    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/7ll98hwt/5ukdx.css"
         media="all" />
     <link rel='stylesheet' id='flatsome-googlefonts-css'
         href='http://fonts.googleapis.com/css?family=Lato%3Aregular%2C700%2C400%2C700%7CDancing+Script%3Aregular%2C400&amp;display=swap&amp;ver=3.9'
@@ -439,31 +439,31 @@
     <link rel='stylesheet' id='google-fonts-1-css'
         href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CHind+Siliguri%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=swap&amp;ver=6.5.3'
         type='text/css' media='all' />
-    {{-- <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin> --}}
-    <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/mob3d79n/5u9rb.js' type="text/javascript"></script>
+    
+    <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/mob3d79n/5u9rb.js' type="text/javascript"></script>
 
-    <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/quq3qn0g/5u9rb.js' type="text/javascript"></script>
+    <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/quq3qn0g/5u9rb.js' type="text/javascript"></script>
 
-    <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/pxrbfce/5ukdy.js' type="text/javascript"></script>
+    <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/pxrbfce/5ukdy.js' type="text/javascript"></script>
 
-    <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/7io3j6c5/5ukdy.js' type="text/javascript"></script>
+    <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/7io3j6c5/5ukdy.js' type="text/javascript"></script>
 
-    <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/2nytrlxg/5ukdy.js' type="text/javascript"></script>
+    <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/2nytrlxg/5ukdy.js' type="text/javascript"></script>
 
-    <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/e5xv04yd/5ukdy.js' type="text/javascript"></script>
+    <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/e5xv04yd/5ukdy.js' type="text/javascript"></script>
 
-    <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/2z65b5dc/5ukdy.js' type="text/javascript"></script>
+    <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/2z65b5dc/5ukdy.js' type="text/javascript"></script>
 
-    <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/fpauzlgh/5ukdy.js' type="text/javascript"></script>
+    <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/fpauzlgh/5ukdy.js' type="text/javascript"></script>
 
-    <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/5awtn25/5ukdy.js' type="text/javascript"></script>
+    <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/5awtn25/5ukdy.js' type="text/javascript"></script>
 
-    <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/g38vfwxl/4euc4.js' type="text/javascript"></script>
+    <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/g38vfwxl/4euc4.js' type="text/javascript"></script>
 
 
-    <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/dq7tdaz1/a3jsn.js' type="text/javascript"></script>
+    <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/dq7tdaz1/a3jsn.js' type="text/javascript"></script>
 
-    <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/kc8sjhif/5ukdy.js' type="text/javascript"></script>
+    <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/kc8sjhif/5ukdy.js' type="text/javascript"></script>
 
     <style>
         img#wpstats {
@@ -481,9 +481,9 @@
             opacity: 1;
         }
     </style>
-    @if($setting->first()->favicon != null)
-        <link rel="shortcut icon" href="{{ asset('uploads/setting') }}/{{ $setting->first()->favicon }}">
-    @endif
+    <?php if($setting->first()->favicon != null): ?>
+        <link rel="shortcut icon" href="<?php echo e(asset('uploads/setting')); ?>/<?php echo e($setting->first()->favicon); ?>">
+    <?php endif; ?>
 
     <style id="custom-css" type="text/css">
         :root {
@@ -727,15 +727,17 @@
     </style>
 
     <!-- Meta Pixel Code -->
-    @if ($markatingsetting->first()->fb_pixel != null)
-        {!! $markatingsetting->first()->fb_pixel !!}
-    @endif
-    {{-- <!-- End Meta Pixel Code --> --}}
+    <?php if($markatingsetting->first()->fb_pixel != null): ?>
+        <?php echo $markatingsetting->first()->fb_pixel; ?>
+
+    <?php endif; ?>
+    
 
     <!-- googletag Code -->
-    @if ($markatingsetting->first()->google_tag != null)
-        {!! $markatingsetting->first()->google_tag !!}
-    @endif
+    <?php if($markatingsetting->first()->google_tag != null): ?>
+        <?php echo $markatingsetting->first()->google_tag; ?>
+
+    <?php endif; ?>
     <!-- End googletag Code -->
 </head>
 
@@ -753,7 +755,7 @@
                         data-widget_type="animated-headline.default">
                         <div class="elementor-widget-container">
                             <link rel="stylesheet" type="text/css"
-                                href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/zixf9ao/5ukdx.css" media="all" />
+                                href="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/zixf9ao/5ukdx.css" media="all" />
                             <h3
                                 class="elementor-headline elementor-headline-animation-type-typing elementor-headline-letters">
                                 <span class="elementor-headline-plain-text elementor-headline-text-wrapper">হোম
@@ -913,11 +915,11 @@
                         </style>
                         <div class="elementor-image-carousel-wrapper swiper" dir="ltr">
                             <div class="imageautoplay" aria-live="off">
-                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/batik/1.jpg') }}" /></figure>
-                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/batik/2.jpg') }}" /></figure>
-                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/batik/3.jpg') }}" /></figure>
-                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/batik/4.jpg') }}" /></figure>
-                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/batik/5.jpg') }}" /></figure>
+                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?php echo e(asset('landingpage/sharee/batik/1.jpg')); ?>" /></figure>
+                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?php echo e(asset('landingpage/sharee/batik/2.jpg')); ?>" /></figure>
+                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?php echo e(asset('landingpage/sharee/batik/3.jpg')); ?>" /></figure>
+                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?php echo e(asset('landingpage/sharee/batik/4.jpg')); ?>" /></figure>
+                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?php echo e(asset('landingpage/sharee/batik/5.jpg')); ?>" /></figure>
 
                             </div>
                             <div class="swiper-pagination"></div>
@@ -944,11 +946,11 @@
                     <div class="elementor-widget-container">
                         <div class="elementor-image-carousel-wrapper swiper">
                             <div class="imageautoplay">
-                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/batik/11.jpg') }}" /></figure>
-                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/batik/22.jpg') }}" /></figure>
-                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/batik/33.jpg') }}" /></figure>
-                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/batik/44.jpg') }}" /></figure>
-                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/batik/55.jpg') }}" /></figure>
+                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?php echo e(asset('landingpage/sharee/batik/11.jpg')); ?>" /></figure>
+                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?php echo e(asset('landingpage/sharee/batik/22.jpg')); ?>" /></figure>
+                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?php echo e(asset('landingpage/sharee/batik/33.jpg')); ?>" /></figure>
+                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?php echo e(asset('landingpage/sharee/batik/44.jpg')); ?>" /></figure>
+                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?php echo e(asset('landingpage/sharee/batik/55.jpg')); ?>" /></figure>
 
                             </div>
 
@@ -1139,7 +1141,8 @@
                     <div class="elementor-element elementor-element-449a027 elementor-widget elementor-widget-heading"
                         data-id="449a027" data-element_type="widget" data-widget_type="heading.default">
                         <div class="elementor-widget-container">
-                            <h2 class="elementor-heading-title elementor-size-default">{{ $products->name }}
+                            <h2 class="elementor-heading-title elementor-size-default"><?php echo e($products->name); ?>
+
                             </h2>
                         </div>
                     </div>
@@ -1240,16 +1243,16 @@
                         <div class="elementor-widget-container">
                             <div class="elementor-image-carousel-wrapper swiper" dir="ltr">
                                 <div class="imageautoplay" aria-live="off">
-                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/batik/3.jpg') }}" /></figure>
-                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/batik/5.jpg') }}" /></figure>
-                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/batik/2.jpg') }}" /></figure>
-                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/batik/4.jpg') }}" /></figure>
-                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/batik/1.jpg') }}" /></figure>
-                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/batik/22.jpg') }}" /></figure>
-                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/batik/44.jpg') }}" /></figure>
-                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/batik/55.jpg') }}" /></figure>
-                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/batik/11.jpg') }}" /></figure>
-                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/batik/33.jpg') }}" /></figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?php echo e(asset('landingpage/sharee/batik/3.jpg')); ?>" /></figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?php echo e(asset('landingpage/sharee/batik/5.jpg')); ?>" /></figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?php echo e(asset('landingpage/sharee/batik/2.jpg')); ?>" /></figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?php echo e(asset('landingpage/sharee/batik/4.jpg')); ?>" /></figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?php echo e(asset('landingpage/sharee/batik/1.jpg')); ?>" /></figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?php echo e(asset('landingpage/sharee/batik/22.jpg')); ?>" /></figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?php echo e(asset('landingpage/sharee/batik/44.jpg')); ?>" /></figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?php echo e(asset('landingpage/sharee/batik/55.jpg')); ?>" /></figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?php echo e(asset('landingpage/sharee/batik/11.jpg')); ?>" /></figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?php echo e(asset('landingpage/sharee/batik/33.jpg')); ?>" /></figure>
                                 </div>
                                 <div class="swiper-pagination"></div>
                             </div>
@@ -1315,18 +1318,18 @@
                     data-id="5219f14" data-element_type="widget" data-widget_type="button.default">
                     <div class="elementor-widget-container">
                         <div class="elementor-button-wrapper">
-                            @if ($setting->first()->number_two != null)
+                            <?php if($setting->first()->number_two != null): ?>
                                 <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-pulse-grow"
-                                    href="https://api.whatsapp.com/send?phone=88{{$setting->first()->number_two}}&text=Hello%20there,%20I%20found%20you%20on%20website!%20i%20would%20like%20to%20talk%20about%20your%20Product." target="_blank" style="background: #33D422">
+                                    href="https://api.whatsapp.com/send?phone=88<?php echo e($setting->first()->number_two); ?>&text=Hello%20there,%20I%20found%20you%20on%20website!%20i%20would%20like%20to%20talk%20about%20your%20Product." target="_blank" style="background: #33D422">
                                     <span class="elementor-button-content-wrapper">
                                         <span class="elementor-button-icon elementor-align-icon-left">
                                             <img style="width: 65px"
-                                                src="{{ asset('landingpage/sharee/whatsapp.png') }}" alt="">
+                                                src="<?php echo e(asset('landingpage/sharee/whatsapp.png')); ?>" alt="">
                                             <span
-                                                class="elementor-button-text">{{ $setting->first()->number_two }}</span>
+                                                class="elementor-button-text"><?php echo e($setting->first()->number_two); ?></span>
                                         </span>
                                 </a>
-                            @endif
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
@@ -1415,29 +1418,29 @@
                                 <!-- CHECKOUT SHORTCODE -->
                                 <div class="woocommerce">
                                     <div class="woocommerce-notices-wrapper"></div>
-                                    <form action="{{ route('batik.order.store') }}" method="POST">
-                                        @csrf
-                                        <input type="hidden" name="product_id" value="{{ $products->id }}">
-                                        @if ($products->inventorie_id != null)
-                                            @if ($products->rel_to_inventorie)
-                                                @php
+                                    <form action="<?php echo e(route('batik.order.store')); ?>" method="POST">
+                                        <?php echo csrf_field(); ?>
+                                        <input type="hidden" name="product_id" value="<?php echo e($products->id); ?>">
+                                        <?php if($products->inventorie_id != null): ?>
+                                            <?php if($products->rel_to_inventorie): ?>
+                                                <?php
                                                     $inventorie = $products->rel_to_inventorie
-                                                @endphp
-                                                @foreach ($inventorie->rel_to_attribute->take(1) as $attribute)
-                                                    @if ($attribute->sell_price != null)
-                                                        <input type="hidden" name="price" value="{{$attribute->sell_price}}">
-                                                    @else
-                                                        <input type="hidden" id="product_price" name="price" value="{{$attribute->price}}">
-                                                    @endif
-                                                @endforeach
-                                            @endif
-                                        @else
-                                            @if ($products->sell_price != null)
-                                                <input type="hidden" id="product_price" name="price" value="{{$products->sell_price}}">
-                                            @else
-                                                <input type="hidden" id="product_price" name="price" value="{{$products->price}}">
-                                            @endif
-                                        @endif
+                                                ?>
+                                                <?php $__currentLoopData = $inventorie->rel_to_attribute->take(1); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $attribute): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                                    <?php if($attribute->sell_price != null): ?>
+                                                        <input type="hidden" name="price" value="<?php echo e($attribute->sell_price); ?>">
+                                                    <?php else: ?>
+                                                        <input type="hidden" id="product_price" name="price" value="<?php echo e($attribute->price); ?>">
+                                                    <?php endif; ?>
+                                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                                            <?php endif; ?>
+                                        <?php else: ?>
+                                            <?php if($products->sell_price != null): ?>
+                                                <input type="hidden" id="product_price" name="price" value="<?php echo e($products->sell_price); ?>">
+                                            <?php else: ?>
+                                                <input type="hidden" id="product_price" name="price" value="<?php echo e($products->price); ?>">
+                                            <?php endif; ?>
+                                        <?php endif; ?>
                                         <div  class="wcf-product-option-wrap wcf-yp-skin-classic wcf-product-option-before-customer">
                                             <h3 id="billing_fields_heading">Billing details</h3>
                                             <h3 id="your_products_heading"> একপিচ এর অধিক অর্ডার এর জন্য পরিমান লিখুন ও পছন্দের কালার গুলি সিলেক্ট করুন</h3>
@@ -1458,45 +1461,46 @@
                                                     <!-- Product Row 1 -->
                                                     <div class="wcf-item">
                                                         <div class="wcf-item-selector wcf-item-single-sel">
-                                                            @if ($products->inventorie_id != null)
-                                                                @if ($products->rel_to_inventorie)
-                                                                    @php
+                                                            <?php if($products->inventorie_id != null): ?>
+                                                                <?php if($products->rel_to_inventorie): ?>
+                                                                    <?php
                                                                         $inventorie = $products->rel_to_inventorie
-                                                                    @endphp
-                                                                    @foreach ($inventorie->rel_to_attribute->take(1) as $attribute)
-                                                                        @if ($attribute->sell_price != null)
-                                                                            <input class="wcf-single-sel" type="radio" id="product_1" name="radio_btn" value="1" data-product-name="{{ $products->name }}" data-quantity="1" data-price="{{$attribute->sell_price}}" data-image="" checked="checked">
-                                                                        @else
-                                                                            <input class="wcf-single-sel" type="radio" id="product_1" name="radio_btn" value="1" data-product-name="{{ $products->name }}" data-quantity="1" data-price="{{$attribute->price}}" data-image="" checked="checked">
-                                                                        @endif
-                                                                    @endforeach
-                                                                @endif
-                                                            @else
-                                                                @if ($products->sell_price != null)
-                                                                    <input class="wcf-single-sel" type="radio" id="product_1" name="radio_btn" value="1" data-product-name="{{ $products->name }}" data-quantity="1" data-price="{{$products->sell_price}}" data-image="" checked="checked">
-                                                                @else
-                                                                    <input class="wcf-single-sel" type="radio" id="product_1" name="radio_btn" value="1" data-product-name="{{ $products->name }}" data-quantity="1" data-price="{{$products->price}}" data-image="" checked="checked">
-                                                                @endif
-                                                            @endif
+                                                                    ?>
+                                                                    <?php $__currentLoopData = $inventorie->rel_to_attribute->take(1); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $attribute): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                                                        <?php if($attribute->sell_price != null): ?>
+                                                                            <input class="wcf-single-sel" type="radio" id="product_1" name="radio_btn" value="1" data-product-name="<?php echo e($products->name); ?>" data-quantity="1" data-price="<?php echo e($attribute->sell_price); ?>" data-image="" checked="checked">
+                                                                        <?php else: ?>
+                                                                            <input class="wcf-single-sel" type="radio" id="product_1" name="radio_btn" value="1" data-product-name="<?php echo e($products->name); ?>" data-quantity="1" data-price="<?php echo e($attribute->price); ?>" data-image="" checked="checked">
+                                                                        <?php endif; ?>
+                                                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                                                                <?php endif; ?>
+                                                            <?php else: ?>
+                                                                <?php if($products->sell_price != null): ?>
+                                                                    <input class="wcf-single-sel" type="radio" id="product_1" name="radio_btn" value="1" data-product-name="<?php echo e($products->name); ?>" data-quantity="1" data-price="<?php echo e($products->sell_price); ?>" data-image="" checked="checked">
+                                                                <?php else: ?>
+                                                                    <input class="wcf-single-sel" type="radio" id="product_1" name="radio_btn" value="1" data-product-name="<?php echo e($products->name); ?>" data-quantity="1" data-price="<?php echo e($products->price); ?>" data-image="" checked="checked">
+                                                                <?php endif; ?>
+                                                            <?php endif; ?>
                                                         </div>
                                                         <div class="wcf-item-image" style="">
-                                                            @if ($products->inventorie_id != null)
-                                                                @if ($products->rel_to_inventorie)
-                                                                    @php
+                                                            <?php if($products->inventorie_id != null): ?>
+                                                                <?php if($products->rel_to_inventorie): ?>
+                                                                    <?php
                                                                         $inventorie = $products->rel_to_inventorie
-                                                                    @endphp
-                                                                    @foreach ($inventorie->rel_to_attribute->take(1) as $attribute)
-                                                                        <img fetchpriority="high" decoding="async" width="300" height="300" src="{{asset('uploads/product')}}/{{ $attribute->image }}" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" />
-                                                                    @endforeach
-                                                                @endif
-                                                            @else
-                                                                <img fetchpriority="high" decoding="async" width="300" height="300" src="{{asset('uploads/product')}}/{{$product->image}}" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" />
-                                                            @endif
+                                                                    ?>
+                                                                    <?php $__currentLoopData = $inventorie->rel_to_attribute->take(1); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $attribute): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                                                        <img fetchpriority="high" decoding="async" width="300" height="300" src="<?php echo e(asset('uploads/product')); ?>/<?php echo e($attribute->image); ?>" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" />
+                                                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                                                                <?php endif; ?>
+                                                            <?php else: ?>
+                                                                <img fetchpriority="high" decoding="async" width="300" height="300" src="<?php echo e(asset('uploads/product')); ?>/<?php echo e($product->image); ?>" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" />
+                                                            <?php endif; ?>
 
                                                         </div>
                                                         <div class="wcf-item-all-text">
                                                             <div class="wcf-item-wrap">
-                                                                <span class="wcf-display-title">{{ $products->name }}
+                                                                <span class="wcf-display-title"><?php echo e($products->name); ?>
+
                                                                 </span>
                                                             </div>
                                                         </div>
@@ -1508,26 +1512,26 @@
                                                     </div>
                                                     <div class="wcf-price">
                                                         <div class="wcf-display-price wcf-field-label">
-                                                            @if ($products->inventorie_id != null)
-                                                                @if ($products->rel_to_inventorie)
-                                                                    @php
+                                                            <?php if($products->inventorie_id != null): ?>
+                                                                <?php if($products->rel_to_inventorie): ?>
+                                                                    <?php
                                                                         $inventorie = $products->rel_to_inventorie
-                                                                    @endphp
-                                                                    @foreach ($inventorie->rel_to_attribute->take(1) as $attribute)
-                                                                        @if ($attribute->sell_price != null)
-                                                                            <label for="product_1" id="subtotal">{{$attribute->sell_price}}৳</label>
-                                                                        @else
-                                                                            <label for="product_1" id="subtotal">{{$attribute->price}}৳</label>
-                                                                        @endif
-                                                                    @endforeach
-                                                                @endif
-                                                            @else
-                                                                @if ($products->sell_price != null)
-                                                                    <label for="product_1" id="subtotal">{{$products->sell_price}}৳</label>
-                                                                @else
-                                                                    <label for="product_1" id="subtotal">{{$products->price}}৳</label>
-                                                                @endif
-                                                            @endif
+                                                                    ?>
+                                                                    <?php $__currentLoopData = $inventorie->rel_to_attribute->take(1); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $attribute): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                                                        <?php if($attribute->sell_price != null): ?>
+                                                                            <label for="product_1" id="subtotal"><?php echo e($attribute->sell_price); ?>৳</label>
+                                                                        <?php else: ?>
+                                                                            <label for="product_1" id="subtotal"><?php echo e($attribute->price); ?>৳</label>
+                                                                        <?php endif; ?>
+                                                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                                                                <?php endif; ?>
+                                                            <?php else: ?>
+                                                                <?php if($products->sell_price != null): ?>
+                                                                    <label for="product_1" id="subtotal"><?php echo e($products->sell_price); ?>৳</label>
+                                                                <?php else: ?>
+                                                                    <label for="product_1" id="subtotal"><?php echo e($products->price); ?>৳</label>
+                                                                <?php endif; ?>
+                                                            <?php endif; ?>
 
                                                         </div>
                                                     </div>
@@ -1567,9 +1571,16 @@
                                                                 <input type="text" class="input-text " name="name" id="name" placeholder="সম্পূর্ন নামটি লিখুন" value="" autocomplete="given-name" required />
                                                             </span>
                                                         </p>
-                                                        @error('name')
-                                                            <strong class="text-danger">{{ $message }}</strong>
-                                                        @enderror
+                                                        <?php $__errorArgs = ['name'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+                                                            <strong class="text-danger"><?php echo e($message); ?></strong>
+                                                        <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
                                                         <p class="form-row address-field form-row-first thwcfd-required thwcfd-field-wrapper thwcfd-field-text wcf-column-100 validate-required" id="billing_address_1_field" data-priority="20">
                                                             <label for="address" class="">আপনার সম্পূর্ণ ঠিকানা&nbsp;
                                                                 <abbr class="required" title="required">*</abbr>
@@ -1578,9 +1589,16 @@
                                                                 <input type="text" class="input-text " name="address" id="address" placeholder="আপনার সম্পূর্ণ ঠিকানা লিখুন" value="" autocomplete="address-line1" required />
                                                             </span>
                                                         </p>
-                                                        @error('address')
-                                                            <strong class="text-danger">{{ $message }}</strong>
-                                                        @enderror
+                                                        <?php $__errorArgs = ['address'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+                                                            <strong class="text-danger"><?php echo e($message); ?></strong>
+                                                        <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
                                                         <p class="form-row form-row-wide thwcfd-required thwcfd-field-wrapper thwcfd-field-tel wcf-column-100 validate-required validate-phone" id="billing_phone_field" data-priority="30">
                                                             <label for="mobile" class="">আপনার ফোন নাম্বার&nbsp;
                                                                 <abbr class="required" title="required">*</abbr>
@@ -1589,10 +1607,21 @@
                                                                 <input type="tel" class="input-text " name="mobile" id="mobile" placeholder="আপনার ফোন নাম্বার লিখুন" value="" autocomplete="tel" required />
                                                             </span>
                                                         </p>
-                                                        @error('mobile')
-                                                            <strong class="text-danger">{{ $message }}</strong>
-                                                        @enderror
-                                                        @error('mobile')
+                                                        <?php $__errorArgs = ['mobile'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+                                                            <strong class="text-danger"><?php echo e($message); ?></strong>
+                                                        <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+                                                        <?php $__errorArgs = ['mobile'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
                                                             <script>
                                                                 Swal.fire({
                                                                     icon: "error",
@@ -1600,7 +1629,10 @@
                                                                     text: "Something went wrong!",
                                                                 });
                                                             </script>
-                                                        @enderror
+                                                        <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1621,56 +1653,60 @@
                                                                     <td class="product-name">
                                                                         <div class="wcf-product-image">
                                                                             <div class="wcf-product-thumbnail">
-                                                                                @if ($products->inventorie_id != null)
-                                                                                    @if ($products->rel_to_inventorie)
-                                                                                        @php
+                                                                                <?php if($products->inventorie_id != null): ?>
+                                                                                    <?php if($products->rel_to_inventorie): ?>
+                                                                                        <?php
                                                                                             $inventorie = $products->rel_to_inventorie
-                                                                                        @endphp
-                                                                                        @foreach ($inventorie->rel_to_attribute->take(1) as $attribute)
-                                                                                            <img fetchpriority="high" decoding="async" width="80" height="80" src="{{asset('uploads/product')}}/{{ $attribute->image }}" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" />
-                                                                                        @endforeach
-                                                                                    @endif
-                                                                                @else
-                                                                                    <img fetchpriority="high" decoding="async" width="80" height="80" src="{{asset('uploads/product')}}/{{$products->image}}" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" />
-                                                                                @endif
+                                                                                        ?>
+                                                                                        <?php $__currentLoopData = $inventorie->rel_to_attribute->take(1); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $attribute): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                                                                            <img fetchpriority="high" decoding="async" width="80" height="80" src="<?php echo e(asset('uploads/product')); ?>/<?php echo e($attribute->image); ?>" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" />
+                                                                                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                                                                                    <?php endif; ?>
+                                                                                <?php else: ?>
+                                                                                    <img fetchpriority="high" decoding="async" width="80" height="80" src="<?php echo e(asset('uploads/product')); ?>/<?php echo e($products->image); ?>" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" />
+                                                                                <?php endif; ?>
                                                                                 <a href="#" rel="nofollow"
                                                                                     class="wcf-remove-product cartflows-icon cartflows-circle-cross"
                                                                                     data-id="138"
                                                                                     data-item-key="013d407166ec4fa56eb1e1f8cbe183b9"></a>
                                                                             </div>
-                                                                            <div class="wcf-product-name">{{ $products->name }}</div>
+                                                                            <div class="wcf-product-name"><?php echo e($products->name); ?></div>
                                                                         </div>
                                                                         <strong class="product-quantity"></strong>
                                                                     </td>
                                                                     <td class="product-total">
-                                                                        @if ($products->inventorie_id != null)
-                                                                            @if ($products->rel_to_inventorie)
-                                                                                @php
+                                                                        <?php if($products->inventorie_id != null): ?>
+                                                                            <?php if($products->rel_to_inventorie): ?>
+                                                                                <?php
                                                                                     $inventorie = $products->rel_to_inventorie
-                                                                                @endphp
-                                                                                @foreach ($inventorie->rel_to_attribute->take(1) as $attribute)
-                                                                                    @if ($attribute->sell_price != null)
-                                                                                        <span class="woocommerce-Price-amount amount"><bdi >{{$attribute->sell_price}}
+                                                                                ?>
+                                                                                <?php $__currentLoopData = $inventorie->rel_to_attribute->take(1); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $attribute): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                                                                    <?php if($attribute->sell_price != null): ?>
+                                                                                        <span class="woocommerce-Price-amount amount"><bdi ><?php echo e($attribute->sell_price); ?>
+
                                                                                             <span class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi>
                                                                                         </span>
-                                                                                    @else
-                                                                                        <span class="woocommerce-Price-amount amount"><bdi >{{$attribute->price}}
+                                                                                    <?php else: ?>
+                                                                                        <span class="woocommerce-Price-amount amount"><bdi ><?php echo e($attribute->price); ?>
+
                                                                                             <span class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi>
                                                                                         </span>
-                                                                                    @endif
-                                                                                @endforeach
-                                                                            @endif
-                                                                        @else
-                                                                            @if ($products->sell_price != null)
-                                                                                <span class="woocommerce-Price-amount amount"><bdi >{{$products->sell_price}}
+                                                                                    <?php endif; ?>
+                                                                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                                                                            <?php endif; ?>
+                                                                        <?php else: ?>
+                                                                            <?php if($products->sell_price != null): ?>
+                                                                                <span class="woocommerce-Price-amount amount"><bdi ><?php echo e($products->sell_price); ?>
+
                                                                                     <span class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi>
                                                                                 </span>
-                                                                            @else
-                                                                                <span class="woocommerce-Price-amount amount"><bdi >{{$products->price}}
+                                                                            <?php else: ?>
+                                                                                <span class="woocommerce-Price-amount amount"><bdi ><?php echo e($products->price); ?>
+
                                                                                     <span class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi>
                                                                                 </span>
-                                                                            @endif
-                                                                        @endif
+                                                                            <?php endif; ?>
+                                                                        <?php endif; ?>
 
                                                                     </td>
                                                                 </tr>
@@ -1680,30 +1716,30 @@
                                                                 <tr class="cart-subtotal">
                                                                     <th>Subtotal</th>
                                                                     <td>
-                                                                        @if ($products->inventorie_id != null)
-                                                                            @if ($products->rel_to_inventorie)
-                                                                                @php
+                                                                        <?php if($products->inventorie_id != null): ?>
+                                                                            <?php if($products->rel_to_inventorie): ?>
+                                                                                <?php
                                                                                     $inventorie = $products->rel_to_inventorie
-                                                                                @endphp
-                                                                                @foreach ($inventorie->rel_to_attribute->take(1) as $attribute)
-                                                                                    @if ($attribute->sell_price != null)
-                                                                                        <input type="hidden" name="sub_total" value="{{$attribute->sell_price}}" id="sub_total_input">
-                                                                                        <span class="woocommerce-Price-amount amount"><bdi id="subtotal_footer">{{$attribute->sell_price}}<span class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span>
-                                                                                    @else
-                                                                                        <input type="hidden" name="sub_total" value="{{$attribute->price}}" id="sub_total_input">
-                                                                                        <span class="woocommerce-Price-amount amount"><bdi id="subtotal_footer">{{$attribute->price}}<span class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span>
-                                                                                    @endif
-                                                                                @endforeach
-                                                                            @endif
-                                                                        @else
-                                                                            @if ($products->sell_price != null)
-                                                                                <input type="hidden" name="sub_total" value="{{$products->sell_price}}" id="sub_total_input">
-                                                                                <span class="woocommerce-Price-amount amount"><bdi id="subtotal_footer">{{$products->sell_price}}<span class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span>
-                                                                            @else
-                                                                                <input type="hidden" name="sub_total" value="{{$products->price}}" id="sub_total_input">
-                                                                                <span class="woocommerce-Price-amount amount"><bdi id="subtotal_footer">{{$products->price}}<span class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span>
-                                                                            @endif
-                                                                        @endif
+                                                                                ?>
+                                                                                <?php $__currentLoopData = $inventorie->rel_to_attribute->take(1); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $attribute): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                                                                    <?php if($attribute->sell_price != null): ?>
+                                                                                        <input type="hidden" name="sub_total" value="<?php echo e($attribute->sell_price); ?>" id="sub_total_input">
+                                                                                        <span class="woocommerce-Price-amount amount"><bdi id="subtotal_footer"><?php echo e($attribute->sell_price); ?><span class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span>
+                                                                                    <?php else: ?>
+                                                                                        <input type="hidden" name="sub_total" value="<?php echo e($attribute->price); ?>" id="sub_total_input">
+                                                                                        <span class="woocommerce-Price-amount amount"><bdi id="subtotal_footer"><?php echo e($attribute->price); ?><span class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span>
+                                                                                    <?php endif; ?>
+                                                                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                                                                            <?php endif; ?>
+                                                                        <?php else: ?>
+                                                                            <?php if($products->sell_price != null): ?>
+                                                                                <input type="hidden" name="sub_total" value="<?php echo e($products->sell_price); ?>" id="sub_total_input">
+                                                                                <span class="woocommerce-Price-amount amount"><bdi id="subtotal_footer"><?php echo e($products->sell_price); ?><span class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span>
+                                                                            <?php else: ?>
+                                                                                <input type="hidden" name="sub_total" value="<?php echo e($products->price); ?>" id="sub_total_input">
+                                                                                <span class="woocommerce-Price-amount amount"><bdi id="subtotal_footer"><?php echo e($products->price); ?><span class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span>
+                                                                            <?php endif; ?>
+                                                                        <?php endif; ?>
 
                                                                     </td>
                                                                 </tr>
@@ -1731,30 +1767,30 @@
                                                                 <tr class="order-total">
                                                                     <th>Total</th>
                                                                     <td>
-                                                                        @if ($products->inventorie_id != null)
-                                                                            @if ($products->rel_to_inventorie)
-                                                                                @php
+                                                                        <?php if($products->inventorie_id != null): ?>
+                                                                            <?php if($products->rel_to_inventorie): ?>
+                                                                                <?php
                                                                                     $inventorie = $products->rel_to_inventorie
-                                                                                @endphp
-                                                                                @foreach ($inventorie->rel_to_attribute->take(1) as $attribute)
-                                                                                    @if ($attribute->sell_price != null)
-                                                                                        <input type="hidden" name="total" value="{{$attribute->sell_price}}" id="total_input">
-                                                                                        <strong><span class="woocommerce-Price-amount amount"><bdi id="total">{{$attribute->sell_price}}<span class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span></strong>
-                                                                                    @else
-                                                                                        <input type="hidden" name="total" value="{{$attribute->price}}" id="total_input">
-                                                                                        <strong><span class="woocommerce-Price-amount amount"><bdi id="total">{{$attribute->price}}<span class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span></strong>
-                                                                                    @endif
-                                                                                @endforeach
-                                                                            @endif
-                                                                        @else
-                                                                            @if ($products->sell_price != null)
-                                                                                <input type="hidden" name="total" value="{{$products->sell_price}}" id="total_input">
-                                                                                <strong><span class="woocommerce-Price-amount amount"><bdi id="total">{{$products->sell_price}}<span class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span></strong>
-                                                                            @else
-                                                                                <input type="hidden" name="total" value="{{$products->price}}" id="total_input">
-                                                                                <strong><span class="woocommerce-Price-amount amount"><bdi id="total">{{$products->price}}<span class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span></strong>
-                                                                            @endif
-                                                                        @endif
+                                                                                ?>
+                                                                                <?php $__currentLoopData = $inventorie->rel_to_attribute->take(1); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $attribute): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                                                                    <?php if($attribute->sell_price != null): ?>
+                                                                                        <input type="hidden" name="total" value="<?php echo e($attribute->sell_price); ?>" id="total_input">
+                                                                                        <strong><span class="woocommerce-Price-amount amount"><bdi id="total"><?php echo e($attribute->sell_price); ?><span class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span></strong>
+                                                                                    <?php else: ?>
+                                                                                        <input type="hidden" name="total" value="<?php echo e($attribute->price); ?>" id="total_input">
+                                                                                        <strong><span class="woocommerce-Price-amount amount"><bdi id="total"><?php echo e($attribute->price); ?><span class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span></strong>
+                                                                                    <?php endif; ?>
+                                                                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                                                                            <?php endif; ?>
+                                                                        <?php else: ?>
+                                                                            <?php if($products->sell_price != null): ?>
+                                                                                <input type="hidden" name="total" value="<?php echo e($products->sell_price); ?>" id="total_input">
+                                                                                <strong><span class="woocommerce-Price-amount amount"><bdi id="total"><?php echo e($products->sell_price); ?><span class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span></strong>
+                                                                            <?php else: ?>
+                                                                                <input type="hidden" name="total" value="<?php echo e($products->price); ?>" id="total_input">
+                                                                                <strong><span class="woocommerce-Price-amount amount"><bdi id="total"><?php echo e($products->price); ?><span class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span></strong>
+                                                                            <?php endif; ?>
+                                                                        <?php endif; ?>
                                                                     </td>
                                                                 </tr>
                                                                 <!-- End Order Total -->
@@ -1805,14 +1841,14 @@
         </div>
     </div>
 
-<link rel="stylesheet" type="text/css" href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/78qrtsnc/5ukdx.css"
+<link rel="stylesheet" type="text/css" href="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/78qrtsnc/5ukdx.css"
         media="all" />
 
-{{-- main js --}}
-{{-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> --}}
+
+
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="{{ asset('landingpage/sharee/slick.min.js') }}"></script>
+<script src="<?php echo e(asset('landingpage/sharee/slick.min.js')); ?>"></script>
 
 <script>
     function startCountdown() {
@@ -1854,7 +1890,7 @@
         const subtotalElement = document.getElementById('subtotal');
         const subtotalFooterElement = document.getElementById('subtotal_footer');
         const totalElement = document.getElementById('total');
-        const productPrice = {{$attribute->price}};
+        const productPrice = <?php echo e($attribute->price); ?>;
         let shippingCost = 60;
 
         function updateSubtotalAndTotal() {
@@ -1895,30 +1931,8 @@
         autoplaySpeed: 2000,
     });
 </script>
-        {{-- @if (session('success'))
-            {
-            <script>
-                Swal.fire({
-                    icon: "success",
-                    title: "Success...",
-                    text: "প্রিয় গ্রাহক অর্ডার কররা জন্য ধন্যবাদ আপনার অর্ডার নম্বর #8500 কিছুক্ষণের মধেই আমাদের একজন প্রতিনিধি ফোন করে আপনার অর্ডার টি কনফার্ম করবেন প্রয়োজনে ফোন করুন 0 1890-30940",
-                });
-            </script>
-            }
-        @endif
-        @if (session('error'))
-            {
-            <script>
-                Swal.fire({
-                    icon: "error",
-                    title: "Oops...",
-                    text: "Something went wrong!",
-                    footer: '<a href="#">Why do I have this issue?</a>'
-                });
-            </script>
-            }
-        @endif --}}
-{{-- main js end --}}
+        
+
 
     <script type="text/javascript" id="woo-variation-swatches-js-extra">
         /* <![CDATA[ */
@@ -1974,19 +1988,19 @@
         /* ]]> */
     </script>
     <script type="text/javascript"
-        src="{{ asset('landingpage/sharee') }}/wp-content/plugins/pro-elements/assets/js/webpack-pro.runtime.min08e6.js?ver=3.21.2"
+        src="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/plugins/pro-elements/assets/js/webpack-pro.runtime.min08e6.js?ver=3.21.2"
         id="elementor-pro-webpack-runtime-js"></script>
-    <script type="text/javascript" src="{{ asset('landingpage/sharee') }}/wp-content/plugins/elementor/assets/js/webpack.runtime.min63aa.js?ver=3.21.5"
+    <script type="text/javascript" src="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/plugins/elementor/assets/js/webpack.runtime.min63aa.js?ver=3.21.5"
         id="elementor-webpack-runtime-js"></script>
-    <script type="text/javascript" src="{{ asset('landingpage/sharee') }}/wp-content/plugins/elementor/assets/js/frontend-modules.min63aa.js?ver=3.21.5"
+    <script type="text/javascript" src="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/plugins/elementor/assets/js/frontend-modules.min63aa.js?ver=3.21.5"
         id="elementor-frontend-modules-js"></script>
 
-    <script type="text/javascript" src="{{ asset('landingpage/sharee') }}/wp-content/plugins/pro-elements/assets/js/frontend.min08e6.js?ver=3.21.2"
+    <script type="text/javascript" src="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/plugins/pro-elements/assets/js/frontend.min08e6.js?ver=3.21.2"
         id="elementor-pro-frontend-js"></script>
     <script type="text/javascript"
-        src="{{ asset('landingpage/sharee') }}/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js?ver=4.0.2"
+        src="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js?ver=4.0.2"
         id="elementor-waypoints-js"></script>
-    <script type="text/javascript" src="{{ asset('landingpage/sharee') }}/wp-content/plugins/ui/core.min3f14.js?ver=1.13.2" id="jquery-ui-core-js">
+    <script type="text/javascript" src="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/plugins/ui/core.min3f14.js?ver=1.13.2" id="jquery-ui-core-js">
     </script>
 
     <script type="text/javascript" id="elementor-frontend-js-before">
@@ -2118,11 +2132,12 @@
         };
         /* ]]> */
     </script>
-    <script type="text/javascript" src="{{ asset('landingpage/sharee') }}/wp-content/plugins/elementor/assets/js/frontend.min63aa.js?ver=3.21.5"
+    <script type="text/javascript" src="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/plugins/elementor/assets/js/frontend.min63aa.js?ver=3.21.5"
         id="elementor-frontend-js"></script>
     <script type="text/javascript"
-        src="{{ asset('landingpage/sharee') }}/wp-content/plugins/pro-elements/assets/js/elements-handlers.min08e6.js?ver=3.21.2"
+        src="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/plugins/pro-elements/assets/js/elements-handlers.min08e6.js?ver=3.21.2"
         id="pro-elements-handlers-js"></script>
 
 </body>
 </html>
+<?php /**PATH F:\all project\cottonbd\resources\views/landingpage/five.blade.php ENDPATH**/ ?>

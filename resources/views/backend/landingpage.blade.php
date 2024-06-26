@@ -37,12 +37,12 @@
                                     <td>3</td>
                                     <td><a href="https://cottonbd.nitebiz.com/putul/dress">https://cottonbd.nitebiz.com/putul/dress</a></td>
                                 </tr>
-                                <tr>
+                                {{-- <tr>
                                     <td>4</td>
                                     <td><a href="https://cottonbd.nitebiz.com/sharee">https://cottonbd.nitebiz.com/sharee</a></td>
-                                </tr>
+                                </tr> --}}
                                 <tr>
-                                    <td>5</td>
+                                    <td>4</td>
                                     <td><a href="https://cottonbd.nitebiz.com/batik/dress">https://cottonbd.nitebiz.com/batik/dress</a></td>
                                 </tr>
                             </tbody>
