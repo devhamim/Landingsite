@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-
 <head>
     <!-- Meta Tags -->
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Laralink">
     <!-- Site Title -->
     <title>Invoice</title>
     <link rel="stylesheet" href="{{ asset('invoice_assets') }}/css/style.css">
@@ -25,7 +21,7 @@
                     $orderproducts = App\Models\OrderProduct::where('order_id', $order->order_id)->get();
                 @endphp
                 <div class="tm_invoice tm_style1 tm_type1 tm_invoice_in" style="height: 920px; page-break-after: always;">
-                    <div class="tm_invoice_head tm_top_head tm_mb15 tm_align_center" style="margin-top: 30px">
+                    <div class="tm_invoice_head tm_top_head tm_mb15 tm_align_center" >
                         <div class="tm_invoice_left">
                             <div class="tm_logo">
                                 <strong>{{ $setting->first()->name }}</strong><br>
@@ -37,6 +33,7 @@
                                 <img src="{{ asset('uploads/setting') }}/{{ $setting->first()->white_logo }}" width="350px" alt="Logo">
                             </div>
                         </div>
+                        <div class="tm_shape_bg tm_accent_bg tm_mobile_hide" style=""></div>
                         <div class="tm_shape_bg tm_accent_bg tm_mobile_hide"></div>
                     </div>
                     <div class="tm_invoice_head tm_mb10">
@@ -65,6 +62,7 @@
                                         <tr class="tm_accent_bg">
                                             <th class="tm_width_3 tm_semi_bold tm_white_color">SL#</th>
                                             <th class="tm_width_4 tm_semi_bold tm_white_color">Product(s)</th>
+                                            <th class="tm_width_2 tm_semi_bold tm_white_color">Description</th>
                                             <th class="tm_width_2 tm_semi_bold tm_white_color">Qty</th>
                                             <th class="tm_width_1 tm_semi_bold tm_white_color">Price</th>
                                         </tr>
@@ -74,6 +72,22 @@
                                             <tr>
                                                 <td class="tm_width_3">{{ $sl+1 }}</td>
                                                 <td class="tm_width_4">{{ $orderpro->rel_to_pro->name }}</td>
+                                                <td>
+                                                    @if ($order->landing == 1)
+                                                        @if ($order->color)
+                                                            <span>Color:{{ $order->color }}, </span>
+                                                        @endif
+                                                        @if ($order->size)
+                                                            <span>Size:{{ $order->size }}, </span>
+                                                        @endif
+                                                    @else
+                                                        @if ($orderpro->rel_to_attribute->weight)
+                                                            <span style="">Package:{{ $orderpro->rel_to_attribute->weight }}, </span>
+                                                        @else
+                                                            <span style="">Color:{{ $orderpro->rel_to_attribute->color_id }} <span>, Size:{{ $orderpro->rel_to_attribute->size_id }}, </span></span>
+                                                        @endif
+                                                    @endif
+                                                </td>
                                                 <td class="tm_width_2">{{ $orderpro->quantity }}</td>
                                                 <td class="tm_width_1">{{ $orderpro->rel_to_attribute->sell_price ?? $orderpro->rel_to_attribute->price }}Tk</td>
                                             </tr>
@@ -83,6 +97,14 @@
                             </div>
                         </div>
                         <div class="tm_invoice_footer tm_border_top tm_mb15 tm_m0_md">
+                            <div class="tm_left_footer">
+                                @foreach ($orderproducts as $orderpro)
+                                    @if ($orderpro->first()->rel_to_attribute->image)
+                                        <img width="150px" src="{{ asset('uploads/product') }}/{{ $orderpro->rel_to_attribute->image }}" alt="">
+                                    @endif
+                                @endforeach
+                            </div>
+
                             <div class="tm_right_footer">
                                 <table class="tm_mb15">
                                     <tbody>

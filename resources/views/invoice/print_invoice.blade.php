@@ -93,7 +93,6 @@
                                                 <span style="">Color:{{ $order->rel_to_attribute->color_id }} <span>, Size:{{ $order->rel_to_attribute->size_id }}, </span></span>
                                             @endif
                                         @endif
-
                                     </td>
                                     <td>{{ number_format($order->rel_to_attribute->sell_price ?? $order->rel_to_attribute->price) }} X {{ $order->quantity }}</td>
                                     <td>{{ number_format(($order->rel_to_attribute->sell_price ?? $order->rel_to_attribute->price) * $order->quantity) }}</td>
@@ -107,7 +106,11 @@
                     </table>
                 </div>
                 <div class="row">
-                    <div class="col-lg-7 col-md-6 col-sm-4"></div>
+                    <div class="col-lg-7 col-md-6 col-sm-4">
+                        @if ($order->rel_to_attribute->image)
+                            <img width="150px" src="{{ asset('uploads/product') }}/{{ $order->rel_to_attribute->image }}" alt="">
+                        @endif
+                    </div>
                     <div class="col-lg-5 col-md-6 col-sm-8 ms-auto">
                         <table class="table">
                             <tbody>

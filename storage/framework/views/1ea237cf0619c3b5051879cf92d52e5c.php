@@ -107,7 +107,11 @@
                     </table>
                 </div>
                 <div class="row">
-                    <div class="col-lg-7 col-md-6 col-sm-4"></div>
+                    <div class="col-lg-7 col-md-6 col-sm-4">
+                        <?php if($order->rel_to_attribute->image): ?>
+                            <img width="150px" src="<?php echo e(asset('uploads/product')); ?>/<?php echo e($order->rel_to_attribute->image); ?>" alt="">
+                        <?php endif; ?>
+                    </div>
                     <div class="col-lg-5 col-md-6 col-sm-8 ms-auto">
                         <table class="table">
                             <tbody>
