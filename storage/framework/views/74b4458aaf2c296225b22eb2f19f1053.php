@@ -1409,7 +1409,7 @@
                         <div class="elementor-button-wrapper">
                             <?php if($setting->first()->number_two != null): ?>
                                 <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-pulse-grow"
-                                    href="tel:<?php echo e($setting->first()->number_two); ?>" style="background: #33D422">
+                                    href="https://api.whatsapp.com/send?phone=88<?php echo e($setting->first()->number_two); ?>&text=Hello%20there,%20I%20found%20you%20on%20website!%20i%20would%20like%20to%20talk%20about%20your%20Product." target="_blank" style="background: #33D422">
                                     <span class="elementor-button-content-wrapper">
                                         <span class="elementor-button-icon elementor-align-icon-left">
                                             <img style="width: 65px"
@@ -1430,6 +1430,18 @@
                         <div class="elementor-widget-container">
                             <link rel="stylesheet"
                                 href="https://elegentbd.com/wp-content/plugins/elementor-pro/assets/css/widget-animated-headline.min.css">
+                                <style>
+                                    .elementor-headline--style-highlight .elementor-headline-plain-text {
+                                        z-index: 1;
+                                        position: relative;
+                                        color: #000;
+                                        font-size: 25px;
+                                    }
+                                    .elementor-headline-dynamic-wrapper .elementor-headline-dynamic-text.elementor-headline-text-active {
+                                        position: relative;
+                                        color: #000;
+                                    }
+                                </style>
                             <h3 class="elementor-headline e-animated">
                                 <span class="elementor-headline-plain-text elementor-headline-text-wrapper">সম্পূর্ণ আফসান
                                     প্রিন্ট করা আনস্টিজ ৩ পিসের ১ সেট পূর্বের মূল্য </span>
@@ -1438,8 +1450,8 @@
                                         class="elementor-headline-dynamic-text elementor-headline-text-active">১৫৫০/-</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150"
                                         preserveAspectRatio="none">
-                                        <path d="M497.4,23.9C301.6,40,155.9,80.6,4,144.4"></path>
-                                        <path d="M14.1,27.6c204.5,20.3,393.8,74,467.3,111.7"></path>
+                                        <path style="stroke: red;" d="M497.4,23.9C301.6,40,155.9,80.6,4,144.4"></path>
+                                        <path style="stroke: red;" d="M14.1,27.6c204.5,20.3,393.8,74,467.3,111.7"></path>
                                     </svg></span>
                                 <span class="elementor-headline-plain-text elementor-headline-text-wrapper">টাকা</span>
                             </h3>
