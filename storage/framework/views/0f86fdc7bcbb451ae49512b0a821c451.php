@@ -21,11 +21,11 @@
                     $orderproducts = App\Models\OrderProduct::where('order_id', $order->order_id)->get();
                 ?>
                 <div class="tm_invoice tm_style1 tm_type1 tm_invoice_in" style="height: 920px; page-break-after: always;">
-                    <div class="tm_invoice_head tm_top_head tm_mb15 tm_align_center" style="border-bottom: 1px solid #000">
+                    <div class="tm_invoice_head tm_top_head tm_mb15 tm_align_center">
                         <div class="tm_invoice_left">
                             <div class="tm_logo">
-                                <strong><?php echo e($setting->first()->name); ?></strong><br>
-                                <span>#<?php echo e($order->order_id); ?></span>
+                                <strong style="color: #fff"><?php echo e($setting->first()->name); ?></strong><br>
+                                <span style="color: #fff">#<?php echo e($order->order_id); ?></span>
                             </div>
                         </div>
                         <div class="tm_invoice_right tm_text_right tm_mobile_hide">
@@ -33,7 +33,8 @@
                                 <img src="<?php echo e(asset('uploads/setting')); ?>/<?php echo e($setting->first()->white_logo); ?>" width="350px" alt="Logo">
                             </div>
                         </div>
-                        
+                        <div class="tm_shape_bg tm_accent_bg tm_mobile_hide" style="width: 130%; z-index: -1"></div>
+                        <div class="tm_shape_bg tm_accent_bg tm_mobile_hide" style="background: #000"></div>
                     </div>
                     <div class="tm_invoice_head tm_mb10">
                         <div class="tm_invoice_left">
@@ -41,8 +42,7 @@
                             <p>
                                 <?php echo e($setting->first()->name); ?> <br>
                                 <?php echo e($setting->first()->number_one); ?> <br>
-                                #<?php echo e($order->order_id); ?>
-
+                                <?php echo e($setting->first()->address); ?> <br>
                             </p>
                         </div>
                         <div class="tm_invoice_right tm_text_right">
