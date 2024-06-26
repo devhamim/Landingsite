@@ -101,7 +101,7 @@
                         <div class="tm_invoice_footer tm_border_top tm_mb15 tm_m0_md">
                             <div class="tm_left_footer">
                                 <?php $__currentLoopData = $orderproducts; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $orderpro): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                    <?php if($orderpro->first()->rel_to_attribute->image): ?>
+                                    <?php if($orderpro->rel_to_attribute->image): ?>
                                         <img width="150px" src="<?php echo e(asset('uploads/product')); ?>/<?php echo e($orderpro->rel_to_attribute->image); ?>" alt="">
                                     <?php endif; ?>
                                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>

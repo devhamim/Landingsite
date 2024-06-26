@@ -99,7 +99,7 @@
                         <div class="tm_invoice_footer tm_border_top tm_mb15 tm_m0_md">
                             <div class="tm_left_footer">
                                 @foreach ($orderproducts as $orderpro)
-                                    @if ($orderpro->first()->rel_to_attribute->image)
+                                    @if ($orderpro->rel_to_attribute->image)
                                         <img width="150px" src="{{ asset('uploads/product') }}/{{ $orderpro->rel_to_attribute->image }}" alt="">
                                     @endif
                                 @endforeach

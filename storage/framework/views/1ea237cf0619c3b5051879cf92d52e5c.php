@@ -93,7 +93,6 @@
                                                 <span style="">Color:<?php echo e($order->rel_to_attribute->color_id); ?> <span>, Size:<?php echo e($order->rel_to_attribute->size_id); ?>, </span></span>
                                             <?php endif; ?>
                                         <?php endif; ?>
-
                                     </td>
                                     <td><?php echo e(number_format($order->rel_to_attribute->sell_price ?? $order->rel_to_attribute->price)); ?> X <?php echo e($order->quantity); ?></td>
                                     <td><?php echo e(number_format(($order->rel_to_attribute->sell_price ?? $order->rel_to_attribute->price) * $order->quantity)); ?></td>
