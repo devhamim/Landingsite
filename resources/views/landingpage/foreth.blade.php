@@ -1392,8 +1392,8 @@
                             <link rel="stylesheet"
                                 href="https://elegentbd.com/wp-content/plugins/elementor-pro/assets/css/widget-animated-headline.min.css">
                             <h3 class="elementor-headline e-animated">
-                                <span class="elementor-headline-plain-text elementor-headline-text-wrapper">সম্পূর্ণ আফসান
-                                    প্রিন্ট করা আনস্টিজ ৩ পিসের ১ সেট পূর্বের মূল্য </span>
+                                <span class="elementor-headline-plain-text elementor-headline-text-wrapper">ডিজিটাল আফসান প্রিন্ট করা থ্রি পিস এর রেগুলার প্রাইস
+                                     </span>
                                 <span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper">
                                     <span
                                         class="elementor-headline-dynamic-text elementor-headline-text-active">১৮০০/-</span>
@@ -1412,8 +1412,7 @@
                         data-widget_type="animated-headline.default">
                         <div class="elementor-widget-container">
                             <h3 class="elementor-headline e-animated">
-                                <span class="elementor-headline-plain-text elementor-headline-text-wrapper">৩ পিসের ১ সেট
-                                    আজকের অফার মূল্য মাত্র</span>
+                                <span class="elementor-headline-plain-text elementor-headline-text-wrapper">আজকের অফার প্রাইজ মাত্র</span>
                                 <span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper">
                                     <span
                                         class="elementor-headline-dynamic-text elementor-headline-text-active">১৩৫০/-</span>
@@ -1424,6 +1423,16 @@
                                         </path>
                                     </svg></span>
                                 <span class="elementor-headline-plain-text elementor-headline-text-wrapper">টাকা</span>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="elementor-element elementor-element-65994e40 elementor-headline--style-highlight elementor-widget elementor-widget-animated-headline"
+                        data-id="65994e40" data-element_type="widget"
+                        data-settings="{&quot;highlighted_text&quot;:&quot;\u09e7\u09e9\u09e6\u09e6\/-&quot;,&quot;headline_style&quot;:&quot;highlight&quot;,&quot;marker&quot;:&quot;circle&quot;,&quot;loop&quot;:&quot;yes&quot;,&quot;highlight_animation_duration&quot;:1200,&quot;highlight_iteration_delay&quot;:8000}"
+                        data-widget_type="animated-headline.default">
+                        <div class="elementor-widget-container">
+                            <h3 class="elementor-headline e-animated">
+                                <span class="elementor-headline-plain-text elementor-headline-text-wrapper">দুই সেট নিলে সারা দেশে সম্পূর্ণ ডেলিভারি চার্জ ফ্রি</span>
                             </h3>
                         </div>
                     </div>

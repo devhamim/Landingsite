@@ -304,7 +304,10 @@ class landingpageController extends Controller
 
     //putul_dress
     function putul_dress(){
-        return view('landingpage.threepage');
+        $products = Product::find(32);
+        return view('landingpage.threepage',[
+            'products'=>$products,
+        ]);
     }
     // putul_order_store
     function putul_order_store(Request $request){

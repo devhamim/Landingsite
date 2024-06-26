@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <?php if($setting->first()->title != null): ?>
-        <title><?php echo e($setting->first()->title); ?></title>
-    <?php endif; ?>
-    <link rel="stylesheet" type="text/css"
-        href="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/eh03duwi/a3jsn.css" media="all" />
+    @if($setting->first()->title != null)
+        <title>{{$setting->first()->title}}</title>
+    @endif
+    <link rel="stylesheet" type="text/css" href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/eh03duwi/a3jsn.css"
+        media="all" />
     <style id='jetpack-sharing-buttons-style-inline-css' type='text/css'>
         .jetpack-sharing-buttons__services-list {
             display: flex;
@@ -54,8 +54,8 @@
             padding: 1.25em 2.375em
         }
     </style>
-    <link rel="stylesheet" type="text/css"
-        href="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/1y6plmk/5ukdx.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/1y6plmk/5ukdx.css"
+        media="all" />
     <style id='classic-theme-styles-inline-css' type='text/css'>
         /*! This file is auto-generated */
         .wp-block-button__link {
@@ -396,28 +396,26 @@
             line-height: 1.6;
         }
     </style>
-    <link rel="stylesheet" type="text/css"
-        href="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/14oboyxa/5ukdx.css" media="all" />
-    <link rel="stylesheet" type="text/css"
-        href="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/2c3d52n2/5ukdx.css"
+    <link rel="stylesheet" type="text/css" href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/14oboyxa/5ukdx.css"
+        media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/2c3d52n2/5ukdx.css"
         media="only screen and (max-width: 768px)" />
-    <link rel="stylesheet" type="text/css"
-        href="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/buoawj8/5ukdx.css" media="all" />
-    <link rel="stylesheet" type="text/css"
-        href="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/78qfj7b0/5u9rb.css" media="all" />
-    <link rel="stylesheet" type="text/css"
-        href="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/7xzwkiy0/5ukdx.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/buoawj8/5ukdx.css"
+        media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/78qfj7b0/5u9rb.css"
+        media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/7xzwkiy0/5ukdx.css"
+        media="all" />
     <link rel='stylesheet' id='elementor-post-2283-css'
-        href='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/uploads/elementor/css/post-2283eefd.css?ver=1715248386'
-        type='text/css' media='all' />
-    <link rel="stylesheet" href="<?php echo e(asset('landingpage/sharee/slick.css')); ?>">
-    <link rel="stylesheet" type="text/css"
-        href="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/6zsossqs/5ukdx.css" media="all" />
+        href='{{ asset('landingpage/sharee') }}/wp-content/uploads/elementor/css/post-2283eefd.css?ver=1715248386' type='text/css'
+        media='all' />
+    <link rel="stylesheet" type="text/css" href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/6zsossqs/5ukdx.css"
+        media="all" />
     <link rel='stylesheet' id='elementor-post-2325-css'
-        href='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/uploads/elementor/css/post-23252ee6.css?ver=1715511391'
-        type='text/css' media='all' />
-    <link rel="stylesheet" type="text/css"
-        href="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/qa9ezqp0/5ukdx.css" media="all" />
+        href='{{ asset('landingpage/sharee') }}/wp-content/uploads/elementor/css/post-23252ee6.css?ver=1715511391' type='text/css'
+        media='all' />
+    <link rel="stylesheet" type="text/css" href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/qa9ezqp0/5ukdx.css"
+        media="all" />
     <style id='dashicons-inline-css' type='text/css'>
         [data-font="Dashicons"]:before {
             font-family: 'Dashicons' !important;
@@ -432,53 +430,41 @@
             -moz-osx-font-smoothing: grayscale !important;
         }
     </style>
-    <link rel="stylesheet" type="text/css"
-        href="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/7ll98hwt/5ukdx.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/7ll98hwt/5ukdx.css"
+        media="all" />
+    <link rel="stylesheet" href="{{ asset('landingpage/sharee/slick.css') }}">
     <link rel='stylesheet' id='flatsome-googlefonts-css'
         href='http://fonts.googleapis.com/css?family=Lato%3Aregular%2C700%2C400%2C700%7CDancing+Script%3Aregular%2C400&amp;display=swap&amp;ver=3.9'
         type='text/css' media='all' />
     <link rel='stylesheet' id='google-fonts-1-css'
         href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CHind+Siliguri%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=swap&amp;ver=6.5.3'
         type='text/css' media='all' />
-    
-    <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/mob3d79n/5u9rb.js'
-        type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/mob3d79n/5u9rb.js' type="text/javascript"></script>
 
-    <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/quq3qn0g/5u9rb.js'
-        type="text/javascript"></script>
+    <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/quq3qn0g/5u9rb.js' type="text/javascript"></script>
 
-    <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/pxrbfce/5ukdy.js' type="text/javascript">
-    </script>
+    <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/pxrbfce/5ukdy.js' type="text/javascript"></script>
 
-    <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/7io3j6c5/5ukdy.js'
-        type="text/javascript"></script>
+    <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/7io3j6c5/5ukdy.js' type="text/javascript"></script>
 
-    <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/2nytrlxg/5ukdy.js'
-        type="text/javascript"></script>
+    <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/2nytrlxg/5ukdy.js' type="text/javascript"></script>
 
-    <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/e5xv04yd/5ukdy.js'
-        type="text/javascript"></script>
+    <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/e5xv04yd/5ukdy.js' type="text/javascript"></script>
 
-    <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/2z65b5dc/5ukdy.js'
-        type="text/javascript"></script>
+    <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/2z65b5dc/5ukdy.js' type="text/javascript"></script>
 
-    <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/fpauzlgh/5ukdy.js'
-        type="text/javascript"></script>
+    <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/fpauzlgh/5ukdy.js' type="text/javascript"></script>
 
-    <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/5awtn25/5ukdy.js' type="text/javascript">
-    </script>
+    <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/5awtn25/5ukdy.js' type="text/javascript"></script>
 
-    <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/g38vfwxl/4euc4.js'
-        type="text/javascript"></script>
+    <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/g38vfwxl/4euc4.js' type="text/javascript"></script>
 
 
-    <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/dq7tdaz1/a3jsn.js'
-        type="text/javascript"></script>
+    <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/dq7tdaz1/a3jsn.js' type="text/javascript"></script>
 
-    <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/kc8sjhif/5ukdy.js'
-        type="text/javascript"></script>
+    <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/kc8sjhif/5ukdy.js' type="text/javascript"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <style>
         img#wpstats {
             display: none
@@ -495,9 +481,9 @@
             opacity: 1;
         }
     </style>
-    <?php if($setting->first()->favicon != null): ?>
-        <link rel="shortcut icon" href="<?php echo e(asset('uploads/setting')); ?>/<?php echo e($setting->first()->favicon); ?>">
-    <?php endif; ?>
+    @if($setting->first()->favicon != null)
+        <link rel="shortcut icon" href="{{ asset('uploads/setting') }}/{{ $setting->first()->favicon }}">
+    @endif
 
     <style id="custom-css" type="text/css">
         :root {
@@ -741,17 +727,15 @@
     </style>
 
     <!-- Meta Pixel Code -->
-    <?php if($markatingsetting->first()->fb_pixel != null): ?>
-        <?php echo $markatingsetting->first()->fb_pixel; ?>
-
-    <?php endif; ?>
-    
+    @if ($markatingsetting->first()->fb_pixel != null)
+        {!! $markatingsetting->first()->fb_pixel !!}
+    @endif
+    {{-- <!-- End Meta Pixel Code --> --}}
 
     <!-- googletag Code -->
-    <?php if($markatingsetting->first()->google_tag != null): ?>
-        <?php echo $markatingsetting->first()->google_tag; ?>
-
-    <?php endif; ?>
+    @if ($markatingsetting->first()->google_tag != null)
+        {!! $markatingsetting->first()->google_tag !!}
+    @endif
     <!-- End googletag Code -->
 </head>
 
@@ -770,15 +754,14 @@
                         data-widget_type="animated-headline.default">
                         <div class="elementor-widget-container">
                             <link rel="stylesheet" type="text/css"
-                                href="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/zixf9ao/5ukdx.css"
-                                media="all" />
+                                href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/zixf9ao/5ukdx.css" media="all" />
                             <h3
                                 class="elementor-headline elementor-headline-animation-type-typing elementor-headline-letters">
-                                <span class="elementor-headline-plain-text elementor-headline-text-wrapper">একসাথে ২ টি
-                                    ড্রেস </span>
+                                <span class="elementor-headline-plain-text elementor-headline-text-wrapper">হোম
+                                    ডেলিভারি ফ্রি </span>
                                 <span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper">
                                     <span class="elementor-headline-dynamic-text elementor-headline-text-active">
-                                        অর্ডারে&nbsp;ফ্রি&nbsp;ডেলিভারি </span>
+                                        ৩&nbsp;দিনের&nbsp;জন্য&nbsp;প্রযোজ্য </span>
                                 </span>
                             </h3>
                         </div>
@@ -844,7 +827,8 @@
                                     padding-right: 5px
                                 }
                             </style>
-                            <div id="simple_timer" class="elementor-countdown-wrapper">
+                            <div data-expire-actions="[{&quot;type&quot;:&quot;hide&quot;}]"
+                                class="elementor-countdown-wrapper" data-date="1718259900">
                                 <div class="elementor-countdown-item"><span
                                         class="elementor-countdown-digits elementor-countdown-hours"></span> <span
                                         class="elementor-countdown-label">Hours</span></div>
@@ -855,7 +839,6 @@
                                         class="elementor-countdown-digits elementor-countdown-seconds"></span> <span
                                         class="elementor-countdown-label">Seconds</span></div>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -902,12 +885,14 @@
                             }
                         </style>
                         <h2 class="elementor-heading-title elementor-size-default">
-                            দেখতে অসম্ভব সুন্দর এই গ্রাউন+ওড়না সেট খুবই প্রিমিয়াম ও আরামদায়ক।
+                            ”দেখতে অসম্ভব সুন্দর এই গ্রাউন+ওড়না  সেট খুবই প্রিমিয়াম ও আরামদায়ক।
                         </h2>
                     </div>
                 </div>
                 <div class="elementor-element elementor-element-078d25b elementor-widget__width-initial elementor-widget-mobile__width-initial elementor-arrows-position-inside elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel"
-                    data-id="078d25b" data-element_type="widget">
+                    data-id="078d25b" data-element_type="widget"
+                    data-settings="{&quot;slides_to_show&quot;:&quot;1&quot;,&quot;slides_to_show_mobile&quot;:&quot;1&quot;,&quot;speed&quot;:5000,&quot;navigation&quot;:&quot;both&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;infinite&quot;:&quot;yes&quot;,&quot;effect&quot;:&quot;slide&quot;}"
+                    data-widget_type="image-carousel.default">
                     <div class="elementor-widget-container">
                         <style>
                             /*! elementor - v3.21.0 - 08-05-2024 */
@@ -932,18 +917,18 @@
                         <div class="elementor-image-carousel-wrapper swiper" dir="ltr">
                             <div class="imageautoplay" aria-live="off">
                                 <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                                    src="<?php echo e(asset('landingpage/sharee/image/3-1.jpg')); ?>" alt="1.jpg" />
+                                        src="{{ asset('landingpage/sharee/image/3-1.jpg') }}" alt="1.jpg" />
                                 </figure>
                                 <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                                        src="<?php echo e(asset('landingpage/sharee/image/3-4.jpg')); ?>" /></figure>
+                                        src="{{ asset('landingpage/sharee/image/3-4.jpg') }}" /></figure>
                                 <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                                        src="<?php echo e(asset('landingpage/sharee/black-image/3.jpg')); ?>" alt="3.jpg" />
+                                        src="{{ asset('landingpage/sharee/black-image/3.jpg') }}" alt="3.jpg" />
                                 </figure>
                                 <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                                        src="<?php echo e(asset('landingpage/sharee/image/3-6.jpg')); ?>" alt="4.jpg" />
+                                        src="{{ asset('landingpage/sharee/image/3-6.jpg') }}" alt="4.jpg" />
                                 </figure>
                                 <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                                        src="<?php echo e(asset('landingpage/sharee/image/3-7.jpg')); ?>" alt="4.jpg" />
+                                        src="{{ asset('landingpage/sharee/image/3-7.jpg') }}" alt="4.jpg" />
                                 </figure>
 
                             </div>
@@ -969,22 +954,23 @@
                 <div class="elementor-element elementor-element-278d1b5 elementor-widget__width-initial elementor-widget-mobile__width-initial elementor-arrows-position-inside elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel"
                     data-id="278d1b5" data-element_type="widget">
                     <div class="elementor-widget-container">
-                        <div class="elementor-image-carousel-wrapper swiper">
-                            <div class="imageautoplay">
+                        <div class="elementor-image-carousel-wrapper swiper" >
+                            <div class="imageautoplay" >
                                 <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                                    src="<?php echo e(asset('landingpage/sharee/image/3-3.jpg')); ?>" alt="1.jpg" />
+                                        src="{{ asset('landingpage/sharee/image/3-3.jpg') }}" alt="1.jpg" />
                                 </figure>
                                 <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                                        src="<?php echo e(asset('landingpage/sharee/image/3-5.jpg')); ?>" /></figure>
+                                        src="{{ asset('landingpage/sharee/image/3-5.jpg') }}" /></figure>
                                 <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                                        src="<?php echo e(asset('landingpage/sharee/black-image/3.jpg')); ?>" alt="3.jpg" />
+                                        src="{{ asset('landingpage/sharee/black-image/3.jpg') }}" alt="3.jpg" />
                                 </figure>
                                 <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                                        src="<?php echo e(asset('landingpage/sharee/image/3-8.jpg')); ?>" alt="4.jpg" />
+                                        src="{{ asset('landingpage/sharee/image/3-8.jpg') }}" alt="4.jpg" />
                                 </figure>
                                 <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                                        src="<?php echo e(asset('landingpage/sharee/image/3-2.jpg')); ?>" alt="4.jpg" />
+                                        src="{{ asset('landingpage/sharee/image/3-2.jpg') }}" alt="4.jpg" />
                                 </figure>
+
                             </div>
 
                             <div class="swiper-pagination"></div>
@@ -1045,7 +1031,7 @@
                                 display: inline-block
                             }
                         </style>
-                        <p><span style="font-weight: 400;">&#8221;”দেখতে অসম্ভব সুন্দর এই জামা + ওড়না সেট খুবই প্রিমিয়াম ও আরামদায়ক”</span><span style="font-weight: 400;">খুবই প্রিমিয়াম ও আরামদায়ক&#8221;</span>
+                        <p><span style="font-weight: 400;">&#8221;দেখতে অসম্ভব সুন্দর এই জামা + ওড়না সেট </span><span style="font-weight: 400;">খুবই প্রিমিয়াম ও আরামদায়ক&#8221;</span>
                         </p>
                     </div>
                 </div>
@@ -1062,7 +1048,9 @@
                         </div>
                     </div>
                     <div class="elementor-element elementor-element-69ca886 elementor-widget__width-initial elementor-widget elementor-widget-video"
-                        data-id="69ca886" data-element_type="widget">
+                        data-id="69ca886" data-element_type="widget"
+                        data-settings="{&quot;youtube_url&quot;:&quot;https:\/\/www.youtube.com\/watch?v=kexiKp1W2FY&quot;,&quot;video_type&quot;:&quot;youtube&quot;,&quot;controls&quot;:&quot;yes&quot;}"
+                        data-widget_type="video.default">
                         <div class="elementor-widget-container">
                             <style>
                                 /*! elementor - v3.21.0 - 08-05-2024 */
@@ -1174,8 +1162,8 @@
                     <div class="elementor-element elementor-element-449a027 elementor-widget elementor-widget-heading"
                         data-id="449a027" data-element_type="widget" data-widget_type="heading.default">
                         <div class="elementor-widget-container">
-                            <h2 class="elementor-heading-title elementor-size-default"><?php echo e($products->name); ?>
-
+                            <h2 class="elementor-heading-title elementor-size-default">পুতুল ড্রেস
+                                টু পিস >গ্রাউন+ওড়না ।
                             </h2>
                         </div>
                     </div>
@@ -1192,7 +1180,7 @@
                                                 d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
                                             </path>
                                         </svg> </span>
-                                    <span class="elementor-icon-list-text">ফেব্রিক্স পিওর সুতি ।</span>
+                                    <span class="elementor-icon-list-text">গের ১২০" লং ৪৮" বডি ফ্রি সাইজ।</span>
                                 </li>
                                 <li class="elementor-icon-list-item">
                                     <span class="elementor-icon-list-icon">
@@ -1202,7 +1190,7 @@
                                                 d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
                                             </path>
                                         </svg> </span>
-                                    <span class="elementor-icon-list-text">জামা,ওড়না,পায়জামা থ্রী পিস সেট।</span>
+                                    <span class="elementor-icon-list-text">কোমরে ফিতা আছে বড় ছোট করতে পারবেন।</span>
                                 </li>
                                 <li class="elementor-icon-list-item">
                                     <span class="elementor-icon-list-icon">
@@ -1212,8 +1200,7 @@
                                                 d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
                                             </path>
                                         </svg> </span>
-                                    <span class="elementor-icon-list-text">লং৪৯" বডি ৬০"পর্যন্ত সাইজ বানিয়ে নিতে
-                                        পারবেন।</span>
+                                    <span class="elementor-icon-list-text">ডিজিটাল আফসান প্রিন্ট করা।</span>
                                 </li>
                                 <li class="elementor-icon-list-item">
                                     <span class="elementor-icon-list-icon">
@@ -1223,7 +1210,7 @@
                                                 d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
                                             </path>
                                         </svg> </span>
-                                    <span class="elementor-icon-list-text">ওড়নার দেওয়া আছে ৫ হাত।</span>
+                                    <span class="elementor-icon-list-text">ফেব্রিক্স ইন্ডিয়ান চোষা কাপড়।</span>
                                 </li>
                                 <li class="elementor-icon-list-item">
                                     <span class="elementor-icon-list-icon">
@@ -1233,7 +1220,47 @@
                                                 d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
                                             </path>
                                         </svg> </span>
-                                    <span class="elementor-icon-list-text">কালার ১০০% গ্যারান্টি।</span>
+                                    <span class="elementor-icon-list-text">পায়জামার কাপড় থাকবে না।</span>
+                                </li>
+                                <li class="elementor-icon-list-item">
+                                    <span class="elementor-icon-list-icon">
+                                        <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle"
+                                            viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                                            </path>
+                                        </svg> </span>
+                                    <span class="elementor-icon-list-text">ওড়নার কাপড় দেওয়া আছে ৫ হাত।</span>
+                                </li>
+                                <li class="elementor-icon-list-item">
+                                    <span class="elementor-icon-list-icon">
+                                        <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle"
+                                            viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                                            </path>
+                                        </svg> </span>
+                                    <span class="elementor-icon-list-text">ডেলিভারি ম্যানের সামনে দেখে নিয়ে পারবেন।</span>
+                                </li>
+                                <li class="elementor-icon-list-item">
+                                    <span class="elementor-icon-list-icon">
+                                        <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle"
+                                            viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                                            </path>
+                                        </svg> </span>
+                                    <span class="elementor-icon-list-text">কোন অগ্রিম পেমেন্ট করতে হবে না।</span>
+                                </li>
+                                <li class="elementor-icon-list-item">
+                                    <span class="elementor-icon-list-icon">
+                                        <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle"
+                                            viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                                            </path>
+                                        </svg> </span>
+                                    <span class="elementor-icon-list-text">দুই সেট নিলে ডেলিভারি চার্জ।</span>
                                 </li>
                             </ul>
                         </div>
@@ -1263,40 +1290,41 @@
                         </div>
                     </div>
                     <div class="elementor-element elementor-element-d879611 elementor-widget-mobile__width-initial elementor-arrows-position-inside elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel"
-                        data-id="d879611" data-element_type="widget">
+                        data-id="d879611" data-element_type="widget"
+                        data-settings="{&quot;slides_to_show&quot;:&quot;1&quot;,&quot;navigation&quot;:&quot;both&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;effect&quot;:&quot;slide&quot;,&quot;speed&quot;:500}"
+                        data-widget_type="image-carousel.default">
                         <div class="elementor-widget-container">
                             <div class="elementor-image-carousel-wrapper swiper" dir="ltr">
                                 <div class="imageautoplay" aria-live="off">
-                                    <figure class="swiper-slide-inner"><img decoding="async"
-                                            class="swiper-slide-image"
-                                            src="<?php echo e(asset('landingpage/sharee/black-image/1.jpg')); ?>"
-                                            alt="1.jpg" /></figure>
-                                    <figure class="swiper-slide-inner"><img decoding="async"
-                                            class="swiper-slide-image"
-                                            src="<?php echo e(asset('landingpage/sharee/black-image/3.jpg')); ?>"
-                                            alt="1.jpg" /></figure>
-                                    <figure class="swiper-slide-inner"><img decoding="async"
-                                            class="swiper-slide-image"
-                                            src="<?php echo e(asset('landingpage/sharee/black-image/2.jpg')); ?>"
-                                            alt="1.jpg" /></figure>
-                                    <figure class="swiper-slide-inner"><img decoding="async"
-                                            class="swiper-slide-image"
-                                            src="<?php echo e(asset('landingpage/sharee/black-image/4.jpg')); ?>"
-                                            alt="1.jpg" /></figure>
-                                    <figure class="swiper-slide-inner"><img decoding="async"
-                                            class="swiper-slide-image"
-                                            src="<?php echo e(asset('landingpage/sharee/black-image/6.jpg')); ?>"
-                                            alt="1.jpg" /></figure>
-                                    <figure class="swiper-slide-inner"><img decoding="async"
-                                            class="swiper-slide-image"
-                                            src="<?php echo e(asset('landingpage/sharee/black-image/7.jpg')); ?>"
-                                            alt="1.jpg" /></figure>
-                                    <figure class="swiper-slide-inner"><img decoding="async"
-                                            class="swiper-slide-image"
-                                            src="<?php echo e(asset('landingpage/sharee/black-image/5.jpg')); ?>"
-                                            alt="1.jpg" /></figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
+                                            src="{{ asset('landingpage/sharee/image/3-1.jpg') }}" alt="1.jpg" />
+                                    </figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
+                                            src="{{ asset('landingpage/sharee/image/3-2.jpg') }}" /></figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
+                                            src="{{ asset('landingpage/sharee/black-image/3.jpg') }}" alt="3.jpg" />
+                                    </figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
+                                            src="{{ asset('landingpage/sharee/image/3-3.jpg') }}" alt="4.jpg" />
+                                    </figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
+                                            src="{{ asset('landingpage/sharee/image/3-4.jpg') }}" alt="4.jpg" />
+                                    </figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
+                                            src="{{ asset('landingpage/sharee/image/3-5.jpg') }}" alt="4.jpg" />
+                                    </figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
+                                            src="{{ asset('landingpage/sharee/image/3-6.jpg') }}" alt="4.jpg" />
+                                    </figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
+                                            src="{{ asset('landingpage/sharee/image/3-7.jpg') }}" alt="4.jpg" />
+                                    </figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
+                                            src="{{ asset('landingpage/sharee/image/3-8.jpg') }}" alt="4.jpg" />
+                                    </figure>
 
                                 </div>
+
                                 <div class="swiper-pagination"></div>
                             </div>
                         </div>
@@ -1316,9 +1344,7 @@
                     <div class="elementor-element elementor-element-7b4be82 elementor-widget elementor-widget-text-editor"
                         data-id="7b4be82" data-element_type="widget" data-widget_type="text-editor.default">
                         <div class="elementor-widget-container">
-                            <p>বাজারে সবার চেয়ে কম প্রাইজে অর্ডার করতে চাইলে এখনি অর্ডার করুন কারন * আমরা নিজস্ব
-                                কারখানায় ২০১২ সাল থেকে ইসলামপুরে পোশাক তৈরি করে আসছি।* আমাদের সকল কাপড় প্রস্তুত
-                                করি।জামা ও ওড়নার কাপড় সম্পুর্ন সুতি।</p>
+                            <p>বাজারে সবার চেয়ে কম প্রাইজে অর্ডার করতে চাইলে এখনি অর্ডার করুন কারন * আমরা নিজস্ব কারখানায় ২০১২ সাল থেকে ইসলামপুরে পোশাক তৈরি করে আসছি।* আমাদের সকল কাপড় প্রস্তুত করি।জামা ও ওড়নার কাপড় সম্পুর্ন সুতি।</p>
                         </div>
                     </div>
                 </div>
@@ -1330,7 +1356,7 @@
                     data-id="561989e" data-element_type="widget" data-widget_type="heading.default">
                     <div class="elementor-widget-container">
                         <h2 class="elementor-heading-title elementor-size-default">
-                            দেখতে অসম্ভব সুন্দর এই গ্রাউন+ওড়না সেট খুবই প্রিমিয়াম ও আরামদায়ক।
+                            ”দেখতে অসম্ভব সুন্দর এই গ্রাউন+ওড়না  সেট খুবই প্রিমিয়াম ও আরামদায়ক।
                         </h2>
                     </div>
                 </div>
@@ -1363,18 +1389,18 @@
                     data-id="5219f14" data-element_type="widget" data-widget_type="button.default">
                     <div class="elementor-widget-container">
                         <div class="elementor-button-wrapper">
-                            <?php if($setting->first()->number_two != null): ?>
+                            @if ($setting->first()->number_two != null)
                                 <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-pulse-grow"
-                                    href="tel:<?php echo e($setting->first()->number_two); ?>" style="background: #33D422">
+                                    href="tel:{{ $setting->first()->number_two }}" style="background: #33D422">
                                     <span class="elementor-button-content-wrapper">
                                         <span class="elementor-button-icon elementor-align-icon-left">
                                             <img style="width: 65px"
-                                                src="<?php echo e(asset('landingpage/sharee/whatsapp.png')); ?>" alt="">
+                                                src="{{ asset('landingpage/sharee/whatsapp.png') }}" alt="">
                                             <span
-                                                class="elementor-button-text"><?php echo e($setting->first()->number_two); ?></span>
+                                                class="elementor-button-text">{{ $setting->first()->number_two }}</span>
                                         </span>
                                 </a>
-                            <?php endif; ?>
+                            @endif
                         </div>
                     </div>
                 </div>
@@ -1391,7 +1417,7 @@
                                     প্রিন্ট করা আনস্টিজ ৩ পিসের ১ সেট পূর্বের মূল্য </span>
                                 <span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper">
                                     <span
-                                        class="elementor-headline-dynamic-text elementor-headline-text-active">১৮০০/-</span>
+                                        class="elementor-headline-dynamic-text elementor-headline-text-active">১৫৫০/-</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150"
                                         preserveAspectRatio="none">
                                         <path d="M497.4,23.9C301.6,40,155.9,80.6,4,144.4"></path>
@@ -1411,7 +1437,7 @@
                                     আজকের অফার মূল্য মাত্র</span>
                                 <span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper">
                                     <span
-                                        class="elementor-headline-dynamic-text elementor-headline-text-active">১৩৫০/-</span>
+                                        class="elementor-headline-dynamic-text elementor-headline-text-active">১০৮০/-</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150"
                                         preserveAspectRatio="none">
                                         <path
@@ -1424,7 +1450,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="elementor-element elementor-element-e6e60b8 e-con-full e-flex e-con e-parent"
                 data-id="e6e60b8" data-element_type="container">
                 <div class="elementor-element elementor-element-1fc5908 elementor-widget-mobile__width-initial elementor-widget__width-initial elementor-widget elementor-widget-heading"
@@ -1444,165 +1469,50 @@
                                 <!-- CHECKOUT SHORTCODE -->
                                 <div class="woocommerce">
                                     <div class="woocommerce-notices-wrapper"></div>
-                                    <form action="<?php echo e(route('black.order.store')); ?>" method="POST">
-                                        <?php echo csrf_field(); ?>
-                                        <input type="hidden" name="product_id" value="<?php echo e($products->id); ?>">
-                                        <?php if($products->inventorie_id != null): ?>
-                                            <?php if($products->rel_to_inventorie): ?>
-                                                <?php
-                                                    $inventorie = $products->rel_to_inventorie;
-                                                ?>
-                                                <?php $__currentLoopData = $inventorie->rel_to_attribute->take(1); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $attribute): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                                    <?php if($attribute->sell_price != null): ?>
-                                                        <input type="hidden" name="price"
-                                                            value="<?php echo e($attribute->sell_price); ?>">
-                                                    <?php else: ?>
-                                                        <input type="hidden" id="product_price" name="price"
-                                                            value="<?php echo e($attribute->price); ?>">
-                                                    <?php endif; ?>
-                                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                            <?php endif; ?>
-                                        <?php else: ?>
-                                            <?php if($products->sell_price != null): ?>
-                                                <input type="hidden" id="product_price" name="price"
-                                                    value="<?php echo e($products->sell_price); ?>">
-                                            <?php else: ?>
-                                                <input type="hidden" id="product_price" name="price"
-                                                    value="<?php echo e($products->price); ?>">
-                                            <?php endif; ?>
-                                        <?php endif; ?>
-                                        <div
-                                            class="wcf-product-option-wrap wcf-yp-skin-classic wcf-product-option-before-customer">
-                                            <h3 id="billing_fields_heading">Billing details</h3>
-                                            <h3 id="your_products_heading"> একপিচ এর অধিক অর্ডার এর জন্য পরিমান লিখুন
-                                            </h3>
+                                    <form action="{{ route('putul.order.store') }}" method="POST">
+                                        @csrf
+                                        <div class="wcf-product-option-wrap wcf-yp-skin-classic wcf-product-option-before-customer">
+                                            <h3 id="your_products_heading"> নিচে আপনার প্রোডাক্টটি নিবার্চন করুন </h3>
                                             <!-- Product Options Table -->
                                             <div class="wcf-qty-options">
                                                 <div class="wcf-qty-row wcf-qty-table-titles">
                                                     <div class="wcf-qty-header wcf-item">
-                                                        <div class="wcf-field-label">পণ্য</div>
+                                                        <div class="wcf-field-label">Product</div>
                                                     </div>
                                                     <div class="wcf-qty-header wcf-qty ">
-                                                        <div class="wcf-field-label">পরিমান</div>
+                                                        <div class="wcf-field-label">Quantity</div>
                                                     </div>
                                                     <div class="wcf-qty-header wcf-price">
-                                                        <div class="wcf-field-label">মূল্য</div>
+                                                        <div class="wcf-field-label">Price</div>
                                                     </div>
                                                 </div>
                                                 <div class="wcf-qty-row wcf-qty-row-2276">
                                                     <!-- Product Row 1 -->
                                                     <div class="wcf-item">
                                                         <div class="wcf-item-selector wcf-item-single-sel">
-                                                            <?php if($products->inventorie_id != null): ?>
-                                                                <?php if($products->rel_to_inventorie): ?>
-                                                                    <?php
-                                                                        $inventorie = $products->rel_to_inventorie;
-                                                                    ?>
-                                                                    <?php $__currentLoopData = $inventorie->rel_to_attribute->take(1); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $attribute): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                                                        <?php if($attribute->sell_price != null): ?>
-                                                                            <input class="wcf-single-sel"
-                                                                                type="radio" id="product_1"
-                                                                                name="radio_btn" value="1"
-                                                                                data-product-name="<?php echo e($products->name); ?>"
-                                                                                data-quantity="1"
-                                                                                data-price="<?php echo e($attribute->sell_price); ?>"
-                                                                                data-image="" checked="checked">
-                                                                        <?php else: ?>
-                                                                            <input class="wcf-single-sel"
-                                                                                type="radio" id="product_1"
-                                                                                name="radio_btn" value="1"
-                                                                                data-product-name="<?php echo e($products->name); ?>"
-                                                                                data-quantity="1"
-                                                                                data-price="<?php echo e($attribute->price); ?>"
-                                                                                data-image="" checked="checked">
-                                                                        <?php endif; ?>
-                                                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                                                <?php endif; ?>
-                                                            <?php else: ?>
-                                                                <?php if($products->sell_price != null): ?>
-                                                                    <input class="wcf-single-sel" type="radio"
-                                                                        id="product_1" name="radio_btn"
-                                                                        value="1"
-                                                                        data-product-name="<?php echo e($products->name); ?>"
-                                                                        data-quantity="1"
-                                                                        data-price="<?php echo e($products->sell_price); ?>"
-                                                                        data-image="" checked="checked">
-                                                                <?php else: ?>
-                                                                    <input class="wcf-single-sel" type="radio"
-                                                                        id="product_1" name="radio_btn"
-                                                                        value="1"
-                                                                        data-product-name="<?php echo e($products->name); ?>"
-                                                                        data-quantity="1"
-                                                                        data-price="<?php echo e($products->price); ?>"
-                                                                        data-image="" checked="checked">
-                                                                <?php endif; ?>
-                                                            <?php endif; ?>
+                                                            <input class="wcf-single-sel" type="radio" id="product_1" name="radio_btn" value="1" data-product-name="প্রিমিয়াম - টু পিচ সেট গ্রাউন+ওড়না" data-quantity="1" data-price="1080" data-image="" checked="checked">
                                                         </div>
                                                         <div class="wcf-item-image" style="">
-                                                            <?php if($products->inventorie_id != null): ?>
-                                                                <?php if($products->rel_to_inventorie): ?>
-                                                                    <?php
-                                                                        $inventorie = $products->rel_to_inventorie;
-                                                                    ?>
-                                                                    <?php $__currentLoopData = $inventorie->rel_to_attribute->take(1); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $attribute): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                                                        <img fetchpriority="high" decoding="async"
-                                                                            width="300" height="300"
-                                                                            src="<?php echo e(asset('uploads/product')); ?>/<?php echo e($attribute->image); ?>"
-                                                                            class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                                                            alt="" />
-                                                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                                                <?php endif; ?>
-                                                            <?php else: ?>
-                                                                <img fetchpriority="high" decoding="async"
-                                                                    width="300" height="300"
-                                                                    src="<?php echo e(asset('uploads/product')); ?>/<?php echo e($product->image); ?>"
-                                                                    class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                                                    alt="" />
-                                                            <?php endif; ?>
-
+                                                            <img fetchpriority="high" decoding="async" width="300" height="300" src="{{ asset('landingpage/sharee/image/3-7.jpg') }}" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" />
                                                         </div>
                                                         <div class="wcf-item-all-text">
                                                             <div class="wcf-item-wrap">
-                                                                <span class="wcf-display-title"><?php echo e($products->name); ?>
-
-                                                                </span>
+                                                                <span class="wcf-display-title">প্রিমিয়াম - টু পিচ সেট গ্রাউন+ওড়না
+                                                                </span><span
+                                                                    class="wcf-display-title-quantity"><span
+                                                                        class="dashicons dashicons-no-alt"></span><span
+                                                                        class="wcf-display-quantity">1</span></span>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="wcf-qty">
                                                         <div class="wcf-qty-selection-wrap">
-                                                            <input type="number" id="quantity" value="1"
-                                                                step="1" min="1" name="quantity"
-                                                                class="wcf-qty-selection" placeholder="1">
+                                                            <input type="number" id="quantity" value="1" step="1" min="1" name="quantity" class="wcf-qty-selection" placeholder="1">
                                                         </div>
                                                     </div>
                                                     <div class="wcf-price">
                                                         <div class="wcf-display-price wcf-field-label">
-                                                            <?php if($products->inventorie_id != null): ?>
-                                                                <?php if($products->rel_to_inventorie): ?>
-                                                                    <?php
-                                                                        $inventorie = $products->rel_to_inventorie;
-                                                                    ?>
-                                                                    <?php $__currentLoopData = $inventorie->rel_to_attribute->take(1); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $attribute): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                                                        <?php if($attribute->sell_price != null): ?>
-                                                                            <label for="product_1"
-                                                                                id="subtotal"><?php echo e($attribute->sell_price); ?>৳</label>
-                                                                        <?php else: ?>
-                                                                            <label for="product_1"
-                                                                                id="subtotal"><?php echo e($attribute->price); ?>৳</label>
-                                                                        <?php endif; ?>
-                                                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                                                <?php endif; ?>
-                                                            <?php else: ?>
-                                                                <?php if($products->sell_price != null): ?>
-                                                                    <label for="product_1"
-                                                                        id="subtotal"><?php echo e($products->sell_price); ?>৳</label>
-                                                                <?php else: ?>
-                                                                    <label for="product_1"
-                                                                        id="subtotal"><?php echo e($products->price); ?>৳</label>
-                                                                <?php endif; ?>
-                                                            <?php endif; ?>
-
+                                                            <label for="product_1" id="subtotal">1080Tk</label>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1620,15 +1530,16 @@
                                                     </style>
                                                 <div class="woocommerce-input-wrapper" style="display: inline-flex">
                                                     <label>
-                                                        <input type="checkbox" name="color[]" checked value="কালো"
+                                                        <input type="checkbox" name="color[]" checked value="সাদা"
                                                             class="input-checkbox">
-                                                        কালো
+                                                            সাদা
                                                     </label>
-                                                    <?php $__errorArgs = ['color'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?>
+                                                    <label>
+                                                        <input type="checkbox" name="color[]" value="আকাশী"
+                                                            class="input-checkbox">
+                                                        আকাশী
+                                                    </label>
+                                                    @error('color')
                                                         <script>
                                                             Swal.fire({
                                                                 icon: "error",
@@ -1636,10 +1547,7 @@ $message = $__bag->first($__errorArgs[0]); ?>
                                                                 text: "Something went wrong!",
                                                             });
                                                         </script>
-                                                    <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
+                                                    @enderror
                                                 </div>
                                                 </p>
                                             </div>
@@ -1647,82 +1555,40 @@ unset($__errorArgs, $__bag); ?>
                                         <div class="wcf-col2-set col2-set" id="customer_details">
                                             <div class="wcf-col-1 col-1">
                                                 <div class="woocommerce-billing-fields">
-
+                                                    <h3 id="billing_fields_heading">Billing details</h3>
                                                     <div class="woocommerce-billing-fields__field-wrapper">
-
-                                                        <p class="form-row form-row-first thwcfd-required thwcfd-field-wrapper thwcfd-field-text wcf-column-100 validate-required"
-                                                            id="billing_first_name_field" data-priority="10">
-                                                            <label for="name" class="">আপনার নাম&nbsp;<abbr
-                                                                    class="required" title="required">*</abbr></label>
+                                                        <p class="form-row form-row-first thwcfd-required thwcfd-field-wrapper thwcfd-field-text wcf-column-100 validate-required" id="billing_first_name_field" data-priority="10">
+                                                            <label for="name" class="">আপনার নাম&nbsp;<abbr class="required" title="required">*</abbr></label>
                                                             <span class="woocommerce-input-wrapper">
-                                                                <input type="text" class="input-text "
-                                                                    name="name" id="name"
-                                                                    placeholder="সম্পূর্ন নামটি লিখুন" value=""
-                                                                    autocomplete="given-name" required />
+                                                                <input type="text" class="input-text " name="name" id="name" placeholder="সম্পূর্ন নামটি লিখুন" value="" autocomplete="given-name" required />
                                                             </span>
                                                         </p>
-                                                        <?php $__errorArgs = ['name'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?>
-                                                            <strong class="text-danger"><?php echo e($message); ?></strong>
-                                                        <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-                                                        <p class="form-row address-field form-row-first thwcfd-required thwcfd-field-wrapper thwcfd-field-text wcf-column-100 validate-required"
-                                                            id="billing_address_1_field" data-priority="20">
-                                                            <label for="address" class="">আপনার সম্পূর্ণ
-                                                                ঠিকানা&nbsp;
+                                                        @error('name')
+                                                            <strong class="text-danger">{{ $message }}</strong>
+                                                        @enderror
+                                                        <p class="form-row address-field form-row-first thwcfd-required thwcfd-field-wrapper thwcfd-field-text wcf-column-100 validate-required" id="billing_address_1_field" data-priority="20">
+                                                            <label for="address" class="">আপনার সম্পূর্ণ ঠিকানা&nbsp;
                                                                 <abbr class="required" title="required">*</abbr>
                                                             </label>
                                                             <span class="woocommerce-input-wrapper">
-                                                                <input type="text" class="input-text "
-                                                                    name="address" id="address"
-                                                                    placeholder="আপনার সম্পূর্ণ ঠিকানা লিখুন"
-                                                                    value="" autocomplete="address-line1"
-                                                                    required />
+                                                                <input type="text" class="input-text " name="address" id="address" placeholder="আপনার সম্পূর্ণ ঠিকানা লিখুন" value="" autocomplete="address-line1" required />
                                                             </span>
                                                         </p>
-                                                        <?php $__errorArgs = ['address'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?>
-                                                            <strong class="text-danger"><?php echo e($message); ?></strong>
-                                                        <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-                                                        <p class="form-row form-row-wide thwcfd-required thwcfd-field-wrapper thwcfd-field-tel wcf-column-100 validate-required validate-phone"
-                                                            id="billing_phone_field" data-priority="30">
-                                                            <label for="mobile" class="">আপনার ফোন
-                                                                নাম্বার&nbsp;
+                                                        @error('address')
+                                                            <strong class="text-danger">{{ $message }}</strong>
+                                                        @enderror
+                                                        <p class="form-row form-row-wide thwcfd-required thwcfd-field-wrapper thwcfd-field-tel wcf-column-100 validate-required validate-phone" id="billing_phone_field" data-priority="30">
+                                                            <label for="mobile" class="">আপনার ফোন নাম্বার&nbsp;
                                                                 <abbr class="required" title="required">*</abbr>
                                                             </label>
                                                             <span class="woocommerce-input-wrapper">
-                                                                <input type="tel" class="input-text "
-                                                                    name="mobile" id="mobile"
-                                                                    placeholder="আপনার ফোন নাম্বার লিখুন"
-                                                                    value="" autocomplete="tel" required />
+                                                                <input type="tel" class="input-text " name="mobile" id="mobile" placeholder="আপনার ফোন নাম্বার লিখুন" value="" autocomplete="tel" required />
                                                             </span>
                                                         </p>
-                                                        <?php $__errorArgs = ['mobile'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?>
-                                                            <strong class="text-danger"><?php echo e($message); ?></strong>
-                                                        <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-                                                        <?php $__errorArgs = ['mobile'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?>
+                                                        @error('mobile')
+                                                            <strong class="text-danger">{{ $message }}</strong>
+                                                        @enderror
+                                                        @error('mobile')
                                                             <script>
                                                                 Swal.fire({
                                                                     icon: "error",
@@ -1730,10 +1596,7 @@ $message = $__bag->first($__errorArgs[0]); ?>
                                                                     text: "Something went wrong!",
                                                                 });
                                                             </script>
-                                                        <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
+                                                        @enderror
                                                     </div>
                                                 </div>
                                             </div>
@@ -1754,83 +1617,23 @@ unset($__errorArgs, $__bag); ?>
                                                                     <td class="product-name">
                                                                         <div class="wcf-product-image">
                                                                             <div class="wcf-product-thumbnail">
-                                                                                <?php if($products->inventorie_id != null): ?>
-                                                                                    <?php if($products->rel_to_inventorie): ?>
-                                                                                        <?php
-                                                                                            $inventorie =
-                                                                                                $products->rel_to_inventorie;
-                                                                                        ?>
-                                                                                        <?php $__currentLoopData = $inventorie->rel_to_attribute->take(1); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $attribute): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                                                                            <img fetchpriority="high"
-                                                                                                decoding="async"
-                                                                                                width="80"
-                                                                                                height="80"
-                                                                                                src="<?php echo e(asset('uploads/product')); ?>/<?php echo e($attribute->image); ?>"
-                                                                                                class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                                                                                alt="" />
-                                                                                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                                                                    <?php endif; ?>
-                                                                                <?php else: ?>
-                                                                                    <img fetchpriority="high"
-                                                                                        decoding="async"
-                                                                                        width="80" height="80"
-                                                                                        src="<?php echo e(asset('uploads/product')); ?>/<?php echo e($products->image); ?>"
-                                                                                        class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                                                                        alt="" />
-                                                                                <?php endif; ?>
+                                                                                <img width="80" height="80"
+                                                                                    src="{{ asset('landingpage/sharee/image/3-7.jpg') }}"
+                                                                                    class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
+                                                                                    alt="">
                                                                                 <a href="#" rel="nofollow"
                                                                                     class="wcf-remove-product cartflows-icon cartflows-circle-cross"
                                                                                     data-id="138"
                                                                                     data-item-key="013d407166ec4fa56eb1e1f8cbe183b9"></a>
                                                                             </div>
-                                                                            <div class="wcf-product-name">
-                                                                                <?php echo e($products->name); ?></div>
+                                                                            <div class="wcf-product-name">প্রিমিয়াম - টু পিচ সেট গ্রাউন+ওড়না x 1</div>
                                                                         </div>
                                                                         <strong class="product-quantity"></strong>
                                                                     </td>
                                                                     <td class="product-total">
-                                                                        <?php if($products->inventorie_id != null): ?>
-                                                                            <?php if($products->rel_to_inventorie): ?>
-                                                                                <?php
-                                                                                    $inventorie =
-                                                                                        $products->rel_to_inventorie;
-                                                                                ?>
-                                                                                <?php $__currentLoopData = $inventorie->rel_to_attribute->take(1); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $attribute): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                                                                    <?php if($attribute->sell_price != null): ?>
-                                                                                        <span
-                                                                                            class="woocommerce-Price-amount amount"><bdi><?php echo e($attribute->sell_price); ?>
-
-                                                                                                <span
-                                                                                                    class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi>
-                                                                                        </span>
-                                                                                    <?php else: ?>
-                                                                                        <span
-                                                                                            class="woocommerce-Price-amount amount"><bdi><?php echo e($attribute->price); ?>
-
-                                                                                                <span
-                                                                                                    class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi>
-                                                                                        </span>
-                                                                                    <?php endif; ?>
-                                                                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                                                            <?php endif; ?>
-                                                                        <?php else: ?>
-                                                                            <?php if($products->sell_price != null): ?>
-                                                                                <span
-                                                                                    class="woocommerce-Price-amount amount"><bdi><?php echo e($products->sell_price); ?>
-
-                                                                                        <span
-                                                                                            class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi>
-                                                                                </span>
-                                                                            <?php else: ?>
-                                                                                <span
-                                                                                    class="woocommerce-Price-amount amount"><bdi><?php echo e($products->price); ?>
-
-                                                                                        <span
-                                                                                            class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi>
-                                                                                </span>
-                                                                            <?php endif; ?>
-                                                                        <?php endif; ?>
-
+                                                                        <span class="woocommerce-Price-amount amount"><bdi >1080
+                                                                            <span class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi>
+                                                                        </span>
                                                                     </td>
                                                                 </tr>
                                                                 <!-- Add more product rows as needed -->
@@ -1839,54 +1642,8 @@ unset($__errorArgs, $__bag); ?>
                                                                 <tr class="cart-subtotal">
                                                                     <th>Subtotal</th>
                                                                     <td>
-                                                                        <?php if($products->inventorie_id != null): ?>
-                                                                            <?php if($products->rel_to_inventorie): ?>
-                                                                                <?php
-                                                                                    $inventorie =
-                                                                                        $products->rel_to_inventorie;
-                                                                                ?>
-                                                                                <?php $__currentLoopData = $inventorie->rel_to_attribute->take(1); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $attribute): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                                                                    <?php if($attribute->sell_price != null): ?>
-                                                                                        <input type="hidden"
-                                                                                            name="sub_total"
-                                                                                            value="<?php echo e($attribute->sell_price); ?>"
-                                                                                            id="sub_total_input">
-                                                                                        <span
-                                                                                            class="woocommerce-Price-amount amount"><bdi
-                                                                                                id="subtotal_footer"><?php echo e($attribute->sell_price); ?><span
-                                                                                                    class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span>
-                                                                                    <?php else: ?>
-                                                                                        <input type="hidden"
-                                                                                            name="sub_total"
-                                                                                            value="<?php echo e($attribute->price); ?>"
-                                                                                            id="sub_total_input">
-                                                                                        <span
-                                                                                            class="woocommerce-Price-amount amount"><bdi
-                                                                                                id="subtotal_footer"><?php echo e($attribute->price); ?><span
-                                                                                                    class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span>
-                                                                                    <?php endif; ?>
-                                                                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                                                            <?php endif; ?>
-                                                                        <?php else: ?>
-                                                                            <?php if($products->sell_price != null): ?>
-                                                                                <input type="hidden" name="sub_total"
-                                                                                    value="<?php echo e($products->sell_price); ?>"
-                                                                                    id="sub_total_input">
-                                                                                <span
-                                                                                    class="woocommerce-Price-amount amount"><bdi
-                                                                                        id="subtotal_footer"><?php echo e($products->sell_price); ?><span
-                                                                                            class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span>
-                                                                            <?php else: ?>
-                                                                                <input type="hidden" name="sub_total"
-                                                                                    value="<?php echo e($products->price); ?>"
-                                                                                    id="sub_total_input">
-                                                                                <span
-                                                                                    class="woocommerce-Price-amount amount"><bdi
-                                                                                        id="subtotal_footer"><?php echo e($products->price); ?><span
-                                                                                            class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span>
-                                                                            <?php endif; ?>
-                                                                        <?php endif; ?>
-
+                                                                        <input type="hidden" name="sub_total" value="1080" id="sub_total_input">
+                                                                        <span class="woocommerce-Price-amount amount"><bdi id="subtotal_footer">1080<span class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span>
                                                                     </td>
                                                                 </tr>
                                                                 <!-- Shipping Options -->
@@ -1894,36 +1651,16 @@ unset($__errorArgs, $__bag); ?>
                                                                     <th>Shipping</th>
                                                                     <td data-title="Shipping">
                                                                         <!-- Shipping Methods -->
-                                                                        <ul id="shipping_method"
-                                                                            class="woocommerce-shipping-methods">
+                                                                        <ul id="shipping_method" class="woocommerce-shipping-methods">
                                                                             <!-- Sample Shipping Method 1 -->
                                                                             <li>
-                                                                                <input type="radio"
-                                                                                    name="shipping_cost"
-                                                                                    data-index="0"
-                                                                                    id="shipping_method_0_flat_rate2"
-                                                                                    value="60"
-                                                                                    class="shipping_method"
-                                                                                    checked="checked">
-                                                                                <label
-                                                                                    for="shipping_method_0_flat_rate2">ঢাকার
-                                                                                    ভিতরে: <span
-                                                                                        class="woocommerce-Price-amount amount"><bdi>60<span
-                                                                                                class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span></label>
+                                                                                <input type="radio" name="shipping_cost" data-index="0" id="shipping_method_0_flat_rate2" value="60" class="shipping_method" checked="checked">
+                                                                                <label for="shipping_method_0_flat_rate2">ঢাকার ভিতরে: <span class="woocommerce-Price-amount amount"><bdi>60<span class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span></label>
                                                                             </li>
                                                                             <!-- Sample Shipping Method 2 -->
                                                                             <li>
-                                                                                <input type="radio"
-                                                                                    name="shipping_cost"
-                                                                                    data-index="0"
-                                                                                    id="shipping_method_0_local_pickup3"
-                                                                                    value="120"
-                                                                                    class="shipping_method">
-                                                                                <label
-                                                                                    for="shipping_method_0_local_pickup3">ঢাকার
-                                                                                    বাহিরে: <span
-                                                                                        class="woocommerce-Price-amount amount"><bdi>120<span
-                                                                                                class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span></label>
+                                                                                <input type="radio" name="shipping_cost" data-index="0" id="shipping_method_0_local_pickup3" value="120" class="shipping_method">
+                                                                                <label for="shipping_method_0_local_pickup3">ঢাকার বাহিরে: <span class="woocommerce-Price-amount amount"><bdi>120<span class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span></label>
                                                                             </li>
                                                                         </ul>
                                                                     </td>
@@ -1933,53 +1670,8 @@ unset($__errorArgs, $__bag); ?>
                                                                 <tr class="order-total">
                                                                     <th>Total</th>
                                                                     <td>
-                                                                        <?php if($products->inventorie_id != null): ?>
-                                                                            <?php if($products->rel_to_inventorie): ?>
-                                                                                <?php
-                                                                                    $inventorie =
-                                                                                        $products->rel_to_inventorie;
-                                                                                ?>
-                                                                                <?php $__currentLoopData = $inventorie->rel_to_attribute->take(1); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $attribute): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                                                                    <?php if($attribute->sell_price != null): ?>
-                                                                                        <input type="hidden"
-                                                                                            name="total"
-                                                                                            value="<?php echo e($attribute->sell_price); ?>"
-                                                                                            id="total_input">
-                                                                                        <strong><span
-                                                                                                class="woocommerce-Price-amount amount"><bdi
-                                                                                                    id="total"><?php echo e($attribute->sell_price); ?><span
-                                                                                                        class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span></strong>
-                                                                                    <?php else: ?>
-                                                                                        <input type="hidden"
-                                                                                            name="total"
-                                                                                            value="<?php echo e($attribute->price); ?>"
-                                                                                            id="total_input">
-                                                                                        <strong><span
-                                                                                                class="woocommerce-Price-amount amount"><bdi
-                                                                                                    id="total"><?php echo e($attribute->price); ?><span
-                                                                                                        class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span></strong>
-                                                                                    <?php endif; ?>
-                                                                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                                                            <?php endif; ?>
-                                                                        <?php else: ?>
-                                                                            <?php if($products->sell_price != null): ?>
-                                                                                <input type="hidden" name="total"
-                                                                                    value="<?php echo e($products->sell_price); ?>"
-                                                                                    id="total_input">
-                                                                                <strong><span
-                                                                                        class="woocommerce-Price-amount amount"><bdi
-                                                                                            id="total"><?php echo e($products->sell_price); ?><span
-                                                                                                class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span></strong>
-                                                                            <?php else: ?>
-                                                                                <input type="hidden" name="total"
-                                                                                    value="<?php echo e($products->price); ?>"
-                                                                                    id="total_input">
-                                                                                <strong><span
-                                                                                        class="woocommerce-Price-amount amount"><bdi
-                                                                                            id="total"><?php echo e($products->price); ?><span
-                                                                                                class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span></strong>
-                                                                            <?php endif; ?>
-                                                                        <?php endif; ?>
+                                                                        <input type="hidden" name="total" value="1080" id="total_input">
+                                                                        <strong><span class="woocommerce-Price-amount amount"><bdi id="total">1080<span class="woocommerce-Price-currencySymbol">৳&nbsp;</span></bdi></span></strong>
                                                                     </td>
                                                                 </tr>
                                                                 <!-- End Order Total -->
@@ -1993,19 +1685,13 @@ unset($__errorArgs, $__bag); ?>
                                                         <ul class="wc_payment_methods payment_methods methods">
                                                             <!-- Cash on Delivery (COD) Method -->
                                                             <li class="wc_payment_method payment_method_bacs">
-                                                                <input id="payment_method_bacs" type="radio"
-                                                                    class="input-radio" name="payment_method"
-                                                                    value="bacs" checked="checked"
-                                                                    data-order_button_text=""
-                                                                    style="display: none;">
+                                                                <input id="payment_method_bacs" type="radio" class="input-radio" name="payment_method" value="bacs" checked="checked" data-order_button_text="" style="display: none;">
 
                                                                 <label for="payment_method_bacs">
-                                                                    ক্যাশঅন ডেলিভারি </label>
-                                                                <div class="payment_box payment_method_bacs">
-                                                                    <p>ডেলিভারি চার্জ প্রযোজ্য ১০০% কনফার্ম হয়ে অর্ডার
-                                                                        করবেন। আপনার কোন কারনে অর্ডার রিসিভ না করলে
-                                                                        ডেলিভারি চার্জ দিয়ে রিটার্ন করতে পারবেন।</p>
-                                                                </div>
+                                                                    ক্যাশঅন ডেলিভারি 	</label>
+                                                                        <div class="payment_box payment_method_bacs">
+                                                                        <p>Pay with cash upon delivery.</p>
+                                                                    </div>
                                                             </li>
                                                             <!-- Add more payment methods as needed -->
                                                         </ul>
@@ -2035,16 +1721,104 @@ unset($__errorArgs, $__bag); ?>
             </div>
         </div>
     </div>
+    <!-- Mobile Sidebar -->
+    {{-- <div id="main-menu" class="mobile-sidebar no-scrollbar mfp-hide">
+        <div class="sidebar-menu no-scrollbar ">
+            <ul class="nav nav-sidebar  nav-vertical nav-uppercase">
+                <li class="header-search-form search-form html relative has-icon">
+                    <div class="header-search-form-wrapper">
+                        <div class="searchform-wrapper ux-search-box relative form-flat is-normal">
+                            <form role="search" method="get" class="searchform"
+                                action="https://baharicolor.online/">
+                                <div class="flex-row relative">
+                                    <div class="flex-col search-form-categories">
+                                        <select class="search_categories resize-select mb-0" name="product_cat">
+                                            <option value="" selected='selected'>All</option>
+                                            <option value="couple-dress">Couple Dress</option>
+                                            <option value="couple-set">Couple Set</option>
+                                            <option value="shari">Shari</option>
+                                            <option value="silk-saree">Silk Saree</option>
+                                        </select>
+                                    </div><!-- .flex-col -->
+                                    <div class="flex-col flex-grow">
+                                        <label class="screen-reader-text"
+                                            for="woocommerce-product-search-field-0">Search for:</label>
+                                        <input type="search" id="woocommerce-product-search-field-0"
+                                            class="search-field mb-0" placeholder="Search&hellip;" value=""
+                                            name="s" />
+                                        <input type="hidden" name="post_type" value="product" />
+                                    </div><!-- .flex-col -->
+                                    <div class="flex-col">
+                                        <button type="submit" value="Search"
+                                            class="ux-search-submit submit-button secondary button icon mb-0">
+                                            <i class="icon-search"></i> </button>
+                                    </div><!-- .flex-col -->
+                                </div><!-- .flex-row -->
+                                <div class="live-search-results text-left z-top"></div>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+                <li id="menu-item-1428"
+                    class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-1428">
+                    <a href="https://baharicolor.online/product-category/couple-dress/" class="nav-top-link">Couple
+                        Dress</a>
+                    <ul class=children>
+                        <li id="menu-item-1429"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1429"><a
+                                href="https://baharicolor.online/product-category/couple-dress/couple-shari-panjabi/">Couple
+                                Set (Shari + Panjabi)</a></li>
+                        <li id="menu-item-1430"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1430"><a
+                                href="https://baharicolor.online/product-category/couple-dress/couple-two-pieces/">Couple
+                                Set (Two-Piece)</a></li>
+                        <li id="menu-item-1727"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1727"><a
+                                href="https://baharicolor.online/product-category/couple-set/">Couple Set</a></li>
+                    </ul>
+                </li>
+                <li id="menu-item-1431"
+                    class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1431"><a
+                        href="https://baharicolor.online/product-category/mens-shirt/" class="nav-top-link">Mens
+                        Shirt</a></li>
+                <li id="menu-item-1432"
+                    class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1432"><a
+                        href="https://baharicolor.online/product-category/panjabi/" class="nav-top-link">Panjabi</a>
+                </li>
+                <li id="menu-item-1433"
+                    class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-1433">
+                    <a href="https://baharicolor.online/product-category/shari/" class="nav-top-link">Shari</a>
+                    <ul class=children>
+                        <li id="menu-item-1435"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1435"><a
+                                href="https://baharicolor.online/product-category/shari/digital-print-shari/">Digital
+                                Print Shari</a></li>
+                        <li id="menu-item-1434"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1434"><a
+                                href="https://baharicolor.online/product-category/shari/boutique-shari/">Boutique
+                                Shari</a></li>
+                        <li id="menu-item-1798"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1798"><a
+                                href="https://baharicolor.online/product-category/silk-saree/">Silk Saree</a></li>
+                    </ul>
+                </li>
+                <li id="menu-item-2247"
+                    class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-2247"><a
+                        href="https://baharicolor.online/product-category/islamic-wear/"
+                        class="nav-top-link">Islamic Wear</a></li>
+            </ul>
+        </div><!-- inner -->
+    </div> --}}
+    <!-- #mobile-menu -->
 
-    <link rel="stylesheet" type="text/css"
-        href="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/78qrtsnc/5ukdx.css"
+<link rel="stylesheet" type="text/css" href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/78qrtsnc/5ukdx.css"
         media="all" />
 
-    
-
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+{{-- main js --}}
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="<?php echo e(asset('landingpage/sharee/slick.min.js')); ?>"></script>
+    <script src="{{ asset('landingpage/sharee/slick.min.js') }}"></script>
 
     <script>
         function startCountdown() {
@@ -2075,47 +1849,6 @@ unset($__errorArgs, $__bag); ?>
             startCountdown();
         });
     </script>
-
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const quantityInput = document.getElementById('quantity');
-            const shippingMethods = document.querySelectorAll('.shipping_method');
-            const subtotalElement = document.getElementById('subtotal');
-            const subtotalFooterElement = document.getElementById('subtotal_footer');
-            const totalElement = document.getElementById('total');
-            const productPrice = <?php echo e($attribute->price); ?>;
-            let shippingCost = 60;
-
-            function updateSubtotalAndTotal() {
-                const quantity = parseInt(quantityInput.value);
-                const subtotal = productPrice * quantity;
-                const total = subtotal + shippingCost;
-
-                subtotalElement.textContent = subtotal + '৳';
-                subtotalFooterElement.textContent = subtotal + '৳';
-                totalElement.textContent = total + '৳';
-
-                document.getElementById('sub_total_input').value = subtotal;
-                document.getElementById('total_input').value = total;
-            }
-
-            quantityInput.addEventListener('input', function() {
-                updateSubtotalAndTotal();
-            });
-
-            shippingMethods.forEach(function(method) {
-                method.addEventListener('change', function() {
-                    shippingCost = parseInt(this.value);
-                    updateSubtotalAndTotal();
-                });
-            });
-
-            // Initial update
-            updateSubtotalAndTotal();
-        });
-    </script>
-
     <script>
         $('.imageautoplay').slick({
             slidesToShow: 1,
@@ -2125,8 +1858,69 @@ unset($__errorArgs, $__bag); ?>
             autoplaySpeed: 2000,
         });
     </script>
-    
-    
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const quantityInput = document.getElementById('quantity');
+        const shippingMethods = document.querySelectorAll('.shipping_method');
+        const subtotalElement = document.getElementById('subtotal');
+        const subtotalFooterElement = document.getElementById('subtotal_footer');
+        const totalElement = document.getElementById('total');
+        const productPrice = 1080;
+        let shippingCost = 60;
+
+        function updateSubtotalAndTotal() {
+            const quantity = parseInt(quantityInput.value);
+            const subtotal = productPrice * quantity;
+            const total = subtotal + shippingCost;
+
+            subtotalElement.textContent = subtotal + '৳';
+            subtotalFooterElement.textContent = subtotal + '৳';
+            totalElement.textContent = total + '৳';
+
+            document.getElementById('sub_total_input').value = subtotal;
+            document.getElementById('total_input').value = total;
+        }
+
+        quantityInput.addEventListener('input', function() {
+            updateSubtotalAndTotal();
+        });
+
+        shippingMethods.forEach(function(method) {
+            method.addEventListener('change', function() {
+                shippingCost = parseInt(this.value);
+                updateSubtotalAndTotal();
+            });
+        });
+
+        // Initial update
+        updateSubtotalAndTotal();
+    });
+</script>
+
+        @if (session('success'))
+            {
+            <script>
+                Swal.fire({
+                    icon: "success",
+                    title: "Success...",
+                    text: "Your order have been success",
+                });
+            </script>
+            }
+        @endif
+        @if (session('error'))
+            {
+            <script>
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "Something went wrong!",
+                    footer: '<a href="#">Why do I have this issue?</a>'
+                });
+            </script>
+            }
+        @endif
+{{-- main js end --}}
 
     <script type="text/javascript" id="woo-variation-swatches-js-extra">
         /* <![CDATA[ */
@@ -2139,7 +1933,7 @@ unset($__errorArgs, $__bag); ?>
             "stock_label_threshold": "5",
             "cart_redirect_after_add": "no",
             "enable_ajax_add_to_cart": "yes",
-            "cart_url": "https:\/\/cottonbd.nitebiz.com\/cart\/",
+            "cart_url": "https:\/\/baharicolor.online\/cart\/",
             "is_cart": ""
         };
         /* ]]> */
@@ -2148,7 +1942,7 @@ unset($__errorArgs, $__bag); ?>
     <script type="text/javascript" id="flatsome-js-js-extra">
         /* <![CDATA[ */
         var flatsomeVars = {
-            "ajaxurl": "https:\/\/cottonbd.nitebiz.com\/wp-admin\/admin-ajax.php",
+            "ajaxurl": "https:\/\/baharicolor.online\/wp-admin\/admin-ajax.php",
             "rtl": "",
             "sticky_height": "70",
             "lightbox": {
@@ -2166,8 +1960,8 @@ unset($__errorArgs, $__bag); ?>
         /* <![CDATA[ */
         _stq = window._stq || [];
         _stq.push(["view", JSON.parse(
-            "{\"v\":\"ext\",\"blog\":\"233461444\",\"post\":\"2325\",\"tz\":\"6\",\"srv\":\"cottonbd.nitebiz.com\",\"j\":\"1:13.4.3\"}"
-        )]);
+            "{\"v\":\"ext\",\"blog\":\"233461444\",\"post\":\"2325\",\"tz\":\"6\",\"srv\":\"baharicolor.online\",\"j\":\"1:13.4.3\"}"
+            )]);
         _stq.push(["clickTrackerInit", "233461444", "2325"]);
         /* ]]> */
     </script>
@@ -2182,22 +1976,116 @@ unset($__errorArgs, $__bag); ?>
         /* ]]> */
     </script>
     <script type="text/javascript"
-        src="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/plugins/pro-elements/assets/js/webpack-pro.runtime.min08e6.js?ver=3.21.2"
+        src="{{ asset('landingpage/sharee') }}/wp-content/plugins/pro-elements/assets/js/webpack-pro.runtime.min08e6.js?ver=3.21.2"
         id="elementor-pro-webpack-runtime-js"></script>
-    <script type="text/javascript"
-        src="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/plugins/elementor/assets/js/webpack.runtime.min63aa.js?ver=3.21.5"
+    <script type="text/javascript" src="{{ asset('landingpage/sharee') }}/wp-content/plugins/elementor/assets/js/webpack.runtime.min63aa.js?ver=3.21.5"
         id="elementor-webpack-runtime-js"></script>
-    <script type="text/javascript"
-        src="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/plugins/elementor/assets/js/frontend-modules.min63aa.js?ver=3.21.5"
+    <script type="text/javascript" src="{{ asset('landingpage/sharee') }}/wp-content/plugins/elementor/assets/js/frontend-modules.min63aa.js?ver=3.21.5"
         id="elementor-frontend-modules-js"></script>
-    <script type="text/javascript"
-        src="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/plugins/pro-elements/assets/js/frontend.min08e6.js?ver=3.21.2"
+    <script type="text/javascript" id="elementor-pro-frontend-js-before">
+        /* <![CDATA[ */
+        var ElementorProFrontendConfig = {
+            "ajaxurl": "https:\/\/baharicolor.online\/wp-admin\/admin-ajax.php",
+            "nonce": "a0f15a11d7",
+            "urls": {
+                "assets": "https:\/\/baharicolor.online\/wp-content\/plugins\/pro-elements\/assets\/",
+                "rest": "https:\/\/baharicolor.online\/wp-json\/"
+            },
+            "shareButtonsNetworks": {
+                "facebook": {
+                    "title": "Facebook",
+                    "has_counter": true
+                },
+                "twitter": {
+                    "title": "Twitter"
+                },
+                "linkedin": {
+                    "title": "LinkedIn",
+                    "has_counter": true
+                },
+                "pinterest": {
+                    "title": "Pinterest",
+                    "has_counter": true
+                },
+                "reddit": {
+                    "title": "Reddit",
+                    "has_counter": true
+                },
+                "vk": {
+                    "title": "VK",
+                    "has_counter": true
+                },
+                "odnoklassniki": {
+                    "title": "OK",
+                    "has_counter": true
+                },
+                "tumblr": {
+                    "title": "Tumblr"
+                },
+                "digg": {
+                    "title": "Digg"
+                },
+                "skype": {
+                    "title": "Skype"
+                },
+                "stumbleupon": {
+                    "title": "StumbleUpon",
+                    "has_counter": true
+                },
+                "mix": {
+                    "title": "Mix"
+                },
+                "telegram": {
+                    "title": "Telegram"
+                },
+                "pocket": {
+                    "title": "Pocket",
+                    "has_counter": true
+                },
+                "xing": {
+                    "title": "XING",
+                    "has_counter": true
+                },
+                "whatsapp": {
+                    "title": "WhatsApp"
+                },
+                "email": {
+                    "title": "Email"
+                },
+                "print": {
+                    "title": "Print"
+                },
+                "x-twitter": {
+                    "title": "X"
+                },
+                "threads": {
+                    "title": "Threads"
+                }
+            },
+            "woocommerce": {
+                "menu_cart": {
+                    "cart_page_url": "https:\/\/baharicolor.online\/cart\/",
+                    "checkout_page_url": "https:\/\/baharicolor.online\/checkout\/",
+                    "fragments_nonce": "be5424afce"
+                },
+                "productAddedToCart": true
+            },
+            "facebook_sdk": {
+                "lang": "en_US",
+                "app_id": ""
+            },
+            "lottie": {
+                "defaultAnimationUrl": "https:\/\/baharicolor.online\/wp-content\/plugins\/pro-elements\/modules\/lottie\/assets\/animations\/default.json"
+            }
+        };
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="{{ asset('landingpage/sharee') }}/wp-content/plugins/pro-elements/assets/js/frontend.min08e6.js?ver=3.21.2"
         id="elementor-pro-frontend-js"></script>
     <script type="text/javascript"
-        src="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js?ver=4.0.2"
+        src="{{ asset('landingpage/sharee') }}/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js?ver=4.0.2"
         id="elementor-waypoints-js"></script>
-    <script type="text/javascript"
-        src="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/plugins/ui/core.min3f14.js?ver=1.13.2" id="jquery-ui-core-js">
+    <script type="text/javascript" src="{{ asset('landingpage/sharee') }}/wp-content/plugins/ui/core.min3f14.js?ver=1.13.2" id="jquery-ui-core-js">
     </script>
 
     <script type="text/javascript" id="elementor-frontend-js-before">
@@ -2302,7 +2190,7 @@ unset($__errorArgs, $__bag); ?>
                 "taxonomy-filter": true
             },
             "urls": {
-                "assets": "https:\/\/cottonbd.nitebiz.com\/wp-content\/plugins\/elementor\/assets\/"
+                "assets": "https:\/\/baharicolor.online\/wp-content\/plugins\/elementor\/assets\/"
             },
             "swiperClass": "swiper",
             "settings": {
@@ -2329,14 +2217,11 @@ unset($__errorArgs, $__bag); ?>
         };
         /* ]]> */
     </script>
-    <script type="text/javascript"
-        src="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/plugins/elementor/assets/js/frontend.min63aa.js?ver=3.21.5"
+    <script type="text/javascript" src="{{ asset('landingpage/sharee') }}/wp-content/plugins/elementor/assets/js/frontend.min63aa.js?ver=3.21.5"
         id="elementor-frontend-js"></script>
     <script type="text/javascript"
-        src="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/plugins/pro-elements/assets/js/elements-handlers.min08e6.js?ver=3.21.2"
+        src="{{ asset('landingpage/sharee') }}/wp-content/plugins/pro-elements/assets/js/elements-handlers.min08e6.js?ver=3.21.2"
         id="pro-elements-handlers-js"></script>
 
 </body>
-
 </html>
-<?php /**PATH F:\all project\cottonbd\resources\views/landingpage/threepage.blade.php ENDPATH**/ ?>
