@@ -1415,9 +1415,11 @@
                                 <!-- CHECKOUT SHORTCODE -->
                                 <div class="woocommerce">
                                     <div class="woocommerce-notices-wrapper"></div>
-                                    <form action="{{ route('batik.order.store') }}" method="POST">
+                                    <form action="{{ route('landing.order.store') }}" method="POST">
                                         @csrf
                                         <input type="hidden" name="product_id" value="{{ $products->id }}">
+                                        <input type="hidden" name="attribute_id" value="63">
+                                        <input type="hidden" name="inventory_id" value="26">
                                         @if ($products->inventorie_id != null)
                                             @if ($products->rel_to_inventorie)
                                                 @php

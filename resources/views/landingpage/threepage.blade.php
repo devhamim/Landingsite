@@ -1497,9 +1497,11 @@
                                 <!-- CHECKOUT SHORTCODE -->
                                 <div class="woocommerce">
                                     <div class="woocommerce-notices-wrapper"></div>
-                                    <form action="{{ route('putul.order.store') }}" method="POST">
+                                    <form action="{{ route('landing.order.store') }}" method="POST">
                                         @csrf
                                         <input type="hidden" name="product_id" value="{{ $products->id }}">
+                                        <input type="hidden" name="attribute_id" value="74">
+                                        <input type="hidden" name="inventory_id" value="29">
                                         @if ($products->inventorie_id != null)
                                             @if ($products->rel_to_inventorie)
                                                 @php
