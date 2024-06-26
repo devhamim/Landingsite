@@ -21,7 +21,7 @@
                     $orderproducts = App\Models\OrderProduct::where('order_id', $order->order_id)->get();
                 @endphp
                 <div class="tm_invoice tm_style1 tm_type1 tm_invoice_in" style="height: 920px; page-break-after: always;">
-                    <div class="tm_invoice_head tm_top_head tm_mb15 tm_align_center" style="border-bottom: 1px solid #000">
+                    <div class="tm_invoice_head tm_top_head tm_mb15 tm_align_center" style="border-bottom: 1px solid #000; padding-bottom: 10px">
                         <div class="tm_invoice_left">
                             <div class="tm_logo">
                                 <strong>{{ $setting->first()->name }}</strong><br>
