@@ -1547,8 +1547,8 @@
                                                             কালো
                                                         </label>
                                                         <label>
-                                                            <input type="checkbox" name="color[]" value="নীল" class="input-checkbox">
-                                                            নীল
+                                                            <input type="checkbox" name="color[]" value="ব্লু" class="input-checkbox">
+                                                            ব্লু
                                                         </label>
 
                                                     </div>
