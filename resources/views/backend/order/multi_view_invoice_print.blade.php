@@ -33,8 +33,8 @@
                                 <img src="{{ asset('uploads/setting') }}/{{ $setting->first()->white_logo }}" width="350px" alt="Logo">
                             </div>
                         </div>
-                        <div class="tm_shape_bg tm_accent_bg tm_mobile_hide" style=""></div>
-                        <div class="tm_shape_bg tm_accent_bg tm_mobile_hide"></div>
+                        {{-- <div class="tm_shape_bg tm_accent_bg tm_mobile_hide" style=""></div>
+                        <div class="tm_shape_bg tm_accent_bg tm_mobile_hide"></div> --}}
                     </div>
                     <div class="tm_invoice_head tm_mb10">
                         <div class="tm_invoice_left">
