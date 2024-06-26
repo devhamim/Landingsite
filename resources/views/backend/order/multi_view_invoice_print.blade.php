@@ -34,7 +34,7 @@
                             </div>
                         </div>
                         <div class="tm_shape_bg tm_accent_bg tm_mobile_hide" style="width: 130%; z-index: -1"></div>
-                        <div class="tm_shape_bg tm_accent_bg tm_mobile_hide" style="background: #000"></div>
+                        <div class="tm_shape_bg tm_accent_bg tm_mobile_hide" style="background: #fff"></div>
                     </div>
                     <div class="tm_invoice_head tm_mb10">
                         <div class="tm_invoice_left">
