@@ -936,8 +936,6 @@
                                 </figure>
                                 <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
                                         src="<?php echo e(asset('landingpage/sharee/image/3-4.jpg')); ?>" /></figure>
-                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                                        src="<?php echo e(asset('landingpage/sharee/black-image/3.jpg')); ?>" alt="3.jpg" />
                                 </figure>
                                 <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
                                         src="<?php echo e(asset('landingpage/sharee/image/3-6.jpg')); ?>" alt="4.jpg" />
@@ -976,8 +974,6 @@
                                 </figure>
                                 <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
                                         src="<?php echo e(asset('landingpage/sharee/image/3-5.jpg')); ?>" /></figure>
-                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
-                                        src="<?php echo e(asset('landingpage/sharee/black-image/3.jpg')); ?>" alt="3.jpg" />
                                 </figure>
                                 <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
                                         src="<?php echo e(asset('landingpage/sharee/image/3-8.jpg')); ?>" alt="4.jpg" />
@@ -1192,7 +1188,8 @@
                                                 d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
                                             </path>
                                         </svg> </span>
-                                    <span class="elementor-icon-list-text">ফেব্রিক্স পিওর সুতি ।</span>
+                                    <span class="elementor-icon-list-text">পুতুল ড্রেস
+                                        টু পিস >গ্রাউন+ওড়না ।</span>
                                 </li>
                                 <li class="elementor-icon-list-item">
                                     <span class="elementor-icon-list-icon">
@@ -1202,7 +1199,7 @@
                                                 d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
                                             </path>
                                         </svg> </span>
-                                    <span class="elementor-icon-list-text">জামা,ওড়না,পায়জামা থ্রী পিস সেট।</span>
+                                    <span class="elementor-icon-list-text">গের ১২০" লং ৪৮" বডি ফ্রি সাইজ।</span>
                                 </li>
                                 <li class="elementor-icon-list-item">
                                     <span class="elementor-icon-list-icon">
@@ -1212,8 +1209,7 @@
                                                 d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
                                             </path>
                                         </svg> </span>
-                                    <span class="elementor-icon-list-text">লং৪৯" বডি ৬০"পর্যন্ত সাইজ বানিয়ে নিতে
-                                        পারবেন।</span>
+                                    <span class="elementor-icon-list-text">কোমরে ফিতা আছে বড় ছোট করতে পারবেন।</span>
                                 </li>
                                 <li class="elementor-icon-list-item">
                                     <span class="elementor-icon-list-icon">
@@ -1223,7 +1219,7 @@
                                                 d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
                                             </path>
                                         </svg> </span>
-                                    <span class="elementor-icon-list-text">ওড়নার দেওয়া আছে ৫ হাত।</span>
+                                    <span class="elementor-icon-list-text">ডিজিটাল আফসান প্রিন্ট করা।</span>
                                 </li>
                                 <li class="elementor-icon-list-item">
                                     <span class="elementor-icon-list-icon">
@@ -1233,7 +1229,57 @@
                                                 d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
                                             </path>
                                         </svg> </span>
-                                    <span class="elementor-icon-list-text">কালার ১০০% গ্যারান্টি।</span>
+                                    <span class="elementor-icon-list-text">ফেব্রিক্স ইন্ডিয়ান চোষা কাপড়।</span>
+                                </li>
+                                <li class="elementor-icon-list-item">
+                                    <span class="elementor-icon-list-icon">
+                                        <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle"
+                                            viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                                            </path>
+                                        </svg> </span>
+                                    <span class="elementor-icon-list-text">পায়জামার কাপড় থাকবে না।</span>
+                                </li>
+                                <li class="elementor-icon-list-item">
+                                    <span class="elementor-icon-list-icon">
+                                        <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle"
+                                            viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                                            </path>
+                                        </svg> </span>
+                                    <span class="elementor-icon-list-text">ওড়নার কাপড় দেওয়া আছে ৫ হাত।</span>
+                                </li>
+                                <li class="elementor-icon-list-item">
+                                    <span class="elementor-icon-list-icon">
+                                        <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle"
+                                            viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                                            </path>
+                                        </svg> </span>
+                                    <span class="elementor-icon-list-text">ডেলিভারি ম্যানের সামনে দেখে নিয়ে পারবেন।</span>
+                                </li>
+                                <li class="elementor-icon-list-item">
+                                    <span class="elementor-icon-list-icon">
+                                        <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle"
+                                            viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                                            </path>
+                                        </svg> </span>
+                                    <span class="elementor-icon-list-text">কোন অগ্রিম পেমেন্ট করতে হবে না।</span>
+                                </li>
+                                <li class="elementor-icon-list-item">
+                                    <span class="elementor-icon-list-icon">
+                                        <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle"
+                                            viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                                            </path>
+                                        </svg> </span>
+                                    <span class="elementor-icon-list-text">দুই সেট নিলে ডেলিভারি চার্জ।</span>
                                 </li>
                             </ul>
                         </div>
@@ -1267,34 +1313,32 @@
                         <div class="elementor-widget-container">
                             <div class="elementor-image-carousel-wrapper swiper" dir="ltr">
                                 <div class="imageautoplay" aria-live="off">
-                                    <figure class="swiper-slide-inner"><img decoding="async"
-                                            class="swiper-slide-image"
-                                            src="<?php echo e(asset('landingpage/sharee/black-image/1.jpg')); ?>"
-                                            alt="1.jpg" /></figure>
-                                    <figure class="swiper-slide-inner"><img decoding="async"
-                                            class="swiper-slide-image"
-                                            src="<?php echo e(asset('landingpage/sharee/black-image/3.jpg')); ?>"
-                                            alt="1.jpg" /></figure>
-                                    <figure class="swiper-slide-inner"><img decoding="async"
-                                            class="swiper-slide-image"
-                                            src="<?php echo e(asset('landingpage/sharee/black-image/2.jpg')); ?>"
-                                            alt="1.jpg" /></figure>
-                                    <figure class="swiper-slide-inner"><img decoding="async"
-                                            class="swiper-slide-image"
-                                            src="<?php echo e(asset('landingpage/sharee/black-image/4.jpg')); ?>"
-                                            alt="1.jpg" /></figure>
-                                    <figure class="swiper-slide-inner"><img decoding="async"
-                                            class="swiper-slide-image"
-                                            src="<?php echo e(asset('landingpage/sharee/black-image/6.jpg')); ?>"
-                                            alt="1.jpg" /></figure>
-                                    <figure class="swiper-slide-inner"><img decoding="async"
-                                            class="swiper-slide-image"
-                                            src="<?php echo e(asset('landingpage/sharee/black-image/7.jpg')); ?>"
-                                            alt="1.jpg" /></figure>
-                                    <figure class="swiper-slide-inner"><img decoding="async"
-                                            class="swiper-slide-image"
-                                            src="<?php echo e(asset('landingpage/sharee/black-image/5.jpg')); ?>"
-                                            alt="1.jpg" /></figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
+                                            src="<?php echo e(asset('landingpage/sharee/image/3-1.jpg')); ?>" alt="1.jpg" />
+                                    </figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
+                                            src="<?php echo e(asset('landingpage/sharee/image/3-2.jpg')); ?>" /></figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
+                                            src="<?php echo e(asset('landingpage/sharee/black-image/3.jpg')); ?>" alt="3.jpg" />
+                                    </figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
+                                            src="<?php echo e(asset('landingpage/sharee/image/3-3.jpg')); ?>" alt="4.jpg" />
+                                    </figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
+                                            src="<?php echo e(asset('landingpage/sharee/image/3-4.jpg')); ?>" alt="4.jpg" />
+                                    </figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
+                                            src="<?php echo e(asset('landingpage/sharee/image/3-5.jpg')); ?>" alt="4.jpg" />
+                                    </figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
+                                            src="<?php echo e(asset('landingpage/sharee/image/3-6.jpg')); ?>" alt="4.jpg" />
+                                    </figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
+                                            src="<?php echo e(asset('landingpage/sharee/image/3-7.jpg')); ?>" alt="4.jpg" />
+                                    </figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image"
+                                            src="<?php echo e(asset('landingpage/sharee/image/3-8.jpg')); ?>" alt="4.jpg" />
+                                    </figure>
 
                                 </div>
                                 <div class="swiper-pagination"></div>
@@ -1391,7 +1435,7 @@
                                     প্রিন্ট করা আনস্টিজ ৩ পিসের ১ সেট পূর্বের মূল্য </span>
                                 <span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper">
                                     <span
-                                        class="elementor-headline-dynamic-text elementor-headline-text-active">১৮০০/-</span>
+                                        class="elementor-headline-dynamic-text elementor-headline-text-active">১৫৫০/-</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150"
                                         preserveAspectRatio="none">
                                         <path d="M497.4,23.9C301.6,40,155.9,80.6,4,144.4"></path>
@@ -1411,7 +1455,7 @@
                                     আজকের অফার মূল্য মাত্র</span>
                                 <span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper">
                                     <span
-                                        class="elementor-headline-dynamic-text elementor-headline-text-active">১৩৫০/-</span>
+                                        class="elementor-headline-dynamic-text elementor-headline-text-active">১০৮০/-</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150"
                                         preserveAspectRatio="none">
                                         <path
@@ -1444,7 +1488,7 @@
                                 <!-- CHECKOUT SHORTCODE -->
                                 <div class="woocommerce">
                                     <div class="woocommerce-notices-wrapper"></div>
-                                    <form action="<?php echo e(route('black.order.store')); ?>" method="POST">
+                                    <form action="<?php echo e(route('putul.order.store')); ?>" method="POST">
                                         <?php echo csrf_field(); ?>
                                         <input type="hidden" name="product_id" value="<?php echo e($products->id); ?>">
                                         <?php if($products->inventorie_id != null): ?>
@@ -1620,9 +1664,14 @@
                                                     </style>
                                                 <div class="woocommerce-input-wrapper" style="display: inline-flex">
                                                     <label>
-                                                        <input type="checkbox" name="color[]" checked value="কালো"
+                                                        <input type="checkbox" name="color[]" checked value="সাদা"
                                                             class="input-checkbox">
-                                                        কালো
+                                                            সাদা
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" name="color[]" value="আকাশী"
+                                                            class="input-checkbox">
+                                                        আকাশী
                                                     </label>
                                                     <?php $__errorArgs = ['color'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');

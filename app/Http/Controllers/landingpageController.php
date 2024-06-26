@@ -304,68 +304,70 @@ class landingpageController extends Controller
 
     //putul_dress
     function putul_dress(){
-        $products = Product::find(32);
+        $products = Product::find(42);
         return view('landingpage.threepage',[
             'products'=>$products,
         ]);
     }
     // putul_order_store
     function putul_order_store(Request $request){
-            $request->validate([
-                'name' => 'required',
-                'mobile' => 'required|min:11|max:11',
-                'address' => 'required',
-                'color' => 'required|array|min:1',
-                'color.*' => 'string',
-            ]);
+        $request->validate([
+            'name' => 'required',
+            'mobile' => 'required|min:11|max:11',
+            'address' => 'required',
+            'color' => 'required|array|min:1',
+            'color.*' => 'string',
+        ]);
 
-            $lastOrder = Order::orderBy('id', 'desc')->first();
-                if ($lastOrder) {
-                    $lastOrderId = $lastOrder->order_id;
-                    $lastOrderNumber = intval(substr($lastOrderId, 4));
-                } else {
-                    $lastOrderNumber = 0;
-                }
-                $newOrderNumber = $lastOrderNumber + 1;
+        $lastOrder = Order::orderBy('id', 'desc')->first();
+        if ($lastOrder) {
+            $lastOrderId = $lastOrder->order_id;
+            $lastOrderNumber = intval(substr($lastOrderId, 4));
+        } else {
+            $lastOrderNumber = 0;
+        }
+        $newOrderNumber = $lastOrderNumber + 1;
+        $order_id = 'NIT-' . str_pad($newOrderNumber, 8, '0', STR_PAD_LEFT);
 
-                $order_id = 'NIT-' . str_pad($newOrderNumber, 8, '0', STR_PAD_LEFT);
+        $district = ($request->shipping_cost == 60) ? 'Dhaka' : 'Outside Dhaka';
 
-                if($request->shipping_cost == 60){
-                    $district = 'Dhaka';
-                }
-                if($request->shipping_cost == 120){
-                    $district = 'Outside Dhaka';
-                }
-                Billingdetails::insert([
-                    'order_id' => $order_id,
-                    'name' => $request->name,
-                    'mobile' => $request->mobile,
-                    'address' => $request->address,
-                    'district' => $district,
-                    'note' => $request->note,
-                    'created_at' => Carbon::now(),
-                ]);
-                if($request->radio_btn == 1){
-                    $price = 1080;
-                    $product_name = 'পুতুল ড্রেস টু পিস >গ্রাউন+ওড়না।';
-                }
-                $subtotal = $price*$request->quantity;
-                Order::insert([
-                    'order_id' => $order_id,
-                    'sub_total' => $subtotal,
-                    'delivery_charge' => $request->shipping_cost,
-                    'total' => $subtotal + $request->shipping_cost,
-                    'color' => implode(',', $request->color),
-                    'landing' => 1,
-                    'created_at' => Carbon::now(),
-                ]);
-                OrderProduct::create([
-                    'order_id' => $order_id,
-                    'product_id' => $product_name,
-                    'quantity' => $request->quantity,
-                    'price' => $price,
-                    'created_at' => Carbon::now(),
-                ]);
-                return back()->with("success","Order has been placed successfully");
+        Billingdetails::insert([
+            'order_id' => $order_id,
+            'name' => $request->name,
+            'mobile' => $request->mobile,
+            'address' => $request->address,
+            'district' => $district,
+            'note' => $request->note,
+            'created_at' => Carbon::now(),
+        ]);
+
+        if($request->radio_btn == 1){
+            $price = $request->price;
+            // $product_name = 'প্রিমিয়াম - টু পিচ সেট জামা + ওড়না';
+        }
+
+        $subtotal = $price * $request->quantity;
+
+        Order::insert([
+            'order_id' => $order_id,
+            'sub_total' => $subtotal,
+            'delivery_charge' => $request->shipping_cost,
+            'total' => $subtotal + $request->shipping_cost,
+            'color' => implode(',', $request->color),
+            'landing' => 1,
+            'created_at' => Carbon::now(),
+        ]);
+
+        OrderProduct::create([
+            'order_id' => $order_id,
+            'product_id' => $request->product_id,
+            'quantity' => $request->quantity,
+            'price' => $price,
+            'attribute_id' => 74,
+            'inventory_id' => 29,
+            'created_at' => Carbon::now(),
+        ]);
+
+        return redirect()->route('order.success')->with('order_id', $order_id);
     }
 }
