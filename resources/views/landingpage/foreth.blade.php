@@ -1404,7 +1404,7 @@
                                     }
                                 </style>
                             <h3 class="elementor-headline e-animated">
-                                <span class="elementor-headline-plain-text elementor-headline-text-wrapper">ডিজিটাল আফসান প্রিন্ট করা থ্রি পিস এর রেগুলার প্রাইস
+                                <span style="font-family: 'Hind Siliguri', Sans-serif" class="elementor-headline-plain-text elementor-headline-text-wrapper">ডিজিটাল আফসান প্রিন্ট করা থ্রি পিস এর রেগুলার প্রাইস
                                      </span>
                                 <span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper">
                                     <span
@@ -1424,7 +1424,7 @@
                         data-widget_type="animated-headline.default">
                         <div class="elementor-widget-container">
                             <h3 class="elementor-headline e-animated">
-                                <span class="elementor-headline-plain-text elementor-headline-text-wrapper">আজকের অফার প্রাইজ মাত্র</span>
+                                <span style="font-family: 'Hind Siliguri', Sans-serif" class="elementor-headline-plain-text elementor-headline-text-wrapper">আজকের অফার প্রাইজ মাত্র</span>
                                 <span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper">
                                     <span
                                         class="elementor-headline-dynamic-text elementor-headline-text-active">১৩৫০/-</span>
@@ -1444,7 +1444,7 @@
                         data-widget_type="animated-headline.default">
                         <div class="elementor-widget-container">
                             <h3 class="elementor-headline e-animated">
-                                <span class="elementor-headline-plain-text elementor-headline-text-wrapper">দুই সেট নিলে সারা দেশে সম্পূর্ণ ডেলিভারি চার্জ ফ্রি</span>
+                                <span style="font-family: 'Hind Siliguri', Sans-serif" class="elementor-headline-plain-text elementor-headline-text-wrapper">দুই সেট নিলে সারা দেশে সম্পূর্ণ ডেলিভারি চার্জ ফ্রি</span>
                             </h3>
                         </div>
                     </div>

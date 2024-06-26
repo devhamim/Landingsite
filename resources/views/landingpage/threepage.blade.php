@@ -1440,7 +1440,7 @@
                                     }
                                 </style>
                             <h3 class="elementor-headline e-animated">
-                                <span class="elementor-headline-plain-text elementor-headline-text-wrapper">সম্পূর্ণ আফসান
+                                <span style="font-family: 'Hind Siliguri', Sans-serif" class="elementor-headline-plain-text elementor-headline-text-wrapper">সম্পূর্ণ আফসান
                                     প্রিন্ট করা আনস্টিজ ৩ পিসের ১ সেট পূর্বের মূল্য </span>
                                 <span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper">
                                     <span
@@ -1460,7 +1460,7 @@
                         data-widget_type="animated-headline.default">
                         <div class="elementor-widget-container">
                             <h3 class="elementor-headline e-animated">
-                                <span class="elementor-headline-plain-text elementor-headline-text-wrapper">৩ পিসের ১ সেট
+                                <span style="font-family: 'Hind Siliguri', Sans-serif" class="elementor-headline-plain-text elementor-headline-text-wrapper">৩ পিসের ১ সেট
                                     আজকের অফার মূল্য মাত্র</span>
                                 <span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper">
                                     <span
