@@ -76,6 +76,7 @@ Route::post('/landing/order/store', [landingpageController::class, 'landing_orde
 Route::get('/black/dress', [landingpageController::class, 'black_dress'])->name('black.dress');
 Route::get('/batik/dress', [landingpageController::class, 'batik_dress'])->name('batik.dress');
 Route::get('/putul/dress', [landingpageController::class, 'putul_dress'])->name('putul.dress');
+Route::get('/premium/dress', [landingpageController::class, 'premium_dress'])->name('premium.dress');
 
 
 // visitor counter

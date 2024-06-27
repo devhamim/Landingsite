@@ -22,6 +22,14 @@ class landingpageController extends Controller
         ]);
     }
 
+    //premium_dress
+    function premium_dress(){
+        $products = Product::find(44);
+        return view('landingpage.six',[
+            'products'=>$products,
+        ]);
+    }
+
     // landing_order_store
     function landing_order_store(Request $request){
         $request->validate([
