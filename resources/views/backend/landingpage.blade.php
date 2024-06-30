@@ -49,6 +49,10 @@
                                     <td>6</td>
                                     <td><a href="https://cottonbd.nitebiz.com/premium/dress">https://cottonbd.nitebiz.com/premium/dress</a></td>
                                 </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td><a href="https://cottonbd.nitebiz.com/fotula">https://cottonbd.nitebiz.com/fotula</a></td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>

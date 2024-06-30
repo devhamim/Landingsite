@@ -913,11 +913,12 @@
                         </style>
                         <div class="elementor-image-carousel-wrapper swiper" dir="ltr">
                             <div class="imageautoplay" aria-live="off">
-                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/image/4.jpg') }}" alt="1.jpg" /></figure>
-                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/image/2.jpg') }}" /></figure>
-                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/image/3.jpg') }}" alt="3.jpg" /></figure>
-                                {{-- <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/image/1.jpg') }}" alt="4.jpg" /></figure> --}}
-
+                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/fotula/6.jpg') }}" alt="6.jpg" /></figure>
+                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/fotula/1.jpg') }}" alt="6.jpg" /></figure>
+                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/fotula/7.jpg') }}" alt="6.jpg" /></figure>
+                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/fotula/2.jpg') }}" alt="6.jpg" /></figure>
+                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/fotula/8.jpg') }}" alt="6.jpg" /></figure>
+                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/fotula/3.jpg') }}" alt="6.jpg" /></figure>
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
@@ -943,11 +944,12 @@
                     <div class="elementor-widget-container">
                         <div class="elementor-image-carousel-wrapper swiper">
                             <div class="imageautoplay">
-                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/image/11.jpg') }}" alt="11.jpg" /></figure>
-                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/image/22.jpg') }}" /></figure>
-                                {{-- <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/image/33.jpg') }}" alt="33.jpg" /></figure> --}}
-                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/image/44.jpg') }}" alt="44.jpg" /></figure>
-
+                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/fotula/4.jpg') }}" alt="11.jpg" /></figure>
+                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/fotula/9.jpg') }}" alt="11.jpg" /></figure>
+                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/fotula/5.jpg') }}" alt="11.jpg" /></figure>
+                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/fotula/10.jpg') }}" alt="11.jpg" /></figure>
+                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/fotula/11.jpg') }}" alt="11.jpg" /></figure>
+                                <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/fotula/12.jpg') }}" alt="11.jpg" /></figure>
                             </div>
 
                             <div class="swiper-pagination"></div>
@@ -1238,14 +1240,18 @@
                         <div class="elementor-widget-container">
                             <div class="elementor-image-carousel-wrapper swiper" dir="ltr">
                                 <div class="imageautoplay" aria-live="off">
-                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/image/22.jpg') }}" alt="22.jpg" /></figure>
-                                    {{-- <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/image/33.jpg') }}" alt="33.jpg" /></figure> --}}
-                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/image/2.jpg') }}" /></figure>
-                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/image/44.jpg') }}" /></figure>
-                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/image/4.jpg') }}" alt="1.jpg" /></figure>
-                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/image/3.jpg') }}" alt="3.jpg" /></figure>
-                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/image/11.jpg') }}" alt="11.jpg" /></figure>
-                                    {{-- <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/image/1.jpg') }}" alt="4.jpg" /></figure> --}}
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/fotula/6.jpg') }}" alt="22.jpg" /></figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/fotula/1.jpg') }}" alt="22.jpg" /></figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/fotula/7.jpg') }}" alt="22.jpg" /></figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/fotula/2.jpg') }}" alt="22.jpg" /></figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/fotula/3.jpg') }}" alt="22.jpg" /></figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/fotula/8.jpg') }}" alt="22.jpg" /></figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/fotula/4.jpg') }}" alt="22.jpg" /></figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/fotula/9.jpg') }}" alt="22.jpg" /></figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/fotula/5.jpg') }}" alt="22.jpg" /></figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/fotula/10.jpg') }}" alt="22.jpg" /></figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/fotula/11.jpg') }}" alt="22.jpg" /></figure>
+                                    <figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="{{ asset('landingpage/sharee/fotula/12.jpg') }}" alt="22.jpg" /></figure>
                                 </div>
                                 <div class="swiper-pagination"></div>
                             </div>
