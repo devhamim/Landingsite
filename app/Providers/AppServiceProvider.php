@@ -155,6 +155,14 @@ class AppServiceProvider extends ServiceProvider
         View::composer('landingpage.six', function ($view){
             $view->with('markatingsetting', markatingsetting::all());
         });
+        // saven landing page
+        View::composer('landingpage.saven', function ($view){
+            $view->with('setting', Setting::all());
+        });
+        // saven landing page
+        View::composer('landingpage.saven', function ($view){
+            $view->with('markatingsetting', markatingsetting::all());
+        });
 
     }
 }

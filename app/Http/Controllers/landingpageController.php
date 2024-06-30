@@ -114,6 +114,14 @@ class landingpageController extends Controller
         ]);
     }
 
+    //fotula
+    function fotula(){
+        $products = Product::find(45);
+        return view('landingpage.saven',[
+            'products'=>$products,
+        ]);
+    }
+
     //cloth
     function sharee(){
         return view('landingpage.secondpage');
