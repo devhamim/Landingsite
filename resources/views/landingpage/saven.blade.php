@@ -1551,16 +1551,12 @@
                                                             লাল
                                                         </label> --}}
                                                         <label>
-                                                            <input type="checkbox" name="color[]" value="কালো" checked class="input-checkbox">
-                                                            কালো
+                                                            <input type="checkbox" name="color[]" value="লাল" checked class="input-checkbox">
+                                                            লাল
                                                         </label>
                                                         <label>
-                                                            <input type="checkbox" name="color[]" value="অ্যাশ" class="input-checkbox">
-                                                            অ্যাশ
-                                                        </label>
-                                                        <label>
-                                                            <input type="checkbox" name="color[]" value="টিয়া" class="input-checkbox">
-                                                            টিয়া
+                                                            <input type="checkbox" name="color[]" value="কমলা" class="input-checkbox">
+                                                            কমলা
                                                         </label>
                                                     </div>
                                                 </p>
