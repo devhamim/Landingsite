@@ -1156,7 +1156,7 @@
                                                 d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
                                             </path>
                                         </svg> </span>
-                                    <span class="elementor-icon-list-text">মদীনা প্রিন্ট করা কালার ১০০% গ্যারান্টি।</span>
+                                    <span class="elementor-icon-list-text">লং ৪৬" > ফেব্রিক্স পিওর সুতি।</span>
                                 </li>
                                 <li class="elementor-icon-list-item">
                                     <span class="elementor-icon-list-icon">
@@ -1166,7 +1166,7 @@
                                                 d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
                                             </path>
                                         </svg> </span>
-                                    <span class="elementor-icon-list-text">লং ৪৭"+ ফেব্রিক্স ১০০%কটন।</span>
+                                    <span class="elementor-icon-list-text">জামা ওড়না টু পিস সেট।</span>
                                 </li>
                                 <li class="elementor-icon-list-item">
                                     <span class="elementor-icon-list-icon">
@@ -1176,7 +1176,7 @@
                                                 d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
                                             </path>
                                         </svg> </span>
-                                    <span class="elementor-icon-list-text">জামা+ওরনা টু পিস।</span>
+                                    <span class="elementor-icon-list-text">সালোয়ারের কাপড় থাকবে না।</span>
                                 </li>
                                 <li class="elementor-icon-list-item">
                                     <span class="elementor-icon-list-icon">
@@ -1186,17 +1186,7 @@
                                                 d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
                                             </path>
                                         </svg> </span>
-                                    <span class="elementor-icon-list-text">পায়জামার কাপড় থাকবে না।</span>
-                                </li>
-                                <li class="elementor-icon-list-item">
-                                    <span class="elementor-icon-list-icon">
-                                        <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle"
-                                            viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
-                                            </path>
-                                        </svg> </span>
-                                    <span class="elementor-icon-list-text">বডি ৬০"পর্যন্ত বানাতে পারবেন।</span>
+                                    <span class="elementor-icon-list-text">বডি ৫৮" পর্যন্ত বানাতে পারবে।</span>
                                 </li>
                                 <li class="elementor-icon-list-item">
                                     <span class="elementor-icon-list-icon">
@@ -1207,6 +1197,16 @@
                                             </path>
                                         </svg> </span>
                                     <span class="elementor-icon-list-text">ওড়নার কাপড় দেওয়া আছে ৫ হাত।</span>
+                                </li>
+                                <li class="elementor-icon-list-item">
+                                    <span class="elementor-icon-list-icon">
+                                        <svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle"
+                                            viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                                            </path>
+                                        </svg> </span>
+                                    <span class="elementor-icon-list-text">কালার ১০০% গ্যারান্টি।</span>
                                 </li>
                             </ul>
                         </div>
@@ -1551,12 +1551,12 @@
                                                             লাল
                                                         </label> --}}
                                                         <label>
-                                                            <input type="checkbox" name="color[]" value="লাল" checked class="input-checkbox">
-                                                            লাল
+                                                            <input type="checkbox" name="color[]" value="মেরুর" checked class="input-checkbox">
+                                                            মেরুর
                                                         </label>
                                                         <label>
-                                                            <input type="checkbox" name="color[]" value="কমলা" class="input-checkbox">
-                                                            কমলা
+                                                            <input type="checkbox" name="color[]" value="মাস্টার" class="input-checkbox">
+                                                            মাস্টার
                                                         </label>
                                                     </div>
                                                 </p>
