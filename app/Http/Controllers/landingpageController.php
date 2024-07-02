@@ -123,7 +123,7 @@ class landingpageController extends Controller
     }
     //premium_tiya
     function premium_tiya(){
-        $products = Product::find(31);
+        $products = Product::find(52);
         return view('landingpage.eight',[
             'products'=>$products,
         ]);

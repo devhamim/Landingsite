@@ -1414,8 +1414,8 @@
                                     <form action="{{ route('landing.order.store') }}" method="POST">
                                         @csrf
                                         <input type="hidden" name="product_id" value="{{ $products->id }}">
-                                        <input type="hidden" name="attribute_id" value="61">
-                                        <input type="hidden" name="inventory_id" value="23">
+                                        <input type="hidden" name="attribute_id" value="81">
+                                        <input type="hidden" name="inventory_id" value="35">
                                         @if ($products->inventorie_id != null)
                                             @if ($products->rel_to_inventorie)
                                                 @php
