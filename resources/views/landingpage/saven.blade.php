@@ -1822,43 +1822,28 @@
 <script src="{{ asset('landingpage/sharee/slick.min.js') }}"></script>
 
 <script>
-    // Function to start the countdown
     function startCountdown() {
         var countdownElement = document.getElementById('simple_timer');
-
-        // Get the current time
         var now = new Date().getTime();
-
-        // Set the target time to 24 hours from now
         var targetTime = now + (24 * 60 * 60 * 1000);
-
-        // Update the countdown every second
         var x = setInterval(function() {
-            // Get current time
             var now = new Date().getTime();
-
-            // Find the distance between now and the target time
             var distance = targetTime - now;
-
-            // Calculate hours, minutes and seconds
             var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            // Display the result in the elements
             countdownElement.querySelector('.elementor-countdown-hours').innerHTML = hours;
             countdownElement.querySelector('.elementor-countdown-minutes').innerHTML = minutes;
             countdownElement.querySelector('.elementor-countdown-seconds').innerHTML = seconds;
 
-            // If the countdown is over, reset it
             if (distance < 0) {
-                clearInterval(x); // Stop the countdown interval
-                startCountdown(); // Restart the countdown for the next 24 hours
+                clearInterval(x);
+                startCountdown();
             }
-        }, 1000); // Update every second
+        }, 1000);
     }
 
-    // Start the countdown when the page loads
     document.addEventListener('DOMContentLoaded', function() {
         startCountdown();
     });

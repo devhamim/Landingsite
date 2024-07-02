@@ -78,6 +78,7 @@ Route::get('/batik/dress', [landingpageController::class, 'batik_dress'])->name(
 Route::get('/putul/dress', [landingpageController::class, 'putul_dress'])->name('putul.dress');
 Route::get('/premium/dress', [landingpageController::class, 'premium_dress'])->name('premium.dress');
 Route::get('/fotula', [landingpageController::class, 'fotula'])->name('fotula');
+Route::get('/premium/tiya', [landingpageController::class, 'premium_tiya'])->name('premium.tiya');
 
 
 // visitor counter

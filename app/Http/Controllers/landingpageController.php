@@ -121,6 +121,13 @@ class landingpageController extends Controller
             'products'=>$products,
         ]);
     }
+    //premium_tiya
+    function premium_tiya(){
+        $products = Product::find(31);
+        return view('landingpage.eight',[
+            'products'=>$products,
+        ]);
+    }
 
     //cloth
     function sharee(){
