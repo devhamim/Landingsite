@@ -53,6 +53,10 @@
                                     <td>7</td>
                                     <td><a href="https://cottonbd.nitebiz.com/fotula">https://cottonbd.nitebiz.com/fotula</a></td>
                                 </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td><a href="https://cottonbd.nitebiz.com/premium/tiya">https://cottonbd.nitebiz.com/premium/tiya</a></td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
