@@ -234,7 +234,7 @@
                                                 <div class="badge badge-danger">Cancel</div>
                                             @endif
                                         </td>
-                                        <td>{{ $order->created_at->format('d-m-Y') }}</td>
+                                        <td>{{ $order->created_at->format('d-m-Y H:i:s') }}</td>
                                         <td>
                                             <div class="btn-group mb-1">
                                                 <button type="button"

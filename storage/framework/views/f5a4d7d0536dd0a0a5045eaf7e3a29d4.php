@@ -1407,7 +1407,7 @@
                                     }
                                 </style>
                             <h3 class="elementor-headline e-animated">
-                                <span class="elementor-headline-plain-text elementor-headline-text-wrapper">ডিজিটাল আফসান প্রিন্ট করা থ্রি পিস এর রেগুলার প্রাইস
+                                <span style="font-family: 'Hind Siliguri', Sans-serif" class="elementor-headline-plain-text elementor-headline-text-wrapper">ডিজিটাল আফসান প্রিন্ট করা থ্রি পিস এর রেগুলার প্রাইস
                                      </span>
                                 <span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper">
                                     <span
@@ -1427,7 +1427,7 @@
                         data-widget_type="animated-headline.default">
                         <div class="elementor-widget-container">
                             <h3 class="elementor-headline e-animated">
-                                <span class="elementor-headline-plain-text elementor-headline-text-wrapper">আজকের অফার প্রাইজ মাত্র</span>
+                                <span style="font-family: 'Hind Siliguri', Sans-serif" class="elementor-headline-plain-text elementor-headline-text-wrapper">আজকের অফার প্রাইজ মাত্র</span>
                                 <span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper">
                                     <span
                                         class="elementor-headline-dynamic-text elementor-headline-text-active">১৩৫০/-</span>
@@ -1447,7 +1447,7 @@
                         data-widget_type="animated-headline.default">
                         <div class="elementor-widget-container">
                             <h3 class="elementor-headline e-animated">
-                                <span class="elementor-headline-plain-text elementor-headline-text-wrapper">দুই সেট নিলে সারা দেশে সম্পূর্ণ ডেলিভারি চার্জ ফ্রি</span>
+                                <span style="font-family: 'Hind Siliguri', Sans-serif" class="elementor-headline-plain-text elementor-headline-text-wrapper">দুই সেট নিলে সারা দেশে সম্পূর্ণ ডেলিভারি চার্জ ফ্রি</span>
                             </h3>
                         </div>
                     </div>
@@ -1473,9 +1473,11 @@
                                 <!-- CHECKOUT SHORTCODE -->
                                 <div class="woocommerce">
                                     <div class="woocommerce-notices-wrapper"></div>
-                                    <form action="<?php echo e(route('black.order.store')); ?>" method="POST">
+                                    <form action="<?php echo e(route('landing.order.store')); ?>" method="POST">
                                         <?php echo csrf_field(); ?>
                                         <input type="hidden" name="product_id" value="<?php echo e($products->id); ?>">
+                                        <input type="hidden" name="attribute_id" value="62">
+                                        <input type="hidden" name="inventory_id" value="24">
                                         <?php if($products->inventorie_id != null): ?>
                                             <?php if($products->rel_to_inventorie): ?>
                                                 <?php
@@ -2073,6 +2075,8 @@ unset($__errorArgs, $__bag); ?>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="<?php echo e(asset('landingpage/sharee/slick.min.js')); ?>"></script>
 
     <script>
@@ -2155,6 +2159,17 @@ unset($__errorArgs, $__bag); ?>
         });
     </script>
     
+        <?php if(session('error')): ?>
+            {
+            <script>
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "আপনি ইতি মধ্যে অর্ডার করেছেন।  খুব অল্প সময়ের মধ্যে আমাদের প্রতিনিধি ফোন করে আপনার অর্ডার টি কনফার্ম করবেন। এর পরে অর্ডার করতে চাইলে ১০ মিনিট পরে আবার অর্ডার করতে পারবেন।",
+                });
+            </script>
+            }
+        <?php endif; ?>
     
 
     <script type="text/javascript" id="woo-variation-swatches-js-extra">

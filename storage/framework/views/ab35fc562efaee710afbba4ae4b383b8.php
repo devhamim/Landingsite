@@ -1418,9 +1418,11 @@
                                 <!-- CHECKOUT SHORTCODE -->
                                 <div class="woocommerce">
                                     <div class="woocommerce-notices-wrapper"></div>
-                                    <form action="<?php echo e(route('batik.order.store')); ?>" method="POST">
+                                    <form action="<?php echo e(route('landing.order.store')); ?>" method="POST">
                                         <?php echo csrf_field(); ?>
                                         <input type="hidden" name="product_id" value="<?php echo e($products->id); ?>">
+                                        <input type="hidden" name="attribute_id" value="63">
+                                        <input type="hidden" name="inventory_id" value="26">
                                         <?php if($products->inventorie_id != null): ?>
                                             <?php if($products->rel_to_inventorie): ?>
                                                 <?php
@@ -1551,8 +1553,8 @@
                                                             কালো
                                                         </label>
                                                         <label>
-                                                            <input type="checkbox" name="color[]" value="নীল" class="input-checkbox">
-                                                            নীল
+                                                            <input type="checkbox" name="color[]" value="ব্লু" class="input-checkbox">
+                                                            ব্লু
                                                         </label>
 
                                                     </div>

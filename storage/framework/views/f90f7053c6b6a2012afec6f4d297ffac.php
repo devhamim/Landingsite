@@ -1125,7 +1125,7 @@
                                 }
                             </style>
                             <div class="elementor-wrapper elementor-open-inline">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/VZW2Y1gHJiw?si=pzk1cOYJC0Q4VPuG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/3FRV5dPs7EE?si=EfX3HXr-arKrSxqI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
@@ -1417,8 +1417,8 @@
                                     <form action="<?php echo e(route('landing.order.store')); ?>" method="POST">
                                         <?php echo csrf_field(); ?>
                                         <input type="hidden" name="product_id" value="<?php echo e($products->id); ?>">
-                                        <input type="hidden" name="attribute_id" value="61">
-                                        <input type="hidden" name="inventory_id" value="23">
+                                        <input type="hidden" name="attribute_id" value="81">
+                                        <input type="hidden" name="inventory_id" value="35">
                                         <?php if($products->inventorie_id != null): ?>
                                             <?php if($products->rel_to_inventorie): ?>
                                                 <?php

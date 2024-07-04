@@ -40,6 +40,14 @@ class landingpageController extends Controller
             'color.*' => 'string',
         ]);
 
+
+        $tenMinutesAgo = Carbon::now()->subMinutes(10);
+        if(OrderProduct::where('product_id', $request->product_id)->where('created_at', '>=',$tenMinutesAgo)->exists()){
+            if(Billingdetails::where('mobile', $request->mobile)->where('created_at', '>=', $tenMinutesAgo)->exists()){
+                return back()->with('error', 'You have already placed an order');
+            }
+        }
+
         $lastOrder = Order::orderBy('id', 'desc')->first();
         if ($lastOrder) {
             $lastOrderId = $lastOrder->order_id;
