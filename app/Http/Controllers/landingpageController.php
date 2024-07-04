@@ -72,7 +72,6 @@ class landingpageController extends Controller
 
         if($request->radio_btn == 1){
             $price = $request->price;
-            // $product_name = 'প্রিমিয়াম - টু পিচ সেট জামা + ওড়না';
         }
 
         $subtotal = $price * $request->quantity;
@@ -83,7 +82,7 @@ class landingpageController extends Controller
             'delivery_charge' => $request->shipping_cost,
             'total' => $subtotal + $request->shipping_cost,
             'color' => implode(',', $request->color),
-            'landing' => 1,
+            'landing' => 2,
             'created_at' => Carbon::now(),
         ]);
 

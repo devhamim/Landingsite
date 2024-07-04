@@ -478,7 +478,6 @@
     <script src='<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/kc8sjhif/5ukdy.js'
         type="text/javascript"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <style>
         img#wpstats {
             display: none
@@ -2066,7 +2065,170 @@ unset($__errorArgs, $__bag); ?>
             </div>
         </div>
     </div>
+    <style>
+        body {
+            background-color: #eee
+            }
 
+            .chat-btn {
+                position: fixed;
+                right: 14px;
+                bottom: 30px;
+                cursor: pointer
+            }
+
+            .chat-btn .close {
+                display: none
+            }
+
+            .chat-btn i {
+                transition: all 0.9s ease
+            }
+
+            #check:checked~.chat-btn i {
+                display: block;
+                pointer-events: auto;
+                transform: rotate(180deg)
+            }
+
+            #check:checked~.chat-btn .comment {
+                display: none
+            }
+
+            .chat-btn i {
+                font-size: 22px;
+                color: #fff !important
+            }
+
+            .chat-btn {
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50px;
+                background-color: blue;
+                color: #fff;
+                font-size: 22px;
+                border: none
+            }
+
+            .wrapper {
+                position: fixed;
+                right: 20px;
+                bottom: 100px;
+                width: 300px;
+                background-color: #fff;
+                border-radius: 5px;
+                opacity: 0;
+                transition: all 0.4s
+            }
+
+            #check:checked~.wrapper {
+                opacity: 1
+            }
+
+            .header {
+                padding: 13px;
+                background-color: blue;
+                border-radius: 5px 5px 0px 0px;
+                margin-bottom: 10px;
+                color: #fff
+            }
+
+            .chat-form {
+                padding: 15px
+            }
+
+            .chat-form input,
+            textarea,
+            button {
+                margin-bottom: 10px
+            }
+
+            .chat-form textarea {
+                resize: none
+            }
+
+            .form-control:focus,
+            .btn:focus {
+                box-shadow: none
+            }
+
+            .btn,
+            .btn:focus,
+            .btn:hover {
+                background-color: blue;
+                border: blue
+            }
+
+            #check {
+                display: none !important
+            }
+            .popup_image{
+                text-align: center;
+                padding: 20px 0;
+            }
+            .popup_btns li a{
+                width: 100%;
+
+            }
+    </style>
+    <div class="popupbtn">
+        <input type="checkbox" id="check">
+        <label class="chat-btn text-center" style="line-height: 50px" for="check">
+            <img style="width: 35px;" src="<?php echo e(asset('landingpage/images/messeng.png')); ?>">
+        </label>
+        <div class="wrapper">
+            <div class="text-center popuptext p-2">
+                <strong>কথা বলুন</strong><br>
+                <strong>কটন বাংলাদেশ - এর সাথে</strong>
+            </div>
+            <div class="chat-form">
+                <div class="popup_image">
+                    <img src="<?php echo e(asset('landingpage/images/customer.svg')); ?>" alt="">
+                </div>
+                <ul class="popup_btns" style="padding: 0; margin: 0; list-style: none;">
+                    <li>
+                        <?php if($setting->first()->number_two != null): ?>
+                            <a class="elementor-button elementor-button-link elementor-size-sm " href="tel: <?php echo e($setting->first()->number_two); ?>" style="background: #4822d4; padding: 7px 24px;">
+                                <span class="elementor-button-content-wrapper">
+                                    <span class="elementor-button-icon elementor-align-icon-left">
+                                        <img style="width: 22px" src="<?php echo e(asset('landingpage/images/phone-call.png')); ?>" alt="">
+                                        <span class="elementor-button-text">Call</span>
+                                    </span>
+                            </a>
+                        <?php endif; ?>
+                    </li>
+                    <li>
+                        <?php if($setting->first()->number_two != null): ?>
+                            <a class="elementor-button elementor-button-link elementor-size-sm"
+                                href="https://api.whatsapp.com/send?phone=88<?php echo e($setting->first()->number_two); ?>&text=Hello%20there,%20I%20found%20you%20on%20website!%20i%20would%20like%20to%20talk%20about%20your%20Product."
+                                target="_blank" style="background: #33D422; padding: 7px 24px;">
+                                <span class="elementor-button-content-wrapper">
+                                    <span class="elementor-button-icon elementor-align-icon-left">
+                                        <img style="width: 22px" src="<?php echo e(asset('landingpage/images/whatsapp.png')); ?>">
+                                        <span class="elementor-button-text">Whatsapp</span>
+                                    </span>
+                            </a>
+                        <?php endif; ?>
+                    </li>
+
+                    <li>
+                        <a class="elementor-button elementor-button-link elementor-size-sm "
+                                href="https://m.me/277178215488336?ref=Hello%20there,%20I%20found%20you%20on%20website!%20I%20would%20like%20to%20talk%20about%20your%20service%20in%20details.%20Product:%20"
+                                target="_blank" style="background: #22d4c5; padding: 7px 24px;">
+                            <span class="elementor-button-content-wrapper">
+                                <span class="elementor-button-icon elementor-align-icon-left">
+                                    <img style="width: 22px" src="<?php echo e(asset('landingpage/images/messenger.png')); ?>" alt="">
+                                    <span class="elementor-button-text">Messanger</span>
+                                </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <link rel="stylesheet" type="text/css"
         href="<?php echo e(asset('landingpage/sharee')); ?>/wp-content/cache/wpfc-minified/78qrtsnc/5ukdx.css"
         media="all" />
