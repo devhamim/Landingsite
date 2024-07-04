@@ -477,8 +477,6 @@
 
     <script src='{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/kc8sjhif/5ukdy.js'
         type="text/javascript"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <style>
         img#wpstats {
             display: none
@@ -2064,6 +2062,7 @@
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="{{ asset('landingpage/sharee/slick.min.js') }}"></script>
 
     <script>
@@ -2145,29 +2144,17 @@
             autoplaySpeed: 2000,
         });
     </script>
-    {{-- @if (session('success'))
-            {
-            <script>
-                Swal.fire({
-                    icon: "success",
-                    title: "Success...",
-                    text: "প্রিয় গ্রাহক অর্ডার কররা জন্য ধন্যবাদ আপনার অর্ডার নম্বর #8500 কিছুক্ষণের মধেই আমাদের একজন প্রতিনিধি ফোন করে আপনার অর্ডার টি কনফার্ম করবেন প্রয়োজনে ফোন করুন 0 1890-30940",
-                });
-            </script>
-            }
-        @endif
-        @if (session('error'))
-            {
-            <script>
-                Swal.fire({
-                    icon: "error",
-                    title: "Oops...",
-                    text: "Something went wrong!",
-                    footer: '<a href="#">Why do I have this issue?</a>'
-                });
-            </script>
-            }
-        @endif --}}
+    @if (session('error'))
+    {
+    <script>
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "আপনি ইতি মধ্যে অর্ডার করেছেন।  খুব অল্প সময়ের মধ্যে আমাদের প্রতিনিধি ফোন করে আপনার অর্ডার টি কনফার্ম করবেন। এর পরে অর্ডার করতে চাইলে ১০ মিনিট পরে আবার অর্ডার করতে পারবেন।",
+        });
+    </script>
+    }
+@endif
     {{-- main js end --}}
 
     <script type="text/javascript" id="woo-variation-swatches-js-extra">

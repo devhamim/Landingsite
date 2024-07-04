@@ -1802,9 +1802,9 @@
         media="all" />
 
 {{-- main js --}}
-{{-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> --}}
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="{{ asset('landingpage/sharee/slick.min.js') }}"></script>
 
 <script>
@@ -1909,19 +1909,18 @@
                 });
             </script>
             }
-        @endif
+        @endif --}}
         @if (session('error'))
             {
             <script>
                 Swal.fire({
                     icon: "error",
                     title: "Oops...",
-                    text: "Something went wrong!",
-                    footer: '<a href="#">Why do I have this issue?</a>'
+                    text: "আপনি ইতি মধ্যে অর্ডার করেছেন।  খুব অল্প সময়ের মধ্যে আমাদের প্রতিনিধি ফোন করে আপনার অর্ডার টি কনফার্ম করবেন। এর পরে অর্ডার করতে চাইলে ১০ মিনিট পরে আবার অর্ডার করতে পারবেন।",
                 });
             </script>
             }
-        @endif --}}
+        @endif
 {{-- main js end --}}
 
     <script type="text/javascript" id="woo-variation-swatches-js-extra">
