@@ -73,6 +73,9 @@
                         </table>
                     </div>
                 </div>
+                <div class="mb-3">
+                    {{ $visitors->links() }}
+                </div>
             </div>
         </div>
     </div>
