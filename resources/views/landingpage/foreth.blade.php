@@ -2131,7 +2131,7 @@
 
             }
     </style>
-    <div class="popupbtn">
+    {{-- <div class="popupbtn">
         <input type="checkbox" id="check">
         <label class="chat-btn text-center" style="line-height: 50px" for="check">
             <img style="width: 35px;" src="{{ asset('landingpage/images/messeng.png')}}">
@@ -2185,7 +2185,7 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </div> --}}
     <link rel="stylesheet" type="text/css"
         href="{{ asset('landingpage/sharee') }}/wp-content/cache/wpfc-minified/78qrtsnc/5ukdx.css"
         media="all" />
@@ -2195,7 +2195,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    {{-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> --}}
     <script src="{{ asset('landingpage/sharee/slick.min.js') }}"></script>
 
     <script>
@@ -2288,7 +2288,7 @@
             </script>
             }
         @endif --}}
-        @if (session('error'))
+        {{-- @if (session('error'))
             {
             <script>
                 Swal.fire({
@@ -2298,7 +2298,7 @@
                 });
             </script>
             }
-        @endif
+        @endif --}}
     {{-- main js end --}}
 
     <script type="text/javascript" id="woo-variation-swatches-js-extra">
